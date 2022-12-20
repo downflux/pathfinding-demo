@@ -19,11 +19,11 @@ import (
 )
 
 const (
-	n = 1000
+	n = 5
 	r = 10
 
 	density = 0.15
-	nFrames = 300
+	nFrames = 600
 
 	fnOut = "/dev/stdout"
 )
@@ -31,10 +31,51 @@ const (
 func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
 
 func main() {
-	world := db.New(db.DefaultO)
+	world := db.New(db.O{
+		LeafSize:  db.DefaultO.LeafSize,
+		PoolSize:  1,
+		Tolerance: db.DefaultO.Tolerance,
+	})
 	agents := make([]*ragent.A, 0, n)
 
 	min, max := 0.0, math.Sqrt(n*math.Pi*r*r/density)
+
+	/*
+		agents = append(agents, ragent.New(
+			world.Insert(agent.O{
+				Position:           vector.V{50, 50},
+				Heading:            polar.V{1, 0},
+				Velocity:           vector.V{20, 0},
+				Radius:             10,
+				Mass:               rn(0, 100),
+				MaxVelocity:        10,
+				MaxAngularVelocity: math.Pi / 4,
+				MaxAcceleration:    1,
+			}),
+		), ragent.New(
+			world.Insert(agent.O{
+				Position:           vector.V{200, 50},
+				Heading:            polar.V{1, math.Pi},
+				Velocity:           vector.V{-20, 0},
+				Radius:             10,
+				Mass:               rn(0, 100),
+				MaxVelocity:        10,
+				MaxAngularVelocity: math.Pi / 4,
+				MaxAcceleration:    1,
+			}),
+		), ragent.New(
+			world.Insert(agent.O{
+				Position:           vector.V{300, 50},
+				Heading:            polar.V{1, math.Pi},
+				Velocity:           vector.V{-20, 0},
+				Radius:             10,
+				Mass:               rn(0, 100),
+				MaxVelocity:        10,
+				MaxAngularVelocity: math.Pi / 4,
+				MaxAcceleration:    1,
+			}),
+		))
+	*/
 	for i := 0; i < n; i++ {
 		v := vector.Scale(3*r, vector.V{
 			rn(-1, 1),
