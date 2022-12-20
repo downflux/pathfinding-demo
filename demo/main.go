@@ -8,21 +8,24 @@ import (
 	"math"
 	"math/rand"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/downflux/game-db/agent"
+	"github.com/downflux/game-db/agent/mask"
 	"github.com/downflux/game-db/db"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
 
 	ragent "github.com/downflux/pathfinding-demo/internal/render/agent"
+	rlabel "github.com/downflux/pathfinding-demo/internal/render/label"
 )
 
 const (
-	n = 5
+	n = 100
 	r = 10
 
-	density = 0.15
+	density = 0.05
 	nFrames = 600
 
 	fnOut = "/dev/stdout"
@@ -39,45 +42,47 @@ func main() {
 	agents := make([]*ragent.A, 0, n)
 
 	min, max := 0.0, math.Sqrt(n*math.Pi*r*r/density)
-
-	/*
-		agents = append(agents, ragent.New(
-			world.Insert(agent.O{
-				Position:           vector.V{50, 50},
-				Heading:            polar.V{1, 0},
-				Velocity:           vector.V{20, 0},
-				Radius:             10,
-				Mass:               rn(0, 100),
-				MaxVelocity:        10,
-				MaxAngularVelocity: math.Pi / 4,
-				MaxAcceleration:    1,
-			}),
-		), ragent.New(
-			world.Insert(agent.O{
-				Position:           vector.V{200, 50},
-				Heading:            polar.V{1, math.Pi},
-				Velocity:           vector.V{-20, 0},
-				Radius:             10,
-				Mass:               rn(0, 100),
-				MaxVelocity:        10,
-				MaxAngularVelocity: math.Pi / 4,
-				MaxAcceleration:    1,
-			}),
-		), ragent.New(
-			world.Insert(agent.O{
-				Position:           vector.V{300, 50},
-				Heading:            polar.V{1, math.Pi},
-				Velocity:           vector.V{-20, 0},
-				Radius:             10,
-				Mass:               rn(0, 100),
-				MaxVelocity:        10,
-				MaxAngularVelocity: math.Pi / 4,
-				MaxAcceleration:    1,
-			}),
-		))
-	*/
+	agents = append(agents, ragent.New(
+		world.Insert(agent.O{
+			Position:           vector.V{50, 50},
+			Heading:            polar.V{1, 0},
+			Velocity:           vector.V{20, 0},
+			Radius:             10,
+			Mass:               rn(0, 100),
+			MaxVelocity:        10,
+			MaxAngularVelocity: math.Pi / 4,
+			MaxAcceleration:    5,
+			Mask:               mask.MSizeSmall,
+		}),
+	), ragent.New(
+		world.Insert(agent.O{
+			Position:           vector.V{200, 50},
+			Heading:            polar.V{1, math.Pi},
+			Velocity:           vector.V{-20, 0},
+			Radius:             10,
+			Mass:               rn(0, 100),
+			MaxVelocity:        10,
+			MaxAngularVelocity: math.Pi / 4,
+			MaxAcceleration:    5,
+			Mask:               mask.MSizeSmall,
+		}),
+	), ragent.New(
+		world.Insert(agent.O{
+			Position: vector.V{300, 50},
+			Heading:  polar.V{1, math.Pi},
+			Velocity: vector.V{-20, 0},
+			Radius:   10,
+			Mass:     rn(0, 100),
+			// TODO(minkezhang: Check why this isn't being
+			// respected by non-projectiles.
+			MaxVelocity:        10,
+			MaxAngularVelocity: math.Pi / 4,
+			MaxAcceleration:    5,
+			Mask:               mask.MSizeProjectile,
+		}),
+	))
 	for i := 0; i < n; i++ {
-		v := vector.Scale(3*r, vector.V{
+		v := vector.Scale(10*r, vector.V{
 			rn(-1, 1),
 			rn(-1, 1),
 		})
@@ -91,25 +96,27 @@ func main() {
 
 				Radius:             r,
 				Mass:               rn(0, 100),
-				MaxVelocity:        10,
+				MaxVelocity:        vector.Magnitude(v),
 				MaxAngularVelocity: math.Pi / 4,
-				MaxAcceleration:    1,
+				MaxAcceleration:    5,
+				Mask:               mask.MSizeSmall,
 			})),
 		)
 	}
-
 	frames := make([]*image.Paletted, 0, nFrames)
 	for i := 0; i < nFrames; i++ {
 		img := image.NewPaletted(
 			image.Rectangle{image.Point{int(min), int(min)}, image.Point{int(max), int(max)}},
 			[]color.Color{
 				color.White,
+				rlabel.ColorText,
 				ragent.ColorVelocity,
 				ragent.ColorTrail,
 				ragent.ColorAgent,
 				ragent.ColorHeading,
 			},
 		)
+		rlabel.New(strconv.Itoa(i)).Draw(img)
 
 		for _, a := range agents {
 			a.Draw(img)

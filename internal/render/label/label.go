@@ -28,7 +28,7 @@ func (l *L) Draw(img *image.Paletted) {
 		Dst:  img,
 		Src:  image.NewUniform(ColorText),
 		Face: basicfont.Face7x13,
-		Dot:  fixed.Point26_6{fixed.I(0), fixed.I(0)},
+		Dot:  fixed.Point26_6{fixed.I(0), fixed.I(13)},
 	}
 	d.DrawString(l.label)
 }
