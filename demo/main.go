@@ -8,7 +8,6 @@ import (
 	"math"
 	"math/rand"
 	"os"
-	"strconv"
 	"time"
 
 	"github.com/downflux/game-db/agent"
@@ -116,7 +115,7 @@ func main() {
 				ragent.ColorHeading,
 			},
 		)
-		rlabel.New(strconv.Itoa(i)).Draw(img)
+		rlabel.New(fmt.Sprintf("frame %v / %v", i, nFrames)).Draw(img)
 
 		for _, a := range agents {
 			a.Draw(img)
