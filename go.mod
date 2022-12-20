@@ -7,4 +7,7 @@ require (
 	github.com/downflux/go-geometry v0.15.3
 )
 
-require github.com/downflux/go-bvh v0.2.2 // indirect
+require (
+	github.com/downflux/go-bvh v0.2.2 // indirect
+	github.com/downflux/go-pq v0.3.0 // indirect
+)

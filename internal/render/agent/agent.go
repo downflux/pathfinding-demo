@@ -22,20 +22,20 @@ var (
 	ColorTrail    = color.RGBA{192, 192, 192, 255}
 )
 
-type R struct {
+type A struct {
 	agent *agent.A
 
 	trail *trail.T
 }
 
-func New(a *agent.A) *R {
-	return &R{
+func New(a *agent.A) *A {
+	return &A{
 		agent: a,
 		trail: trail.New(ColorTrail),
 	}
 }
 
-func (r *R) Draw(img *image.Paletted) {
+func (r *A) Draw(img *image.Paletted) {
 	r.trail.Push(r.agent.Position())
 	r.trail.Draw(img)
 
