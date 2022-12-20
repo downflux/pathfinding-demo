@@ -3,11 +3,14 @@ package agent
 import (
 	"image"
 	"image/color"
+	"strconv"
 
 	"github.com/downflux/game-db/agent"
 	"github.com/downflux/go-geometry/2d/hypersphere"
+	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
 	"github.com/downflux/pathfinding-demo/internal/render/circle"
+	"github.com/downflux/pathfinding-demo/internal/render/label"
 	"github.com/downflux/pathfinding-demo/internal/render/segment"
 	"github.com/downflux/pathfinding-demo/internal/render/trail"
 
@@ -20,6 +23,8 @@ var (
 	ColorHeading  = color.RGBA{255, 0, 0, 255}
 	ColorAgent    = color.Black
 	ColorTrail    = color.RGBA{192, 192, 192, 255}
+
+	fontOffset = vector.V{-6, -8}
 )
 
 type A struct {
@@ -48,7 +53,15 @@ func (r *A) Draw(img *image.Paletted) {
 	).Draw(img)
 
 	segment.New(
-		*s2d.New(*l2d.New(r.agent.Position(), polar.Cartesian(r.agent.Heading())), 0, 2*r.agent.Radius()),
+		*s2d.New(*l2d.New(
+			r.agent.Position(),
+			polar.Cartesian(r.agent.Heading()),
+		), 0, 2*r.agent.Radius()),
 		ColorHeading,
+	).Draw(img)
+
+	label.New(
+		strconv.Itoa(int(r.agent.ID())),
+		vector.Add(fontOffset, r.agent.Position()),
 	).Draw(img)
 }

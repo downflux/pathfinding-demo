@@ -115,7 +115,7 @@ func main() {
 				ragent.ColorHeading,
 			},
 		)
-		rlabel.New(fmt.Sprintf("frame %v / %v", i, nFrames)).Draw(img)
+		rlabel.New(fmt.Sprintf("frame %v / %v", i, nFrames), vector.V{0, 0}).Draw(img)
 
 		for _, a := range agents {
 			a.Draw(img)
