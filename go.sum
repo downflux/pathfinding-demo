@@ -2,6 +2,8 @@ github.com/downflux/game-db v0.0.0-20221220122307-36043714371f h1:XZcpKmUVJSbjkw
 github.com/downflux/game-db v0.0.0-20221220122307-36043714371f/go.mod h1:x1I2s9sjaIzJ9iu+b/hw4teVN4Ot5Z3nF01ZTd805jo=
 github.com/downflux/game-db v0.0.0-20221220191711-7db1f9d74679 h1:1I4UEbSRCetLRS5nw9eQkdP8S/ZlQaMqOxIcS46kgzU=
 github.com/downflux/game-db v0.0.0-20221220191711-7db1f9d74679/go.mod h1:x1I2s9sjaIzJ9iu+b/hw4teVN4Ot5Z3nF01ZTd805jo=
+github.com/downflux/game-db v0.0.0-20221222080240-c4f620185bdf h1:Y7ILD619kJRBcXsv9JKOQDzkXSnuNf24xEgSXL5Ue9c=
+github.com/downflux/game-db v0.0.0-20221222080240-c4f620185bdf/go.mod h1:x1I2s9sjaIzJ9iu+b/hw4teVN4Ot5Z3nF01ZTd805jo=
 github.com/downflux/go-bvh v0.2.2 h1:0VFLEJKmb+eYg3Oxz27O7maoLK7nJv94DHlHc5pTjn8=
 github.com/downflux/go-bvh v0.2.2/go.mod h1:A4IdDdYkX7zy0STS7KvNMGgQTpMOT3/aSJh8MkM4GLc=
 github.com/downflux/go-geometry v0.15.3 h1:Kwr2tiozUQF/Q47pCZDRaPS+MPrV6KsC87Gm0J7p15w=

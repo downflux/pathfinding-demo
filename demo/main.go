@@ -27,59 +27,17 @@ const (
 	density = 0.1
 	nFrames = 600
 
-	fnOut = "/home/mzhang/downflux/pathfinding-demo/demo/out2.gif"
+	fnOut = "/home/mzhang/downflux/pathfinding-demo/demo/output/demo.gif"
 )
 
 func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
 
 func main() {
-	world := db.New(db.O{
-		LeafSize:  db.DefaultO.LeafSize,
-		PoolSize:  1,
-		Tolerance: db.DefaultO.Tolerance,
-	})
+	world := db.New(db.DefaultO)
 	agents := make([]*ragent.A, 0, n)
 
 	min, max := 0.0, math.Sqrt(n*math.Pi*r*r/density)
-	agents = append(agents, ragent.New(
-		world.Insert(agent.O{
-			Position:           vector.V{50, 50},
-			Heading:            polar.V{1, 0},
-			Velocity:           vector.V{20, 0},
-			Radius:             10,
-			Mass:               rn(0, 100),
-			MaxVelocity:        10,
-			MaxAngularVelocity: math.Pi / 4,
-			MaxAcceleration:    5,
-			Mask:               mask.MSizeSmall,
-		}),
-	), ragent.New(
-		world.Insert(agent.O{
-			Position:           vector.V{200, 50},
-			Heading:            polar.V{1, math.Pi},
-			Velocity:           vector.V{-20, 0},
-			Radius:             10,
-			Mass:               rn(0, 100),
-			MaxVelocity:        10,
-			MaxAngularVelocity: math.Pi / 4,
-			MaxAcceleration:    5,
-			Mask:               mask.MSizeSmall,
-		}),
-	), ragent.New(
-		world.Insert(agent.O{
-			Position: vector.V{300, 50},
-			Heading:  polar.V{1, math.Pi},
-			Velocity: vector.V{-20, 0},
-			Radius:   10,
-			Mass:     rn(0, 100),
-			// TODO(minkezhang: Check why this isn't being
-			// respected by non-projectiles.
-			MaxVelocity:        10,
-			MaxAngularVelocity: math.Pi / 4,
-			MaxAcceleration:    5,
-			Mask:               mask.MSizeProjectile,
-		}),
-	))
+
 	cols := math.Floor(math.Sqrt(n))
 	grid := (max - min) / cols
 	for i := 0; i < n; i++ {
