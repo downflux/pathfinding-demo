@@ -25,8 +25,8 @@ const (
 	n = 200
 	r = 5
 
-	density = 0.05
-	nFrames = 300
+	density = 0.1
+	nFrames = 600
 )
 
 var (
