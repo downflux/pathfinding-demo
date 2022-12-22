@@ -22,15 +22,18 @@ import (
 )
 
 const (
-	n = 100
-	r = 10
+	n = 200
+	r = 5
 
-	density = 0.1
-	nFrames = 600
+	density = 0.05
+	nFrames = 300
 )
 
 var (
 	fnOut = flag.String("out", "/dev/null", "GIF output path")
+
+	// label indicates if agent IDs are labeled in the final output.
+	label = r >= 10.0
 )
 
 func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
@@ -66,7 +69,7 @@ func main() {
 				MaxAngularVelocity: math.Pi / 2,
 				MaxAcceleration:    5,
 				Mask:               mask.MSizeSmall,
-			})),
+			}), label),
 		)
 	}
 	frames := make([]*image.Paletted, 0, nFrames)

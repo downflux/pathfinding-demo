@@ -31,12 +31,15 @@ type A struct {
 	agent *agent.A
 
 	trail *trail.T
+
+	label bool
 }
 
-func New(a *agent.A) *A {
+func New(a *agent.A, label bool) *A {
 	return &A{
 		agent: a,
 		trail: trail.New(ColorTrail),
+		label: label,
 	}
 }
 
@@ -60,10 +63,12 @@ func (r *A) Draw(img *image.Paletted) {
 		ColorHeading,
 	).Draw(img)
 
-	label.New(
-		// Use hexadecimals here since the agents are small and we need
-		// a clear designator.
-		fmt.Sprintf("%02X", r.agent.ID()),
-		vector.Add(fontOffset, r.agent.Position()),
-	).Draw(img)
+	if r.label {
+		label.New(
+			// Use hexadecimals here since the agents are small and we need
+			// a clear designator.
+			fmt.Sprintf("%02X", r.agent.ID()),
+			vector.Add(fontOffset, r.agent.Position()),
+		).Draw(img)
+	}
 }

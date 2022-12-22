@@ -27,9 +27,11 @@ func New(c color.Color) *T {
 
 func (t *T) Push(v vector.V) {
 	if t.frame < trailbufLen {
-		t.trailbuf = append(t.trailbuf, v)
+		u := vector.M{0, 0}
+		u.Copy(v)
+		t.trailbuf = append(t.trailbuf, u.V())
 	} else {
-		t.trailbuf[t.frame%trailbufLen] = v
+		t.trailbuf[t.frame%trailbufLen].M().Copy(v)
 	}
 	t.frame += 1
 }

@@ -10,6 +10,8 @@ github.com/downflux/game-db v0.1.0 h1:7pUOo097RMBcwxExGoIVwzAXRXTp0qKpvzsTFo1mgm
 github.com/downflux/game-db v0.1.0/go.mod h1:WCemaz16xEIFEhcDFhFxJGcdKa+EKu5vl/szrB2ngjM=
 github.com/downflux/game-db v0.1.1 h1:e4d1i/2UmUdNyGEWzY4eKXu6ZhXuzurtDaGJhLKyzNM=
 github.com/downflux/game-db v0.1.1/go.mod h1:WCemaz16xEIFEhcDFhFxJGcdKa+EKu5vl/szrB2ngjM=
+github.com/downflux/game-db v0.1.2 h1:0wjnLi/sJjQ4r8dnV7k5fJ8UOOrBaNIFdvPn6jASA1Y=
+github.com/downflux/game-db v0.1.2/go.mod h1:WCemaz16xEIFEhcDFhFxJGcdKa+EKu5vl/szrB2ngjM=
 github.com/downflux/go-bvh v0.2.2 h1:0VFLEJKmb+eYg3Oxz27O7maoLK7nJv94DHlHc5pTjn8=
 github.com/downflux/go-bvh v0.2.2/go.mod h1:A4IdDdYkX7zy0STS7KvNMGgQTpMOT3/aSJh8MkM4GLc=
 github.com/downflux/go-bvh v1.0.0 h1:k5rSxBGEeuhWaW8JrxL5KF1f3fA9jaXoK1/zJLV9DK4=
