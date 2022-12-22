@@ -52,16 +52,18 @@ func main() {
 		})
 		agents = append(agents, ragent.New(
 			world.Insert(agent.O{
-				Position: vector.Scale(grid, vector.V{float64(i % int(cols)), float64(i) / cols}),
+				Position: vector.Scale(grid, vector.V{
+					float64(i%int(cols)) + 0.5,
+					math.Floor(float64(i)/cols) + 0.5,
+				}),
 				Heading: polar.Normalize(
-					polar.Polar(vector.Unit(v)),
+					polar.V{1, rn(0, 2*math.Pi)},
 				),
 				Velocity: v,
 
 				Radius:             r,
-				Mass:               rn(0, 100),
 				MaxVelocity:        vector.Magnitude(v),
-				MaxAngularVelocity: math.Pi / 4,
+				MaxAngularVelocity: math.Pi / 2,
 				MaxAcceleration:    5,
 				Mask:               mask.MSizeSmall,
 			})),
