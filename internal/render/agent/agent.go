@@ -1,9 +1,9 @@
 package agent
 
 import (
+	"fmt"
 	"image"
 	"image/color"
-	"strconv"
 
 	"github.com/downflux/game-db/agent"
 	"github.com/downflux/go-geometry/2d/hypersphere"
@@ -61,7 +61,9 @@ func (r *A) Draw(img *image.Paletted) {
 	).Draw(img)
 
 	label.New(
-		strconv.Itoa(int(r.agent.ID())),
+		// Use hexadecimals here since the agents are small and we need
+		// a clear designator.
+		fmt.Sprintf("%02X", r.agent.ID()),
 		vector.Add(fontOffset, r.agent.Position()),
 	).Draw(img)
 }

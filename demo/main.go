@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"image"
 	"image/color"
@@ -26,13 +27,17 @@ const (
 
 	density = 0.1
 	nFrames = 600
+)
 
-	fnOut = "/home/mzhang/downflux/pathfinding-demo/demo/output/demo.gif"
+var (
+	fnOut = flag.String("out", "/dev/null", "GIF output path")
 )
 
 func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
 
 func main() {
+	flag.Parse()
+
 	world := db.New(db.DefaultO)
 	agents := make([]*ragent.A, 0, n)
 
@@ -94,13 +99,13 @@ func main() {
 		Image: frames,
 	}
 
-	w, err := os.Create(fnOut)
+	w, err := os.Create(*fnOut)
 	if err != nil {
-		panic(fmt.Sprintf("cannot write to file %v: %v", fnOut, err))
+		panic(fmt.Sprintf("cannot write to file %v: %v", *fnOut, err))
 	}
 	defer w.Close()
 
 	if err := gif.EncodeAll(w, anim); err != nil {
-		panic(fmt.Sprintf("cannot write to file %v: %v", fnOut, err))
+		panic(fmt.Sprintf("cannot write to file %v: %v", *fnOut, err))
 	}
 }
