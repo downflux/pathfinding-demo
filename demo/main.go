@@ -24,10 +24,10 @@ const (
 	n = 100
 	r = 10
 
-	density = 0.05
+	density = 0.1
 	nFrames = 600
 
-	fnOut = "/dev/stdout"
+	fnOut = "/home/mzhang/downflux/pathfinding-demo/demo/out2.gif"
 )
 
 func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
@@ -80,14 +80,16 @@ func main() {
 			Mask:               mask.MSizeProjectile,
 		}),
 	))
+	cols := math.Floor(math.Sqrt(n))
+	grid := (max - min) / cols
 	for i := 0; i < n; i++ {
-		v := vector.Scale(10*r, vector.V{
+		v := vector.Scale(5*r, vector.V{
 			rn(-1, 1),
 			rn(-1, 1),
 		})
 		agents = append(agents, ragent.New(
 			world.Insert(agent.O{
-				Position: vector.V{rn(min, max), rn(min, max)},
+				Position: vector.Scale(grid, vector.V{float64(i % int(cols)), float64(i) / cols}),
 				Heading: polar.Normalize(
 					polar.Polar(vector.Unit(v)),
 				),
