@@ -4,87 +4,60 @@ import (
 	"flag"
 	"fmt"
 	"image/gif"
-	"math"
-	"math/rand"
 	"os"
-	"time"
+	"path/filepath"
 
-	"github.com/downflux/go-collider/agent"
-	"github.com/downflux/go-collider/agent/mask"
-	"github.com/downflux/go-collider/collider"
-	"github.com/downflux/go-geometry/2d/vector"
-	"github.com/downflux/go-geometry/2d/vector/polar"
-	"github.com/downflux/go-geometry/nd/hyperrectangle"
 	"github.com/downflux/pathfinding-demo/simulation"
-
-	vnd "github.com/downflux/go-geometry/nd/vector"
-)
-
-const (
-	n = 200
-	r = 5
-
-	density = 0.1
-	nFrames = 600
 )
 
 var (
-	fnOut = flag.String("out", "/dev/null", "GIF output path")
+	configs = flag.String("configs", "", "config directory")
+	output  = flag.String("output", "/dev/null", "output GIF directory")
 )
 
-func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
+const (
+	nFrames = 600
+)
 
 func main() {
 	flag.Parse()
 
-	agents := make([]agent.O, 0, n)
-	min, max := 0.0, math.Sqrt(n*math.Pi*r*r/density)
-	cols := math.Floor(math.Sqrt(n))
-	grid := (max - min) / cols
-	for i := 0; i < n; i++ {
-		v := vector.Scale(5*r, vector.V{
-			rn(-1, 1),
-			rn(-1, 1),
-		})
-		agents = append(agents, agent.O{
-			Position: vector.Scale(grid, vector.V{
-				float64(i%int(cols)) + 0.5,
-				math.Floor(float64(i)/cols) + 0.5,
-			}),
-			Heading: polar.Normalize(
-				polar.V{1, rn(0, 2*math.Pi)},
-			),
-			Velocity: v,
-
-			Radius:             r,
-			MaxVelocity:        vector.Magnitude(v),
-			MaxAngularVelocity: math.Pi / 2,
-			MaxAcceleration:    5,
-			Mask:               mask.MSizeSmall,
-		})
-	}
-
-	o := simulation.O{
-		Name:     fmt.Sprintf("Random/N=%v/ρ=%v", n, density),
-		Agents:   agents,
-		Collider: collider.DefaultO,
-		Dimensions: *hyperrectangle.New(
-			vnd.V{min, min},
-			vnd.V{max, max},
-		),
-		TickDuration: 20 * time.Millisecond,
-	}
-
-	s := simulation.New(o)
-	anim := s.Execute(nFrames)
-
-	w, err := os.Create(*fnOut)
+	matches, err := filepath.Glob(filepath.Join(*configs, "*.json"))
 	if err != nil {
-		panic(fmt.Sprintf("cannot write to file %v: %v", *fnOut, err))
+		panic(fmt.Sprintf("cannot match input config directory: %v", err))
 	}
-	defer w.Close()
 
-	if err := gif.EncodeAll(w, anim); err != nil {
-		panic(fmt.Sprintf("cannot write to file %v: %v", *fnOut, err))
+	var opts []simulation.O
+	for _, fn := range matches {
+		func() {
+			data, err := os.ReadFile(fn)
+			if err != nil {
+				panic(fmt.Sprintf("cannot read file: %v", err))
+			}
+			opts = append(opts, simulation.Unmarshal(data))
+		}()
+	}
+
+	for _, o := range opts {
+		fmt.Printf("running %v\n", o.Name)
+		s := simulation.New(o)
+		anim := s.Execute(nFrames)
+
+		func() {
+			if *output == "/dev/null" {
+				return
+			}
+
+			fn := filepath.Join(*output, fmt.Sprintf("%v.gif", o.Filename()))
+			w, err := os.Create(fn)
+			if err != nil {
+				panic(fmt.Sprintf("cannot write to file %v: %v", fn, err))
+			}
+			defer w.Close()
+
+			if err := gif.EncodeAll(w, anim); err != nil {
+				panic(fmt.Sprintf("cannot write to file %v: %v", fn, err))
+			}
+		}()
 	}
 }

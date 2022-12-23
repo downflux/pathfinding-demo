@@ -5,5 +5,9 @@ To generate configs, run
 
 ```bash
 go run simulation/generator/main.go \
-  --directory=demo/configs/
+  --output=demo/configs/
+
+go run demo/main.go 
+  --configs=demo/configs \
+  --output=demo/output
 ```

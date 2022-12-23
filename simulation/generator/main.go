@@ -14,18 +14,15 @@ import (
 	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
-	"github.com/downflux/go-geometry/nd/hyperrectangle"
 	"github.com/downflux/pathfinding-demo/simulation"
-
-	vnd "github.com/downflux/go-geometry/nd/vector"
 )
 
 const (
-	r = 1.0
+	r = 5.0
 )
 
 var (
-	dir = flag.String("directory", "/dev/null", "")
+	output = flag.String("output", "/dev/null", "output config directory")
 )
 
 func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
@@ -65,23 +62,23 @@ func main() {
 			}
 
 			opts = append(opts, simulation.O{
-				Name:     fmt.Sprintf("Random/N=%v/ρ=%v", n, density),
-				Agents:   agents,
-				Collider: collider.DefaultO,
-				Dimensions: *hyperrectangle.New(
-					vnd.V{min, min},
-					vnd.V{max, max},
-				),
+				Name:         fmt.Sprintf("Random/N=%v/ρ=%v", n, density),
+				Agents:       agents,
+				Collider:     collider.DefaultO,
+				MinX:         min,
+				MinY:         min,
+				MaxX:         max,
+				MaxY:         max,
 				TickDuration: 20 * time.Millisecond,
 			})
 		}
 	}
 
 	for _, o := range opts {
-		fn := path.Join(*dir, fmt.Sprintf("%v.json", o.Filename()))
+		fn := path.Join(*output, fmt.Sprintf("%v.json", o.Filename()))
 
 		func() {
-			if *dir == "/dev/null" {
+			if *output== "/dev/null" {
 				return
 			}
 
