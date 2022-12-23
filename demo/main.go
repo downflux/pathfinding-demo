@@ -30,9 +30,6 @@ const (
 
 var (
 	fnOut = flag.String("out", "/dev/null", "GIF output path")
-
-	// label indicates if agent IDs are labeled in the final output.
-	label = r >= 10.0
 )
 
 func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
