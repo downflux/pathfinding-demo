@@ -3,8 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"image"
-	"image/color"
 	"image/gif"
 	"math"
 	"math/rand"
@@ -16,9 +14,10 @@ import (
 	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
+	"github.com/downflux/go-geometry/nd/hyperrectangle"
+	"github.com/downflux/pathfinding-demo/simulation"
 
-	ragent "github.com/downflux/pathfinding-demo/internal/render/agent"
-	rlabel "github.com/downflux/pathfinding-demo/internal/render/label"
+	vnd "github.com/downflux/go-geometry/nd/vector"
 )
 
 const (
@@ -41,11 +40,8 @@ func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
 func main() {
 	flag.Parse()
 
-	world := collider.New(collider.DefaultO)
-	agents := make([]*ragent.A, 0, n)
-
+	agents := make([]agent.O, 0, n)
 	min, max := 0.0, math.Sqrt(n*math.Pi*r*r/density)
-
 	cols := math.Floor(math.Sqrt(n))
 	grid := (max - min) / cols
 	for i := 0; i < n; i++ {
@@ -53,56 +49,34 @@ func main() {
 			rn(-1, 1),
 			rn(-1, 1),
 		})
-		agents = append(agents, ragent.New(
-			world.Insert(agent.O{
-				Position: vector.Scale(grid, vector.V{
-					float64(i%int(cols)) + 0.5,
-					math.Floor(float64(i)/cols) + 0.5,
-				}),
-				Heading: polar.Normalize(
-					polar.V{1, rn(0, 2*math.Pi)},
-				),
-				Velocity: v,
+		agents = append(agents, agent.O{
+			Position: vector.Scale(grid, vector.V{
+				float64(i%int(cols)) + 0.5,
+				math.Floor(float64(i)/cols) + 0.5,
+			}),
+			Heading: polar.Normalize(
+				polar.V{1, rn(0, 2*math.Pi)},
+			),
+			Velocity: v,
 
-				Radius:             r,
-				MaxVelocity:        vector.Magnitude(v),
-				MaxAngularVelocity: math.Pi / 2,
-				MaxAcceleration:    5,
-				Mask:               mask.MSizeSmall,
-			}), label),
-		)
-	}
-	frames := make([]*image.Paletted, 0, nFrames)
-	for i := 0; i < nFrames; i++ {
-		img := image.NewPaletted(
-			image.Rectangle{image.Point{int(min), int(min)}, image.Point{int(max), int(max)}},
-			[]color.Color{
-				color.White,
-				rlabel.ColorText,
-				ragent.ColorVelocity,
-				ragent.ColorTrail,
-				ragent.ColorAgent,
-				ragent.ColorHeading,
-			},
-		)
-		rlabel.New(fmt.Sprintf("frame %v / %v", i, nFrames), vector.V{0, 0}).Draw(img)
-
-		for _, a := range agents {
-			a.Draw(img)
-		}
-		frames = append(frames, img)
-
-		world.Tick(20 * time.Millisecond)
+			Radius:             r,
+			MaxVelocity:        vector.Magnitude(v),
+			MaxAngularVelocity: math.Pi / 2,
+			MaxAcceleration:    5,
+			Mask:               mask.MSizeSmall,
+		})
 	}
 
-	delays := make([]int, nFrames)
-	for i := 0; i < nFrames; i++ {
-		delays[i] = 2
-	}
-	anim := &gif.GIF{
-		Delay: delays,
-		Image: frames,
-	}
+	s := simulation.New(simulation.O{
+		Agents:   agents,
+		Collider: collider.DefaultO,
+		Dimensions: *hyperrectangle.New(
+			vnd.V{min, min},
+			vnd.V{max, max},
+		),
+		TickDuration: 20 * time.Millisecond,
+	})
+	anim := s.Execute(nFrames)
 
 	w, err := os.Create(*fnOut)
 	if err != nil {
