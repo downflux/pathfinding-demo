@@ -20,6 +20,10 @@ import (
 	rlabel "github.com/downflux/pathfinding-demo/internal/render/label"
 )
 
+func sanitize(s string) string {
+	return strings.ToLower(regexp.MustCompile(`[^a-zA-Z0-9 ]+`).ReplaceAllString(s, "_"))
+}
+
 type O struct {
 	Name        string
 	Agents      []agent.O
@@ -29,6 +33,8 @@ type O struct {
 	Dimensions   hyperrectangle.R
 	TickDuration time.Duration
 }
+
+func (o *O) Filename() string { return sanitize(o.Name) }
 
 func (o O) Marshal() []byte {
 	data, err := json.MarshalIndent(o, "", "    ")
@@ -72,11 +78,8 @@ func New(o O) *S {
 	return s
 }
 
-func (s *S) Name() string { return s.name }
-
-func (s *S) Filename() string {
-	return strings.ToLower(regexp.MustCompile(`[^a-zA-Z0-9 ]+`).ReplaceAllString(s.name, "_"))
-}
+func (s *S) Name() string     { return s.name }
+func (s *S) Filename() string { return sanitize(s.name) }
 
 func (s *S) Tick(d time.Duration) {
 	s.collider.Tick(d)
