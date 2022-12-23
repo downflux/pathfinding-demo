@@ -5,7 +5,7 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/downflux/game-db/agent"
+	"github.com/downflux/go-collider/agent"
 	"github.com/downflux/go-geometry/2d/hypersphere"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"

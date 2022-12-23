@@ -11,9 +11,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/downflux/game-db/agent"
-	"github.com/downflux/game-db/agent/mask"
-	"github.com/downflux/game-db/db"
+	"github.com/downflux/go-collider/agent"
+	"github.com/downflux/go-collider/agent/mask"
+	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
 
@@ -41,7 +41,7 @@ func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
 func main() {
 	flag.Parse()
 
-	world := db.New(db.DefaultO)
+	world := collider.New(collider.DefaultO)
 	agents := make([]*ragent.A, 0, n)
 
 	min, max := 0.0, math.Sqrt(n*math.Pi*r*r/density)
