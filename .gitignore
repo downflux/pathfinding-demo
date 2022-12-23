@@ -1,4 +1,5 @@
 demo/configs/
+demo/output/
 
 # Binaries for programs and plugins
 *.exe
