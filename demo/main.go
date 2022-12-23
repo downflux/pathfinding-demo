@@ -64,7 +64,8 @@ func main() {
 		})
 	}
 
-	s := simulation.New(simulation.O{
+	o := simulation.O{
+		Name:     fmt.Sprintf("Random/N=%v/ρ=%v", n, density),
 		Agents:   agents,
 		Collider: collider.DefaultO,
 		Dimensions: *hyperrectangle.New(
@@ -72,7 +73,9 @@ func main() {
 			vnd.V{max, max},
 		),
 		TickDuration: 20 * time.Millisecond,
-	})
+	}
+
+	s := simulation.New(o)
 	anim := s.Execute(nFrames)
 
 	w, err := os.Create(*fnOut)

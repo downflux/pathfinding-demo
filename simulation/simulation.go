@@ -1,10 +1,13 @@
 package simulation
 
 import (
+	"encoding/json"
 	"fmt"
 	"image"
 	"image/color"
 	"image/gif"
+	"regexp"
+	"strings"
 	"time"
 
 	"github.com/downflux/go-collider/agent"
@@ -18,6 +21,7 @@ import (
 )
 
 type O struct {
+	Name        string
 	Agents      []agent.O
 	Projectiles []agent.O
 	Collider    collider.O
@@ -26,7 +30,24 @@ type O struct {
 	TickDuration time.Duration
 }
 
+func (o O) Marshal() []byte {
+	data, err := json.MarshalIndent(o, "", "    ")
+	if err != nil {
+		panic(fmt.Sprintf("cannot marshal JSON: %v", err))
+	}
+	return data
+}
+
+func Unmarshal(data []byte) O {
+	var o O
+	if err := json.Unmarshal(data, o); err != nil {
+		panic(fmt.Sprintf("cannot unmarshal JSON: %v", err))
+	}
+	return o
+}
+
 type S struct {
+	name                string
 	agentRenderers      []*ragent.A
 	projectileRenderers []*ragent.A
 	collider            *collider.C
@@ -37,6 +58,7 @@ type S struct {
 
 func New(o O) *S {
 	s := &S{
+		name:         o.Name,
 		collider:     collider.New(o.Collider),
 		tickDuration: o.TickDuration,
 		dimensions:   o.Dimensions,
@@ -48,6 +70,12 @@ func New(o O) *S {
 		s.agentRenderers = append(s.agentRenderers, ragent.New(s.collider.Insert(opt), opt.Radius >= 10))
 	}
 	return s
+}
+
+func (s *S) Name() string { return s.name }
+
+func (s *S) Filename() string {
+	return strings.ToLower(regexp.MustCompile(`[^a-zA-Z0-9 ]+`).ReplaceAllString(s.name, "_"))
 }
 
 func (s *S) Tick(d time.Duration) {
