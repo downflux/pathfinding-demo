@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/downflux/go-collider/agent"
-	"github.com/downflux/go-collider/agent/mask"
 	"github.com/downflux/go-collider/collider"
+	"github.com/downflux/go-collider/mask"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
 	"github.com/downflux/pathfinding-demo/simulation"
@@ -78,7 +78,7 @@ func main() {
 		fn := path.Join(*output, fmt.Sprintf("%v.json", o.Filename()))
 
 		func() {
-			if *output== "/dev/null" {
+			if *output == "/dev/null" {
 				return
 			}
 
