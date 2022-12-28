@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/downflux/go-collider/agent"
-	"github.com/downflux/go-collider/feature"
 	"github.com/downflux/go-collider/collider"
+	"github.com/downflux/go-collider/feature"
 	"github.com/downflux/go-collider/mask"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"

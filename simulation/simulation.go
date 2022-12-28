@@ -11,11 +11,12 @@ import (
 	"time"
 
 	"github.com/downflux/go-collider/agent"
-	"github.com/downflux/go-collider/feature"
 	"github.com/downflux/go-collider/collider"
+	"github.com/downflux/go-collider/feature"
 	"github.com/downflux/go-geometry/2d/vector"
 
 	ragent "github.com/downflux/pathfinding-demo/internal/render/agent"
+	rfeature "github.com/downflux/pathfinding-demo/internal/render/feature"
 	rlabel "github.com/downflux/pathfinding-demo/internal/render/label"
 )
 
@@ -27,7 +28,7 @@ type O struct {
 	Name        string
 	Agents      []agent.O
 	Projectiles []agent.O
-	Features []feature.O
+	Features    []feature.O
 	Collider    collider.O
 
 	MinX         float64
@@ -58,6 +59,7 @@ func Unmarshal(data []byte) O {
 type S struct {
 	agentRenderers      []*ragent.A
 	projectileRenderers []*ragent.A
+	featureRenderers    []*rfeature.F
 	collider            *collider.C
 
 	minX         float64
@@ -83,7 +85,7 @@ func New(o O) *S {
 		s.agentRenderers = append(s.agentRenderers, ragent.New(s.collider.Insert(opt), opt.Radius >= 10))
 	}
 	for _, opt := range o.Features {
-		s.collider.InsertFeature(opt)
+		s.featureRenderers = append(s.featureRenderers, rfeature.New(s.collider.InsertFeature(opt)))
 	}
 	return s
 }
@@ -105,6 +107,7 @@ func (s *S) Execute(nFrames int) *gif.GIF {
 				ragent.ColorTrail,
 				ragent.ColorAgent,
 				ragent.ColorHeading,
+				rfeature.ColorBox,
 			},
 		)
 
@@ -112,6 +115,12 @@ func (s *S) Execute(nFrames int) *gif.GIF {
 
 		for _, a := range s.agentRenderers {
 			a.Draw(img)
+		}
+		for _, p := range s.projectileRenderers {
+			p.Draw(img)
+		}
+		for _, f := range s.featureRenderers {
+			f.Draw(img)
 		}
 		frames = append(frames, img)
 		delays = append(delays, 2) // 50fps
