@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/downflux/go-collider/agent"
+	"github.com/downflux/go-collider/feature"
 	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-geometry/2d/vector"
 
@@ -26,6 +27,7 @@ type O struct {
 	Name        string
 	Agents      []agent.O
 	Projectiles []agent.O
+	Features []feature.O
 	Collider    collider.O
 
 	MinX         float64
@@ -80,6 +82,9 @@ func New(o O) *S {
 	for _, opt := range o.Projectiles {
 		s.agentRenderers = append(s.agentRenderers, ragent.New(s.collider.Insert(opt), opt.Radius >= 10))
 	}
+	for _, opt := range o.Features {
+		s.collider.InsertFeature(opt)
+	}
 	return s
 }
 
@@ -102,6 +107,7 @@ func (s *S) Execute(nFrames int) *gif.GIF {
 				ragent.ColorHeading,
 			},
 		)
+
 		rlabel.New(fmt.Sprintf("frame %v / %v", f, nFrames), vector.V{0, 0}).Draw(img)
 
 		for _, a := range s.agentRenderers {

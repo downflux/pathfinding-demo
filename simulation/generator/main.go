@@ -10,6 +10,7 @@ import (
 	"time"
 
 	"github.com/downflux/go-collider/agent"
+	"github.com/downflux/go-collider/feature"
 	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-collider/mask"
 	"github.com/downflux/go-geometry/2d/vector"
@@ -26,6 +27,27 @@ var (
 )
 
 func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
+
+func borders(xmin, xmax, ymin, ymax float64) []feature.O {
+	return []feature.O{
+		{
+			Min: vector.V{xmin - 1, ymin - 1},
+			Max: vector.V{xmin, ymax + 1},
+		},
+		{
+			Min: vector.V{xmax, ymin - 1},
+			Max: vector.V{xmax + 1, ymax + 1},
+		},
+		{
+			Min: vector.V{xmin, ymin - 1},
+			Max: vector.V{xmax, ymin},
+		},
+		{
+			Min: vector.V{xmin, ymax},
+			Max: vector.V{xmin, ymax + 1},
+		},
+	}
+}
 
 func main() {
 	flag.Parse()
@@ -64,6 +86,7 @@ func main() {
 			opts = append(opts, simulation.O{
 				Name:         fmt.Sprintf("Random/N=%v/ρ=%v", n, density),
 				Agents:       agents,
+				Features:     borders(min, min, max, max),
 				Collider:     collider.DefaultO,
 				MinX:         min,
 				MinY:         min,
