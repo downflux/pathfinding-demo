@@ -3852,7 +3852,9 @@
     "Collider": {
         "LeafSize": 8,
         "Tolerance": 1.15,
-        "PoolSize": 24
+        "PoolSize": 24,
+        "Digitizer": 0,
+        "DigitizerTileSize": 0
     },
     "MinX": 0,
     "MinY": 0,

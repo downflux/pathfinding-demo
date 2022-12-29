@@ -73,6 +73,8 @@ type S struct {
 	tickDuration time.Duration
 
 	tickTimer time.Duration
+
+	tileSize float64
 }
 
 func New(o O) *S {
@@ -85,6 +87,8 @@ func New(o O) *S {
 		minY:         o.MinY,
 		maxX:         o.MaxX,
 		maxY:         o.MaxY,
+
+		tileSize: o.Collider.DigitizerTileSize,
 	}
 	for _, opt := range o.Agents {
 		s.agentRenderers = append(s.agentRenderers, ragent.New(s.collider.Insert(opt), opt.Radius >= 10))
