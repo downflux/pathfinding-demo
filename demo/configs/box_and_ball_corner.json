@@ -1,0 +1,59 @@
+{
+    "Name": "Box_And_Ball_Corner",
+    "Agents": [
+        {
+            "Position": [
+                50,
+                50
+            ],
+            "Velocity": [
+                10,
+                10
+            ],
+            "Radius": 10,
+            "Heading": [
+                1,
+                0
+            ],
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 1.5707963267948966,
+            "MaxAcceleration": 5,
+            "Mask": 4
+        }
+    ],
+    "Projectiles": null,
+    "Features": [
+        {
+            "Min": [
+                70,
+                20
+            ],
+            "Max": [
+                90,
+                80
+            ],
+            "Mask": 4
+        },
+        {
+            "Min": [
+                50,
+                80
+            ],
+            "Max": [
+                90,
+                100
+            ],
+            "Mask": 4
+        }
+    ],
+    "Collider": {
+        "LeafSize": 8,
+        "Tolerance": 1.15,
+        "PoolSize": 24
+    },
+    "MinX": 0,
+    "MinY": 0,
+    "MaxX": 150,
+    "MaxY": 150,
+    "TickDuration": 20000000
+}
