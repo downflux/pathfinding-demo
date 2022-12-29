@@ -264,6 +264,8 @@ func main() {
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      250,
 	}, simulation.O{
+		// Agents should move smoothly alongside each other at shallow
+		// angles of incidence.
 		Name: "Collision_Slide_Test",
 		Agents: []agent.O{
 			{
