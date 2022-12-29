@@ -36,6 +36,8 @@ type O struct {
 	MaxX         float64
 	MaxY         float64
 	TickDuration time.Duration
+
+	NFrames int
 }
 
 func (o *O) Filename() string { return sanitize(o.Name) }
@@ -57,6 +59,8 @@ func Unmarshal(data []byte) O {
 }
 
 type S struct {
+	nFrames int
+
 	agentRenderers      []*ragent.A
 	projectileRenderers []*ragent.A
 	featureRenderers    []*rfeature.F
@@ -73,6 +77,8 @@ type S struct {
 
 func New(o O) *S {
 	s := &S{
+		nFrames: o.NFrames,
+
 		collider:     collider.New(o.Collider),
 		tickDuration: o.TickDuration,
 		minX:         o.MinX,
@@ -98,10 +104,10 @@ func (s *S) Tick(d time.Duration) {
 
 func (s *S) TickTimer() time.Duration { return s.tickTimer }
 
-func (s *S) Execute(nFrames int) *gif.GIF {
-	frames := make([]*image.Paletted, 0, nFrames)
-	delays := make([]int, 0, nFrames)
-	for f := 0; f < nFrames; f++ {
+func (s *S) Execute() *gif.GIF {
+	frames := make([]*image.Paletted, 0, s.nFrames)
+	delays := make([]int, 0, s.nFrames)
+	for f := 0; f < s.nFrames; f++ {
 		img := image.NewPaletted(
 			image.Rectangle{image.Point{int(s.minX), int(s.minY)}, image.Point{int(s.maxX), int(s.maxY)}},
 			[]color.Color{
@@ -115,7 +121,7 @@ func (s *S) Execute(nFrames int) *gif.GIF {
 			},
 		)
 
-		rlabel.New(fmt.Sprintf("frame %v / %v", f, nFrames), vector.V{0, 0}).Draw(img)
+		rlabel.New(fmt.Sprintf("frame %v / %v", f, s.nFrames), vector.V{0, 0}).Draw(img)
 
 		for _, a := range s.agentRenderers {
 			a.Draw(img)
@@ -134,7 +140,7 @@ func (s *S) Execute(nFrames int) *gif.GIF {
 		s.tickTimer = s.tickTimer + time.Now().Sub(start)
 	}
 
-	s.tickTimer = time.Duration(float64(s.tickTimer) / float64(nFrames))
+	s.tickTimer = time.Duration(float64(s.tickTimer) / float64(s.nFrames))
 
 	return &gif.GIF{
 		Delay: delays,

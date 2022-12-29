@@ -1,0 +1,75 @@
+{
+    "Name": "Rotation_Test",
+    "Agents": [
+        {
+            "Position": [
+                50,
+                50
+            ],
+            "Velocity": [
+                10,
+                -10
+            ],
+            "Radius": 10,
+            "Heading": [
+                1,
+                0.7853981633974483
+            ],
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 0.7853981633974483,
+            "MaxAcceleration": 5,
+            "Mask": 4
+        },
+        {
+            "Position": [
+                100,
+                50
+            ],
+            "Velocity": [
+                10,
+                -10
+            ],
+            "Radius": 10,
+            "Heading": [
+                1,
+                3.9269908169872414
+            ],
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 0.7853981633974483,
+            "MaxAcceleration": 5,
+            "Mask": 4
+        },
+        {
+            "Position": [
+                100,
+                100
+            ],
+            "Velocity": [
+                10,
+                10
+            ],
+            "Radius": 10,
+            "Heading": [
+                1,
+                5.497787143782138
+            ],
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 0.7853981633974483,
+            "MaxAcceleration": 5,
+            "Mask": 4
+        }
+    ],
+    "Projectiles": null,
+    "Features": null,
+    "Collider": {
+        "LeafSize": 8,
+        "Tolerance": 1.15,
+        "PoolSize": 24
+    },
+    "MinX": 0,
+    "MinY": 0,
+    "MaxX": 150,
+    "MaxY": 150,
+    "TickDuration": 20000000,
+    "NFrames": 250
+}

@@ -1958,5 +1958,6 @@
     "MinY": 0,
     "MaxX": 886.226925452758,
     "MaxY": 886.226925452758,
-    "TickDuration": 20000000
+    "TickDuration": 20000000,
+    "NFrames": 600
 }

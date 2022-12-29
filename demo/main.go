@@ -15,10 +15,6 @@ var (
 	output  = flag.String("output", "/dev/null", "output GIF directory")
 )
 
-const (
-	nFrames = 600
-)
-
 func main() {
 	flag.Parse()
 
@@ -42,7 +38,7 @@ func main() {
 		fn := filepath.Join(*output, fmt.Sprintf("%v.gif", o.Filename()))
 		fmt.Printf("running %v (%v)", o.Name, fn)
 		s := simulation.New(o)
-		anim := s.Execute(nFrames)
+		anim := s.Execute()
 
 		fmt.Printf(" - average tick time = %v\n", s.TickTimer())
 

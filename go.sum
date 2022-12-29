@@ -22,6 +22,8 @@ github.com/downflux/go-collider v0.1.4 h1:iMGvWeBQzLOoHk99AKlx9hhScKR59uF3zE/QgO
 github.com/downflux/go-collider v0.1.4/go.mod h1:qD2C+NOjxaWpjlI6h7PQum9xZPJCy5FzX65gp2mtp7c=
 github.com/downflux/go-collider v0.1.5 h1:+R4jEtO9M9r1W9jkv52vxIh1ZfIZJSY8TPMciK0op8Q=
 github.com/downflux/go-collider v0.1.5/go.mod h1:qD2C+NOjxaWpjlI6h7PQum9xZPJCy5FzX65gp2mtp7c=
+github.com/downflux/go-collider v0.1.6 h1:I6BwWfN8EjhbhWTvaejkkmf4MT40GJeiUZIm4aSozFI=
+github.com/downflux/go-collider v0.1.6/go.mod h1:qD2C+NOjxaWpjlI6h7PQum9xZPJCy5FzX65gp2mtp7c=
 github.com/downflux/go-geometry v0.15.3 h1:Kwr2tiozUQF/Q47pCZDRaPS+MPrV6KsC87Gm0J7p15w=
 github.com/downflux/go-geometry v0.15.3/go.mod h1:ZJcto0QwYRdoIbi5G4mh5y6v2xUS+d++/cANaO1F9+8=
 github.com/downflux/go-pq v0.3.0 h1:oWLx7rzsD4fv1f2kp33NUq63CJVQvXZORkcpHr6bp9g=

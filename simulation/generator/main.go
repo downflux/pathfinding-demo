@@ -98,6 +98,7 @@ func main() {
 				MaxX:         max,
 				MaxY:         max,
 				TickDuration: 20 * time.Millisecond,
+				NFrames:      600,
 			})
 		}
 	}
@@ -129,40 +130,88 @@ func main() {
 		MaxX:         150,
 		MaxY:         150,
 		TickDuration: 20 * time.Millisecond,
-	},
-		simulation.O{
-			Name: "Box_And_Ball_Corner",
-			Agents: []agent.O{
-				{
-					Position:           vector.V{50, 50},
-					Heading:            polar.V{1, 0},
-					Velocity:           vector.V{10, 10},
-					Radius:             10,
-					MaxVelocity:        100,
-					MaxAngularVelocity: math.Pi / 2,
-					MaxAcceleration:    5,
-					Mask:               mask.MSizeSmall,
-				},
+		NFrames:      300,
+	}, simulation.O{
+		// Make sure agents handle an inner corner by stopping fully.
+		Name: "Box_And_Ball_Corner",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{50, 50},
+				Heading:            polar.V{1, 0},
+				Velocity:           vector.V{10, 10},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi / 2,
+				MaxAcceleration:    5,
+				Mask:               mask.MSizeSmall,
 			},
-			Features: []feature.O{
-				{
-					Min:  vector.V{70, 20},
-					Max:  vector.V{90, 80},
-					Mask: mask.MSizeSmall,
-				},
-				{
-					Min:  vector.V{50, 80},
-					Max:  vector.V{90, 100},
-					Mask: mask.MSizeSmall,
-				},
+		},
+		Features: []feature.O{
+			{
+				Min:  vector.V{70, 20},
+				Max:  vector.V{90, 80},
+				Mask: mask.MSizeSmall,
 			},
-			Collider:     collider.DefaultO,
-			MinX:         0,
-			MinY:         0,
-			MaxX:         150,
-			MaxY:         150,
-			TickDuration: 20 * time.Millisecond,
-		})
+			{
+				Min:  vector.V{50, 80},
+				Max:  vector.V{90, 100},
+				Mask: mask.MSizeSmall,
+			},
+		},
+		Collider:     collider.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      200,
+	}, simulation.O{
+		// Make sure that agents are rotation through the smallest angle
+		// to their target heading.
+		Name: "Rotation_Test",
+		Agents: []agent.O{
+			// (+X, +Y) to (+X, -Y)
+			{
+				Position:           vector.V{50, 50},
+				Heading:            polar.V{1, math.Pi / 4},
+				Velocity:           vector.V{10, -10},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi / 4,
+				MaxAcceleration:    5,
+				Mask:               mask.MSizeSmall,
+			},
+			// (-X, -Y) to (-X, -Y)
+			{
+				Position:           vector.V{100, 50},
+				Heading:            polar.V{1, 5 * math.Pi / 4},
+				Velocity:           vector.V{10, -10},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi / 4,
+				MaxAcceleration:    5,
+				Mask:               mask.MSizeSmall,
+			},
+			// (+X, -Y) to (+X, +Y)
+			{
+				Position:           vector.V{100, 100},
+				Heading:            polar.V{1, 7 * math.Pi / 4},
+				Velocity:           vector.V{10, 10},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi / 4,
+				MaxAcceleration:    5,
+				Mask:               mask.MSizeSmall,
+			},
+		},
+		Collider:     collider.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      250,
+	})
 
 	for _, o := range opts {
 		fn := path.Join(*output, fmt.Sprintf("%v.json", o.Filename()))

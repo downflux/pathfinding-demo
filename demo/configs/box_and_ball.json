@@ -44,5 +44,6 @@
     "MinY": 0,
     "MaxX": 150,
     "MaxY": 150,
-    "TickDuration": 20000000
+    "TickDuration": 20000000,
+    "NFrames": 300
 }
