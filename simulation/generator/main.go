@@ -262,7 +262,7 @@ func main() {
 		MaxX:         150,
 		MaxY:         150,
 		TickDuration: 20 * time.Millisecond,
-		NFrames:      250,
+		NFrames:      400,
 	}, simulation.O{
 		// Agents should move smoothly alongside each other at shallow
 		// angles of incidence.
