@@ -67,6 +67,8 @@ type S struct {
 	maxX         float64
 	maxY         float64
 	tickDuration time.Duration
+
+	tickTimer time.Duration
 }
 
 func New(o O) *S {
@@ -93,6 +95,8 @@ func New(o O) *S {
 func (s *S) Tick(d time.Duration) {
 	s.collider.Tick(d)
 }
+
+func (s *S) TickTimer() time.Duration { return s.tickTimer }
 
 func (s *S) Execute(nFrames int) *gif.GIF {
 	frames := make([]*image.Paletted, 0, nFrames)
@@ -125,8 +129,12 @@ func (s *S) Execute(nFrames int) *gif.GIF {
 		frames = append(frames, img)
 		delays = append(delays, 2) // 50fps
 
+		start := time.Now()
 		s.Tick(s.tickDuration)
+		s.tickTimer = s.tickTimer + time.Now().Sub(start)
 	}
+
+	s.tickTimer = time.Duration(float64(s.tickTimer) / float64(nFrames))
 
 	return &gif.GIF{
 		Delay: delays,

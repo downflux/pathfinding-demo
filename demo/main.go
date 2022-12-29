@@ -39,16 +39,18 @@ func main() {
 	}
 
 	for _, o := range opts {
-		fmt.Printf("running %v\n", o.Name)
+		fn := filepath.Join(*output, fmt.Sprintf("%v.gif", o.Filename()))
+		fmt.Printf("running %v (%v)", o.Name, fn)
 		s := simulation.New(o)
 		anim := s.Execute(nFrames)
+
+		fmt.Printf(" - average tick time = %v\n", s.TickTimer())
 
 		func() {
 			if *output == "/dev/null" {
 				return
 			}
 
-			fn := filepath.Join(*output, fmt.Sprintf("%v.gif", o.Filename()))
 			w, err := os.Create(fn)
 			if err != nil {
 				panic(fmt.Sprintf("cannot write to file %v: %v", fn, err))
