@@ -29,22 +29,27 @@ var (
 func rn(min, max float64) float64 { return min + rand.Float64()*(max-min) }
 
 func borders(xmin, xmax, ymin, ymax float64) []feature.O {
+	width := 2 * r
 	return []feature.O{
 		{
-			Min: vector.V{xmin - 1, ymin - 1},
-			Max: vector.V{xmin, ymax + 1},
+			Min:  vector.V{xmin - width, ymin - width},
+			Max:  vector.V{xmin, ymax + width},
+			Mask: mask.MSizeSmall,
 		},
 		{
-			Min: vector.V{xmax, ymin - 1},
-			Max: vector.V{xmax + 1, ymax + 1},
+			Min:  vector.V{xmax, ymin - width},
+			Max:  vector.V{xmax + width, ymax + width},
+			Mask: mask.MSizeSmall,
 		},
 		{
-			Min: vector.V{xmin, ymin - 1},
-			Max: vector.V{xmax, ymin},
+			Min:  vector.V{xmin, ymin - width},
+			Max:  vector.V{xmax, ymin},
+			Mask: mask.MSizeSmall,
 		},
 		{
-			Min: vector.V{xmin, ymax},
-			Max: vector.V{xmin, ymax + 1},
+			Min:  vector.V{xmin, ymax},
+			Max:  vector.V{xmax, ymax + width},
+			Mask: mask.MSizeSmall,
 		},
 	}
 }
@@ -86,7 +91,7 @@ func main() {
 			opts = append(opts, simulation.O{
 				Name:         fmt.Sprintf("Random/N=%v/ρ=%v", n, density),
 				Agents:       agents,
-				Features:     borders(min, min, max, max),
+				Features:     borders(min, max, min, max),
 				Collider:     collider.DefaultO,
 				MinX:         min,
 				MinY:         min,
@@ -96,6 +101,35 @@ func main() {
 			})
 		}
 	}
+
+	opts = append(opts, simulation.O{
+		Name: "Box_And_Ball",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{50, 50},
+				Heading:            polar.V{1, 0},
+				Velocity:           vector.V{10, 10},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi / 2,
+				MaxAcceleration:    5,
+				Mask:               mask.MSizeSmall,
+			},
+		},
+		Features: []feature.O{
+			{
+				Min:  vector.V{70, 20},
+				Max:  vector.V{90, 80},
+				Mask: mask.MSizeSmall,
+			},
+		},
+		Collider:     collider.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+	})
 
 	for _, o := range opts {
 		fn := path.Join(*output, fmt.Sprintf("%v.json", o.Filename()))
