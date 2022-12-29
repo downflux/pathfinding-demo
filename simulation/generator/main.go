@@ -130,7 +130,7 @@ func main() {
 		MaxX:         150,
 		MaxY:         150,
 		TickDuration: 20 * time.Millisecond,
-		NFrames:      300,
+		NFrames:      600,
 	}, simulation.O{
 		// Make sure agents handle an inner corner by stopping fully.
 		Name: "Box_And_Ball_Corner",
@@ -164,7 +164,7 @@ func main() {
 		MaxX:         150,
 		MaxY:         150,
 		TickDuration: 20 * time.Millisecond,
-		NFrames:      200,
+		NFrames:      400,
 	}, simulation.O{
 		// Make sure that agents are rotation through the smallest angle
 		// to their target heading.
@@ -201,6 +201,58 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    5,
+				Mask:               mask.MSizeSmall,
+			},
+		},
+		Collider:     collider.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      250,
+	}, simulation.O{
+		Name: "Acceleration_Test",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{130, 50},
+				Heading:            polar.V{1, 0},
+				Velocity:           vector.V{-30, 0},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi,
+				MaxAcceleration:    10,
+				Mask:               mask.MSizeSmall,
+			},
+		},
+		Collider:     collider.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      250,
+	}, simulation.O{
+		Name: "Collision_Test",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{50, 50},
+				Heading:            polar.V{1, 0},
+				Velocity:           vector.V{100, 0},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi,
+				MaxAcceleration:    10,
+				Mask:               mask.MSizeSmall,
+			},
+			{
+				Position:           vector.V{100, 45},
+				Heading:            polar.V{1, math.Pi},
+				Velocity:           vector.V{-100, 0},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi,
+				MaxAcceleration:    10,
 				Mask:               mask.MSizeSmall,
 			},
 		},

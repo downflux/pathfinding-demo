@@ -1,14 +1,14 @@
 {
-    "Name": "Box_And_Ball",
+    "Name": "Acceleration_Test",
     "Agents": [
         {
             "Position": [
-                50,
+                130,
                 50
             ],
             "Velocity": [
-                10,
-                10
+                -30,
+                0
             ],
             "Radius": 10,
             "Heading": [
@@ -16,25 +16,13 @@
                 0
             ],
             "MaxVelocity": 100,
-            "MaxAngularVelocity": 1.5707963267948966,
-            "MaxAcceleration": 5,
+            "MaxAngularVelocity": 3.141592653589793,
+            "MaxAcceleration": 10,
             "Mask": 4
         }
     ],
     "Projectiles": null,
-    "Features": [
-        {
-            "Min": [
-                70,
-                20
-            ],
-            "Max": [
-                90,
-                80
-            ],
-            "Mask": 4
-        }
-    ],
+    "Features": null,
     "Collider": {
         "LeafSize": 8,
         "Tolerance": 1.15,
@@ -45,5 +33,5 @@
     "MaxX": 150,
     "MaxY": 150,
     "TickDuration": 20000000,
-    "NFrames": 600
+    "NFrames": 250
 }

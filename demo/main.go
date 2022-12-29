@@ -36,11 +36,11 @@ func main() {
 
 	for _, o := range opts {
 		fn := filepath.Join(*output, fmt.Sprintf("%v.gif", o.Filename()))
-		fmt.Printf("running %v (%v)", o.Name, fn)
+		fmt.Printf("running %v (%v)\n", o.Name, fn)
 		s := simulation.New(o)
 		anim := s.Execute()
 
-		fmt.Printf(" - average tick time = %v\n", s.TickTimer())
+		fmt.Printf("  average tick time = %v\n", s.TickTimer())
 
 		func() {
 			if *output == "/dev/null" {
