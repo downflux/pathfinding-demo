@@ -263,6 +263,37 @@ func main() {
 		MaxY:         150,
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      250,
+	}, simulation.O{
+		Name: "Collision_Slide_Test",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{50, 50},
+				Heading:            polar.V{1, 0},
+				Velocity:           vector.V{20, 2},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi,
+				MaxAcceleration:    10,
+				Mask:               mask.MSizeSmall,
+			},
+			{
+				Position:           vector.V{50, 80},
+				Heading:            polar.V{1, 0},
+				Velocity:           vector.V{20, -2},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi,
+				MaxAcceleration:    10,
+				Mask:               mask.MSizeSmall,
+			},
+		},
+		Collider:     collider.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      250,
 	})
 
 	for _, o := range opts {
