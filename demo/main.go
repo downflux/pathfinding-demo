@@ -40,7 +40,7 @@ func main() {
 		s := simulation.New(o)
 		anim := s.Execute()
 
-		fmt.Printf("  average tick time = %v\n", s.TickTimer())
+		fmt.Printf("  average tick time = %v / frame\n", s.TickTimer())
 
 		func() {
 			if *output == "/dev/null" {

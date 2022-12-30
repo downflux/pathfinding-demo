@@ -365,9 +365,11 @@ func main() {
 		MaxY:         150,
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      250,
-	}, func() simulation.O {
+	})
+	opts = append(opts, func() []simulation.O {
 		const n = 10
-		tilesize := 30.0
+		const r = 10
+		tilesize := 6.0 * r
 		min, max := 0.0, n*tilesize
 		agents := []agent.O{}
 		for i := 0; i < n; i++ {
@@ -384,7 +386,7 @@ func main() {
 					Heading: polar.Normalize(
 						polar.V{1, rn(0, 2*math.Pi)},
 					),
-					Radius:             5,
+					Radius:             r,
 					Velocity:           v,
 					MaxVelocity:        vector.Magnitude(v),
 					MaxAngularVelocity: math.Pi,
@@ -393,25 +395,66 @@ func main() {
 				})
 			}
 		}
-		return simulation.O{
-			Name:     fmt.Sprintf("Digitizer8DTile/N=%v", n*n),
-			Agents:   agents,
-			Features: borders(min, max, min, max),
-			Collider: collider.O{
-				LeafSize:          collider.DefaultO.LeafSize,
-				Tolerance:         collider.DefaultO.Tolerance,
-				PoolSize:          collider.DefaultO.PoolSize,
-				Digitizer:         mode.Digitizer8DTile,
-				DigitizerTileSize: tilesize,
+		return []simulation.O{
+			simulation.O{
+				Name:     fmt.Sprintf("Digitizer8DTile/N=%v", n*n),
+				Agents:   agents,
+				Features: borders(min, max, min, max),
+				Collider: collider.O{
+					LeafSize:          collider.DefaultO.LeafSize,
+					Tolerance:         collider.DefaultO.Tolerance,
+					PoolSize:          collider.DefaultO.PoolSize,
+					Digitizer:         mode.Digitizer8DTile,
+					DigitizerTileSize: tilesize,
+				},
+				MinX:         min,
+				MinY:         min,
+				MaxX:         max,
+				MaxY:         max,
+				TickDuration: 20 * time.Millisecond,
+				NFrames:      600,
+			}, simulation.O{
+				// Experimentally we have previously found this setup
+				// demonstrates agents which do not align to the velocity grid.
+				Name: "Digitizer_Tile_Move_Align",
+				Agents: []agent.O{
+					{
+						Position:           vector.V{450, 390},
+						Heading:            polar.V{1, 0.025016532432634176},
+						Velocity:           vector.V{-13.033920614390532, -14.00741257952408},
+						Radius:             r,
+						MaxVelocity:        19.133496642152053,
+						MaxAngularVelocity: math.Pi,
+						MaxAcceleration:    10,
+						Mask:               mask.MSizeSmall,
+					},
+					{
+						Position:           vector.V{510, 450},
+						Heading:            polar.V{1, 2.0824238986175883},
+						Velocity:           vector.V{-40.5795563856358, -33.494992710177165},
+						Radius:             r,
+						MaxVelocity:        52.61762948964744,
+						MaxAngularVelocity: math.Pi,
+						MaxAcceleration:    10,
+						Mask:               mask.MSizeSmall,
+					},
+				},
+				Collider: collider.O{
+					LeafSize:          collider.DefaultO.LeafSize,
+					Tolerance:         collider.DefaultO.Tolerance,
+					PoolSize:          collider.DefaultO.PoolSize,
+					Digitizer:         mode.Digitizer8DTile,
+					DigitizerTileSize: tilesize,
+				},
+				MinX:         min,
+				MinY:         min,
+				MaxX:         max,
+				MaxY:         max,
+				TickDuration: 20 * time.Millisecond,
+				NFrames:      600,
 			},
-			MinX:         min,
-			MinY:         min,
-			MaxX:         max,
-			MaxY:         max,
-			TickDuration: 20 * time.Millisecond,
-			NFrames:      600,
 		}
-	}())
+	}()...)
 
 	for _, o := range opts {
 		fn := path.Join(*output, fmt.Sprintf("%v.json", o.Filename()))
