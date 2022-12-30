@@ -1,0 +1,58 @@
+{
+    "Name": "Digitizer_Tile_Collision",
+    "Agents": [
+        {
+            "Position": [
+                50,
+                50
+            ],
+            "Velocity": [
+                10,
+                20
+            ],
+            "Radius": 10,
+            "Heading": [
+                1,
+                0
+            ],
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 6.283185307179586,
+            "MaxAcceleration": 100,
+            "Mask": 4
+        },
+        {
+            "Position": [
+                250,
+                250
+            ],
+            "Velocity": [
+                -10,
+                -20
+            ],
+            "Radius": 10,
+            "Heading": [
+                1,
+                0
+            ],
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 6.283185307179586,
+            "MaxAcceleration": 100,
+            "Mask": 4
+        }
+    ],
+    "Projectiles": null,
+    "Features": null,
+    "Collider": {
+        "LeafSize": 8,
+        "Tolerance": 1.15,
+        "PoolSize": 24,
+        "Digitizer": 2,
+        "DigitizerTileSize": 100
+    },
+    "MinX": 0,
+    "MinY": 0,
+    "MaxX": 350,
+    "MaxY": 350,
+    "TickDuration": 20000000,
+    "NFrames": 600
+}

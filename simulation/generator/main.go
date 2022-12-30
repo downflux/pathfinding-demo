@@ -300,6 +300,45 @@ func main() {
 	}, simulation.O{
 		// Even though the velocity vector is not aligned to the 8D
 		// velocity grid, force the simulated velocity to align.
+		Name: "Digitizer_Tile_Collision",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{50, 50},
+				Heading:            polar.V{1, 0},
+				Velocity:           vector.V{10, 20},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: 2 * math.Pi,
+				MaxAcceleration:    100,
+				Mask:               mask.MSizeSmall,
+			},
+			{
+				Position:           vector.V{250, 250},
+				Heading:            polar.V{1, 0},
+				Velocity:           vector.V{-10, -20},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: 2 * math.Pi,
+				MaxAcceleration:    100,
+				Mask:               mask.MSizeSmall,
+			},
+		},
+		Collider: collider.O{
+			LeafSize:          collider.DefaultO.LeafSize,
+			Tolerance:         collider.DefaultO.Tolerance,
+			PoolSize:          collider.DefaultO.PoolSize,
+			Digitizer:         mode.Digitizer8DTile,
+			DigitizerTileSize: 100,
+		},
+		MinX:         0,
+		MinY:         0,
+		MaxX:         350,
+		MaxY:         350,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      600,
+	}, simulation.O{
+		// Even though the velocity vector is not aligned to the 8D
+		// velocity grid, force the simulated velocity to align.
 		Name: "Digitizer_Tile_Move",
 		Agents: []agent.O{
 			{
