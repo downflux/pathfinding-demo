@@ -13,6 +13,7 @@ import (
 	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-collider/feature"
 	"github.com/downflux/go-collider/mask"
+	"github.com/downflux/go-collider/mode"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
 	"github.com/downflux/pathfinding-demo/simulation"
@@ -290,6 +291,35 @@ func main() {
 			},
 		},
 		Collider:     collider.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      250,
+	}, simulation.O{
+		// Even though the velocity vector is not aligned to the 8D
+		// velocity grid, force the simulated velocity to align.
+		Name: "Digitizer_Tile_Move",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{50, 50},
+				Heading:            polar.V{1, 0},
+				Velocity:           vector.V{5, 10},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: 2 * math.Pi,
+				MaxAcceleration:    10,
+				Mask:               mask.MSizeSmall,
+			},
+		},
+		Collider: collider.O{
+			LeafSize:          collider.DefaultO.LeafSize,
+			Tolerance:         collider.DefaultO.Tolerance,
+			PoolSize:          collider.DefaultO.PoolSize,
+			Digitizer:         mode.Digitizer8DTile,
+			DigitizerTileSize: 100,
+		},
 		MinX:         0,
 		MinY:         0,
 		MaxX:         150,

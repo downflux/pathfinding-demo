@@ -17,6 +17,7 @@ import (
 
 	ragent "github.com/downflux/pathfinding-demo/internal/render/agent"
 	rfeature "github.com/downflux/pathfinding-demo/internal/render/feature"
+	rgrid "github.com/downflux/pathfinding-demo/internal/render/grid"
 	rlabel "github.com/downflux/pathfinding-demo/internal/render/label"
 )
 
@@ -122,8 +123,13 @@ func (s *S) Execute() *gif.GIF {
 				ragent.ColorAgent,
 				ragent.ColorHeading,
 				rfeature.ColorBox,
+				rgrid.ColorGrid,
 			},
 		)
+
+		if s.tileSize > 0 {
+			rgrid.New(s.tileSize, s.tileSize).Draw(img)
+		}
 
 		rlabel.New(fmt.Sprintf("frame %v / %v", f, s.nFrames), vector.V{0, 0}).Draw(img)
 
