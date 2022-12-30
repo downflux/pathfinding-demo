@@ -326,7 +326,53 @@ func main() {
 		MaxY:         150,
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      250,
-	})
+	}, func() simulation.O {
+		const n = 10
+		tilesize := 30.0
+		min, max := 0.0, n*tilesize
+		agents := []agent.O{}
+		for i := 0; i < n; i++ {
+			for j := 0; j < n; j++ {
+				v := vector.Scale(5*r, vector.V{
+					rn(-1, 1),
+					rn(-1, 1),
+				})
+				agents = append(agents, agent.O{
+					Position: vector.V{
+						tilesize * (float64(i) + 0.5),
+						tilesize * (float64(j) + 0.5),
+					},
+					Heading: polar.Normalize(
+						polar.V{1, rn(0, 2*math.Pi)},
+					),
+					Radius:             5,
+					Velocity:           v,
+					MaxVelocity:        vector.Magnitude(v),
+					MaxAngularVelocity: math.Pi,
+					MaxAcceleration:    10,
+					Mask:               mask.MSizeSmall,
+				})
+			}
+		}
+		return simulation.O{
+			Name:     fmt.Sprintf("Digitizer8DTile/N=%v", n*n),
+			Agents:   agents,
+			Features: borders(min, max, min, max),
+			Collider: collider.O{
+				LeafSize:          collider.DefaultO.LeafSize,
+				Tolerance:         collider.DefaultO.Tolerance,
+				PoolSize:          collider.DefaultO.PoolSize,
+				Digitizer:         mode.Digitizer8DTile,
+				DigitizerTileSize: tilesize,
+			},
+			MinX:         min,
+			MinY:         min,
+			MaxX:         max,
+			MaxY:         max,
+			TickDuration: 20 * time.Millisecond,
+			NFrames:      600,
+		}
+	}())
 
 	for _, o := range opts {
 		fn := path.Join(*output, fmt.Sprintf("%v.json", o.Filename()))

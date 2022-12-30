@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	resolution = 500
+	resolution = 10
 )
 
 type S struct {
