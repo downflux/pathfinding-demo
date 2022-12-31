@@ -78,7 +78,7 @@ func main() {
 					Heading: polar.Normalize(
 						polar.V{1, rn(0, 2*math.Pi)},
 					),
-					Velocity: v,
+					TargetVelocity: v,
 
 					Radius:             r,
 					MaxVelocity:        vector.Magnitude(v),
@@ -109,7 +109,7 @@ func main() {
 			{
 				Position:           vector.V{50, 50},
 				Heading:            polar.V{1, 0},
-				Velocity:           vector.V{10, 10},
+				TargetVelocity:     vector.V{10, 10},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
@@ -138,7 +138,7 @@ func main() {
 			{
 				Position:           vector.V{50, 50},
 				Heading:            polar.V{1, 0},
-				Velocity:           vector.V{10, 10},
+				TargetVelocity:     vector.V{10, 10},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
@@ -174,7 +174,7 @@ func main() {
 			{
 				Position:           vector.V{50, 50},
 				Heading:            polar.V{1, math.Pi / 4},
-				Velocity:           vector.V{10, -10},
+				TargetVelocity:     vector.V{10, -10},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
@@ -185,7 +185,7 @@ func main() {
 			{
 				Position:           vector.V{100, 50},
 				Heading:            polar.V{1, 5 * math.Pi / 4},
-				Velocity:           vector.V{10, -10},
+				TargetVelocity:     vector.V{10, -10},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
@@ -196,7 +196,7 @@ func main() {
 			{
 				Position:           vector.V{100, 100},
 				Heading:            polar.V{1, 7 * math.Pi / 4},
-				Velocity:           vector.V{10, 10},
+				TargetVelocity:     vector.V{10, 10},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
@@ -217,7 +217,7 @@ func main() {
 			{
 				Position:           vector.V{130, 50},
 				Heading:            polar.V{1, 0},
-				Velocity:           vector.V{-30, 0},
+				TargetVelocity:     vector.V{-30, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi,
@@ -238,7 +238,7 @@ func main() {
 			{
 				Position:           vector.V{50, 50},
 				Heading:            polar.V{1, 0},
-				Velocity:           vector.V{100, 0},
+				TargetVelocity:     vector.V{100, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
@@ -248,7 +248,7 @@ func main() {
 			{
 				Position:           vector.V{100, 45},
 				Heading:            polar.V{1, math.Pi},
-				Velocity:           vector.V{-100, 0},
+				TargetVelocity:     vector.V{-100, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
@@ -271,7 +271,7 @@ func main() {
 			{
 				Position:           vector.V{50, 50},
 				Heading:            polar.V{1, 0},
-				Velocity:           vector.V{20, 2},
+				TargetVelocity:     vector.V{20, 2},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
@@ -281,7 +281,7 @@ func main() {
 			{
 				Position:           vector.V{50, 80},
 				Heading:            polar.V{1, 0},
-				Velocity:           vector.V{20, -2},
+				TargetVelocity:     vector.V{20, -2},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,

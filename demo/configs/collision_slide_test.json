@@ -6,7 +6,7 @@
                 50,
                 50
             ],
-            "Velocity": [
+            "TargetVelocity": [
                 20,
                 2
             ],
@@ -25,7 +25,7 @@
                 50,
                 80
             ],
-            "Velocity": [
+            "TargetVelocity": [
                 20,
                 -2
             ],
