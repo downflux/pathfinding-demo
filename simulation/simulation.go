@@ -17,7 +17,6 @@ import (
 
 	ragent "github.com/downflux/pathfinding-demo/internal/render/agent"
 	rfeature "github.com/downflux/pathfinding-demo/internal/render/feature"
-	rgrid "github.com/downflux/pathfinding-demo/internal/render/grid"
 	rlabel "github.com/downflux/pathfinding-demo/internal/render/label"
 )
 
@@ -74,8 +73,6 @@ type S struct {
 	tickDuration time.Duration
 
 	tickTimer time.Duration
-
-	tileSize float64
 }
 
 func New(o O) *S {
@@ -88,8 +85,6 @@ func New(o O) *S {
 		minY:         o.MinY,
 		maxX:         o.MaxX,
 		maxY:         o.MaxY,
-
-		tileSize: o.Collider.DigitizerTileSize,
 	}
 	for _, opt := range o.Agents {
 		s.agentRenderers = append(s.agentRenderers, ragent.New(s.collider.Insert(opt), opt.Radius >= 10))
@@ -123,13 +118,8 @@ func (s *S) Execute() *gif.GIF {
 				ragent.ColorAgent,
 				ragent.ColorHeading,
 				rfeature.ColorBox,
-				rgrid.ColorGrid,
 			},
 		)
-
-		if s.tileSize > 0 {
-			rgrid.New(s.tileSize, s.tileSize).Draw(img)
-		}
 
 		rlabel.New(fmt.Sprintf("frame %v / %v", f, s.nFrames), vector.V{0, 0}).Draw(img)
 

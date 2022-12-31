@@ -12,5 +12,3 @@ require (
 	github.com/downflux/go-bvh v1.0.0 // indirect
 	github.com/downflux/go-pq v0.3.0 // indirect
 )
-
-replace github.com/downflux/go-collider => ../go-collider
