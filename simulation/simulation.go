@@ -94,13 +94,13 @@ func New(o O) *S {
 		maxY:         o.MaxY,
 	}
 	for _, opt := range o.Agents {
-		s.agentRenderers = append(s.agentRenderers, ragent.New(db.AgentInsert(opt), opt.Radius >= 10))
+		s.agentRenderers = append(s.agentRenderers, ragent.New(db.InsertAgent(opt), opt.Radius >= 10))
 	}
 	for _, opt := range o.Projectiles {
-		s.agentRenderers = append(s.agentRenderers, ragent.New(db.AgentInsert(opt), opt.Radius >= 10))
+		s.agentRenderers = append(s.agentRenderers, ragent.New(db.InsertAgent(opt), opt.Radius >= 10))
 	}
 	for _, opt := range o.Features {
-		s.featureRenderers = append(s.featureRenderers, rfeature.New(db.FeatureInsert(opt)))
+		s.featureRenderers = append(s.featureRenderers, rfeature.New(db.InsertFeature(opt)))
 	}
 	return s
 }
