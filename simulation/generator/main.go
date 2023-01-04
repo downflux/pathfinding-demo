@@ -13,6 +13,7 @@ import (
 	"github.com/downflux/go-database/agent"
 	"github.com/downflux/go-database/feature"
 	"github.com/downflux/go-database/flags"
+	"github.com/downflux/go-database/projectile"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
 	"github.com/downflux/pathfinding-demo/simulation"
@@ -291,6 +292,38 @@ func main() {
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    10,
 				Flags:              flags.FSizeSmall,
+			},
+		},
+		Collider:     collider.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      250,
+	}, simulation.O{
+		Name: "Projectile_No_Collision",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{50, 50},
+				Heading:            polar.V{1, 0},
+				TargetVelocity:     vector.V{20, 0},
+				Velocity:           vector.V{20, 0},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: 2 * math.Pi,
+				MaxAcceleration:    10,
+				Flags:              flags.FSizeSmall,
+			},
+		},
+		Projectiles: []projectile.O{
+			{
+				Position:       vector.V{100, 50},
+				Heading:        polar.V{1, math.Pi},
+				TargetVelocity: vector.V{-30, 0},
+				Velocity:       vector.V{-30, 0},
+				Radius:         2,
+				Flags:          flags.FSizeProjectile,
 			},
 		},
 		Collider:     collider.DefaultO,

@@ -1,0 +1,61 @@
+{
+    "Name": "Projectile_No_Collision",
+    "Agents": [
+        {
+            "Position": [
+                50,
+                50
+            ],
+            "Velocity": [
+                20,
+                0
+            ],
+            "TargetVelocity": [
+                20,
+                0
+            ],
+            "Heading": [
+                1,
+                0
+            ],
+            "Radius": 10,
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 6.283185307179586,
+            "MaxAcceleration": 10,
+            "Flags": 4
+        }
+    ],
+    "Projectiles": [
+        {
+            "Position": [
+                100,
+                50
+            ],
+            "Velocity": [
+                -30,
+                0
+            ],
+            "TargetVelocity": [
+                -30,
+                0
+            ],
+            "Heading": [
+                1,
+                3.141592653589793
+            ],
+            "Radius": 2,
+            "Flags": 2
+        }
+    ],
+    "Features": null,
+    "Collider": {
+        "DB": null,
+        "PoolSize": 24
+    },
+    "MinX": 0,
+    "MinY": 0,
+    "MaxX": 150,
+    "MaxY": 150,
+    "TickDuration": 20000000,
+    "NFrames": 250
+}

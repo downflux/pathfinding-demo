@@ -14,11 +14,13 @@ import (
 	"github.com/downflux/go-database/agent"
 	"github.com/downflux/go-database/database"
 	"github.com/downflux/go-database/feature"
+	"github.com/downflux/go-database/projectile"
 	"github.com/downflux/go-geometry/2d/vector"
 
 	ragent "github.com/downflux/pathfinding-demo/internal/render/agent"
 	rfeature "github.com/downflux/pathfinding-demo/internal/render/feature"
 	rlabel "github.com/downflux/pathfinding-demo/internal/render/label"
+	rprojectile "github.com/downflux/pathfinding-demo/internal/render/projectile"
 )
 
 func sanitize(s string) string {
@@ -28,7 +30,7 @@ func sanitize(s string) string {
 type O struct {
 	Name        string
 	Agents      []agent.O
-	Projectiles []agent.O
+	Projectiles []projectile.O
 	Features    []feature.O
 	Collider    collider.O
 
@@ -63,7 +65,7 @@ type S struct {
 	nFrames int
 
 	agentRenderers      []*ragent.A
-	projectileRenderers []*ragent.A
+	projectileRenderers []*rprojectile.P
 	featureRenderers    []*rfeature.F
 	db                  *database.DB
 	collider            *collider.C
@@ -97,7 +99,7 @@ func New(o O) *S {
 		s.agentRenderers = append(s.agentRenderers, ragent.New(db.InsertAgent(opt), opt.Radius >= 10))
 	}
 	for _, opt := range o.Projectiles {
-		s.agentRenderers = append(s.agentRenderers, ragent.New(db.InsertAgent(opt), opt.Radius >= 10))
+		s.projectileRenderers = append(s.projectileRenderers, rprojectile.New(db.InsertProjectile(opt), opt.Radius >= 10))
 	}
 	for _, opt := range o.Features {
 		s.featureRenderers = append(s.featureRenderers, rfeature.New(db.InsertFeature(opt)))
@@ -119,11 +121,19 @@ func (s *S) Execute() *gif.GIF {
 			image.Rectangle{image.Point{int(s.minX), int(s.minY)}, image.Point{int(s.maxX), int(s.maxY)}},
 			[]color.Color{
 				color.White,
+
 				rlabel.ColorText,
+
 				ragent.ColorVelocity,
 				ragent.ColorTrail,
 				ragent.ColorAgent,
 				ragent.ColorHeading,
+
+				rprojectile.ColorVelocity,
+				rprojectile.ColorTrail,
+				rprojectile.ColorProjectile,
+				rprojectile.ColorHeading,
+
 				rfeature.ColorBox,
 			},
 		)
