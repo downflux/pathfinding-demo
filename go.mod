@@ -3,7 +3,7 @@ module github.com/downflux/pathfinding-demo
 go 1.19
 
 require (
-	github.com/downflux/go-collider v0.2.0
+	github.com/downflux/go-collider v0.2.1
 	github.com/downflux/go-database v0.2.0
 	github.com/downflux/go-geometry v0.15.4
 	golang.org/x/image v0.2.0

@@ -2,6 +2,8 @@ github.com/downflux/go-bvh v1.0.0 h1:k5rSxBGEeuhWaW8JrxL5KF1f3fA9jaXoK1/zJLV9DK4
 github.com/downflux/go-bvh v1.0.0/go.mod h1:A4IdDdYkX7zy0STS7KvNMGgQTpMOT3/aSJh8MkM4GLc=
 github.com/downflux/go-collider v0.2.0 h1:zBbGkoi79Mzhyq6pcjhGgZboBpvMOXbJZEf4EmYFj0M=
 github.com/downflux/go-collider v0.2.0/go.mod h1:QfEya2ScbxL8N+A6itC3dK/+xGjR0efj80mr+0dJKx0=
+github.com/downflux/go-collider v0.2.1 h1:83XfIAj99YyrAZhT+eZRZPOQ6ZR/CpbQuKaImkepBFA=
+github.com/downflux/go-collider v0.2.1/go.mod h1:QfEya2ScbxL8N+A6itC3dK/+xGjR0efj80mr+0dJKx0=
 github.com/downflux/go-database v0.2.0 h1:Z+wQUnJ7RvWTzePhG4pTWEOpn+9o3pP9BMJjvvdI034=
 github.com/downflux/go-database v0.2.0/go.mod h1:GgparhC7kkqx5VPbyFjE8/zA7o2F/E8P8SR/GwXNs+s=
 github.com/downflux/go-geometry v0.15.4 h1:COO+vw9M0fEoBIYrR1tY4nzWhnDNAnW1xIcf3TYKqJg=
