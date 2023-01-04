@@ -4,7 +4,7 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/downflux/go-collider/feature"
+	"github.com/downflux/go-database/feature"
 	"github.com/downflux/pathfinding-demo/internal/render/aabb"
 )
 
@@ -13,10 +13,10 @@ var (
 )
 
 type F struct {
-	feature *feature.F
+	feature feature.RO
 }
 
-func New(f *feature.F) *F {
+func New(f feature.RO) *F {
 	return &F{
 		feature: f,
 	}

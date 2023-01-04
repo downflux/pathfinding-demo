@@ -10,9 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/downflux/go-collider/agent"
 	"github.com/downflux/go-collider/collider"
-	"github.com/downflux/go-collider/feature"
+	"github.com/downflux/go-database/agent"
+	"github.com/downflux/go-database/database"
+	"github.com/downflux/go-database/feature"
 	"github.com/downflux/go-geometry/2d/vector"
 
 	ragent "github.com/downflux/pathfinding-demo/internal/render/agent"
@@ -64,6 +65,7 @@ type S struct {
 	agentRenderers      []*ragent.A
 	projectileRenderers []*ragent.A
 	featureRenderers    []*rfeature.F
+	db                  *database.DB
 	collider            *collider.C
 
 	minX         float64
@@ -76,10 +78,15 @@ type S struct {
 }
 
 func New(o O) *S {
+	db := database.New(database.DefaultO)
 	s := &S{
 		nFrames: o.NFrames,
 
-		collider:     collider.New(o.Collider),
+		db: db,
+		collider: collider.New(collider.O{
+			DB:       db,
+			PoolSize: o.Collider.PoolSize,
+		}),
 		tickDuration: o.TickDuration,
 		minX:         o.MinX,
 		minY:         o.MinY,
@@ -87,13 +94,13 @@ func New(o O) *S {
 		maxY:         o.MaxY,
 	}
 	for _, opt := range o.Agents {
-		s.agentRenderers = append(s.agentRenderers, ragent.New(s.collider.Insert(opt), opt.Radius >= 10))
+		s.agentRenderers = append(s.agentRenderers, ragent.New(db.AgentInsert(opt), opt.Radius >= 10))
 	}
 	for _, opt := range o.Projectiles {
-		s.agentRenderers = append(s.agentRenderers, ragent.New(s.collider.Insert(opt), opt.Radius >= 10))
+		s.agentRenderers = append(s.agentRenderers, ragent.New(db.AgentInsert(opt), opt.Radius >= 10))
 	}
 	for _, opt := range o.Features {
-		s.featureRenderers = append(s.featureRenderers, rfeature.New(s.collider.InsertFeature(opt)))
+		s.featureRenderers = append(s.featureRenderers, rfeature.New(db.FeatureInsert(opt)))
 	}
 	return s
 }

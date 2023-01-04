@@ -6,45 +6,52 @@
                 50,
                 50
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 20,
                 2
             ],
-            "Radius": 10,
             "Heading": [
                 1,
                 0
             ],
+            "Radius": 10,
             "MaxVelocity": 100,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 10,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 50,
                 80
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 20,
                 -2
             ],
-            "Radius": 10,
             "Heading": [
                 1,
                 0
             ],
+            "Radius": 10,
             "MaxVelocity": 100,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 10,
-            "Mask": 4
+            "Flags": 4
         }
     ],
     "Projectiles": null,
     "Features": null,
     "Collider": {
-        "LeafSize": 8,
-        "Tolerance": 1.15,
+        "DB": null,
         "PoolSize": 24
     },
     "MinX": 0,

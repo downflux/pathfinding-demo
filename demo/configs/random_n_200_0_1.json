@@ -6,3800 +6,4600 @@
                 14.154740348592895,
                 14.154740348592895
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 5.029738676542095,
                 -5.2573390751102265
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.9312053344391598
             ],
+            "Radius": 5,
             "MaxVelocity": 7.275842583851322,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -10.6990094752429,
                 -3.7067543453698226
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.128778955445097
             ],
+            "Radius": 5,
             "MaxVelocity": 11.322933874586367,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 15.820308197663568,
                 -15.778578243621466
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.5333224328799644
             ],
+            "Radius": 5,
             "MaxVelocity": 22.34380636460909,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 22.535742325740276,
                 21.570764096618095
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.7113880470450296
             ],
+            "Radius": 5,
             "MaxVelocity": 31.195473163331087,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 9.138327109430955,
                 -6.133951444427726
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.2124849272491596
             ],
+            "Radius": 5,
             "MaxVelocity": 11.006106608676735,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 16.12210094050185,
                 6.8790607574739315
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.7463952376031413
             ],
+            "Radius": 5,
             "MaxVelocity": 17.528366028833048,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 20.52854684327362,
                 -10.721215738593004
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.5760156445809965
             ],
+            "Radius": 5,
             "MaxVelocity": 23.159570428009534,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -19.945706685148906,
                 23.300039917892363
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.6975527048297131
             ],
+            "Radius": 5,
             "MaxVelocity": 30.671209225352875,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 13.352759786664127,
                 18.143605210825104
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.318374119477727
             ],
+            "Radius": 5,
             "MaxVelocity": 22.527463327384076,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 5.224152870135995,
                 20.486976731684997
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.901482936453712
             ],
+            "Radius": 5,
             "MaxVelocity": 21.142563440017216,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 19.609354717784388,
                 2.955786895999568
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.3949016229352251
             ],
+            "Radius": 5,
             "MaxVelocity": 19.83087160521331,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -12.567033554324528,
                 -18.08583778307842
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.8255818223639855
             ],
+            "Radius": 5,
             "MaxVelocity": 22.023348080420142,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 14.154740348592895
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 18.60826436567809,
                 -23.29478520915528
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.932607942442881
             ],
+            "Radius": 5,
             "MaxVelocity": 29.81466955449355,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 14.154740348592895
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -8.204308678862207,
                 -12.570753423308753
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 6.0658967208081105
             ],
+            "Radius": 5,
             "MaxVelocity": 15.01114660935941,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -2.1405203820186984,
                 15.187345395696417
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.0234509781127383
             ],
+            "Radius": 5,
             "MaxVelocity": 15.33744723459607,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 17.020256296973884,
                 -10.125315804387986
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.0514909162318697
             ],
+            "Radius": 5,
             "MaxVelocity": 19.80432136058361,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 0.6465755940278317,
                 22.76459831340995
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 6.093630899932556
             ],
+            "Radius": 5,
             "MaxVelocity": 22.773778702044584,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -7.829520271601756,
                 -15.19950274170801
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.410519126065758
             ],
+            "Radius": 5,
             "MaxVelocity": 17.097551616492115,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 13.058274222367311,
                 0.8652903227563569
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.5158568571565298
             ],
+            "Radius": 5,
             "MaxVelocity": 13.086911515296434,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -10.8661787008291,
                 18.67232488437806
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.734660733719958
             ],
+            "Radius": 5,
             "MaxVelocity": 21.603924554259027,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 7.872418083477811,
                 -3.7543129780205713
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.4775845501931966
             ],
+            "Radius": 5,
             "MaxVelocity": 8.721802131325964,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 10.238133693331536,
                 -7.309577705901979
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.178567842265639
             ],
+            "Radius": 5,
             "MaxVelocity": 12.579718111354868,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -6.941332560595565,
                 -9.594905186775174
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.3531054186901694
             ],
+            "Radius": 5,
             "MaxVelocity": 11.84247876333284,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 9.785685466628575,
                 7.29775563034607
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.5892055426563605
             ],
+            "Radius": 5,
             "MaxVelocity": 12.20724691697655,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 6.444763426897432,
                 22.796219654572475
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.425018411224046
             ],
+            "Radius": 5,
             "MaxVelocity": 23.68971519812324,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 14.755116396538037,
                 8.919279771625476
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.2785156725099294
             ],
+            "Radius": 5,
             "MaxVelocity": 17.24143298916633,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 42.464221045778686
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 5.7364164131814555,
                 22.05483817314494
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.6041266632333557
             ],
+            "Radius": 5,
             "MaxVelocity": 22.78864542067011,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 42.464221045778686
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 20.818301230996138,
                 2.1720063155486247
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.195145341281484
             ],
+            "Radius": 5,
             "MaxVelocity": 20.93129899407293,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -23.622728461350455,
                 -7.564913062967299
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.721003189639004
             ],
+            "Radius": 5,
             "MaxVelocity": 24.80445947020314,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 20.425563564934883,
                 18.80640006586387
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.520958071633234
             ],
+            "Radius": 5,
             "MaxVelocity": 27.764803805943234,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 15.203877039774083,
                 14.508465435397461
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.1709203642538
             ],
+            "Radius": 5,
             "MaxVelocity": 21.01555248692483,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -7.705257842453755,
                 -6.1989622449880155
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.004235631919488
             ],
+            "Radius": 5,
             "MaxVelocity": 9.889293773241947,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 18.753043878294157,
                 7.736621633380386
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.82102611798001
             ],
+            "Radius": 5,
             "MaxVelocity": 20.286250737859753,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -0.9942782827682184,
                 7.105713662956237
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.656587935767328
             ],
+            "Radius": 5,
             "MaxVelocity": 7.174939439710099,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -12.658514896385931,
                 7.846818589685639
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.393984103229797
             ],
+            "Radius": 5,
             "MaxVelocity": 14.893305924523967,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -6.249235953635165,
                 -7.660812756318277
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.0454435721965063
             ],
+            "Radius": 5,
             "MaxVelocity": 9.886404912382217,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 1.7416869399410229,
                 4.689307509712915
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.40121019158925036
             ],
+            "Radius": 5,
             "MaxVelocity": 5.002307299378065,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 24.846066360234875,
                 -6.194777823599576
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.140155662494674
             ],
+            "Radius": 5,
             "MaxVelocity": 25.606684398042557,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -1.9918601576446648,
                 4.915634429987536
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.421795502620142
             ],
+            "Radius": 5,
             "MaxVelocity": 5.303863566956744,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 24.905886852867592,
                 -5.775747084068797
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.472531737932609
             ],
+            "Radius": 5,
             "MaxVelocity": 25.566823312781196,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 70.77370174296448
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 22.27906770033603,
                 -17.633374624626196
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.145180483046213
             ],
+            "Radius": 5,
             "MaxVelocity": 28.412897744661088,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 70.77370174296448
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -1.3284283529326286,
                 -23.67079368494806
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.842353913000789
             ],
+            "Radius": 5,
             "MaxVelocity": 23.70804073651495,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 2.134275230841581,
                 5.75386609380768
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.9768880750019469
             ],
+            "Radius": 5,
             "MaxVelocity": 6.1369459657433465,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -23.943747281321475,
                 -3.9870807803062984
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.2560613139221
             ],
+            "Radius": 5,
             "MaxVelocity": 24.273439126347082,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -7.476716696831814,
                 -4.970742291266056
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.7029048815525698
             ],
+            "Radius": 5,
             "MaxVelocity": 8.978283326497586,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -9.200801365666742,
                 17.685788851479252
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.3546957276487297
             ],
+            "Radius": 5,
             "MaxVelocity": 19.935944248255783,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 14.40948264573772,
                 -1.9904990945471686
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.82717759773083
             ],
+            "Radius": 5,
             "MaxVelocity": 14.546314886018713,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -22.553874409262676,
                 -11.026477391884162
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.329635451587341
             ],
+            "Radius": 5,
             "MaxVelocity": 25.104988638565967,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -23.578205892913875,
                 -19.59349189791738
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.9346612020233095
             ],
+            "Radius": 5,
             "MaxVelocity": 30.656756480136522,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 21.683460966149593,
                 -17.203259194682545
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.2631211946442886
             ],
+            "Radius": 5,
             "MaxVelocity": 27.67895602059374,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -17.22254091273567,
                 -16.86173891444983
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.767070302343478
             ],
+            "Radius": 5,
             "MaxVelocity": 24.102575686219218,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -6.164392026054591,
                 16.56478687437808
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.343173192426607
             ],
+            "Radius": 5,
             "MaxVelocity": 17.674611544372162,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 8.601358564205064,
                 -7.265814347138225
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.3086322760703542
             ],
+            "Radius": 5,
             "MaxVelocity": 11.25945945758958,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 22.811696413963734,
                 23.71698398735725
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.5678730454490974
             ],
+            "Radius": 5,
             "MaxVelocity": 32.90697225117203,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 99.08318244015027
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 18.29635593397193,
                 -19.75503186260829
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.031785313038143
             ],
+            "Radius": 5,
             "MaxVelocity": 26.926156880536418,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 99.08318244015027
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 18.167796784503544,
                 -21.232406011845946
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.8943164335708422
             ],
+            "Radius": 5,
             "MaxVelocity": 27.944300045892888,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -3.4666840731655437,
                 -20.207318419106578
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.4895668714565775
             ],
+            "Radius": 5,
             "MaxVelocity": 20.50252706751789,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 8.501842143481609,
                 22.153462588493383
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.895891710779252
             ],
+            "Radius": 5,
             "MaxVelocity": 23.728826867176892,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 17.06580832090393,
                 -10.914068686657746
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.978197005330123
             ],
+            "Radius": 5,
             "MaxVelocity": 20.257312480754127,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 21.445048215824876,
                 -6.614576963276783
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.3500904169635914
             ],
+            "Radius": 5,
             "MaxVelocity": 22.441985682692287,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 12.848600357700496,
                 21.07193568170944
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.1397927145911
             ],
+            "Radius": 5,
             "MaxVelocity": 24.680214839543048,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -16.63322417804229,
                 15.292641812856273
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.228324940531972
             ],
+            "Radius": 5,
             "MaxVelocity": 22.594889691550403,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -16.114026997234284,
                 -18.144896338917302
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.206354022735109
             ],
+            "Radius": 5,
             "MaxVelocity": 24.267243955951194,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -22.343053347867627,
                 -16.575292695420234
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.7208669355851973
             ],
+            "Radius": 5,
             "MaxVelocity": 27.819999296270844,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 12.06521663910894,
                 8.901544503631275
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.836574251395842
             ],
+            "Radius": 5,
             "MaxVelocity": 14.993563522350495,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -14.85546116444769,
                 13.53537137024809
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.9622938745227976
             ],
+            "Radius": 5,
             "MaxVelocity": 20.097039695909075,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -0.9576247393735748,
                 -11.230159842388543
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.200419531656551
             ],
+            "Radius": 5,
             "MaxVelocity": 11.270915456477196,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 2.508842436177633,
                 -10.715431545580815
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.764792420806604
             ],
+            "Radius": 5,
             "MaxVelocity": 11.00521528992478,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 127.39266313733606
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 7.177226154435429,
                 -0.4021719131053786
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.6248941163147363
             ],
+            "Radius": 5,
             "MaxVelocity": 7.188485064295732,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 127.39266313733606
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -15.646902238038829,
                 -20.083599014784888
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.94677288045291
             ],
+            "Radius": 5,
             "MaxVelocity": 25.4593106551103,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 24.48898315400736,
                 12.490799895266703
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.0045491478504354
             ],
+            "Radius": 5,
             "MaxVelocity": 27.490550702756956,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 23.722779964891643,
                 23.187498425487156
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.1210597930316455
             ],
+            "Radius": 5,
             "MaxVelocity": 33.17273537853991,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -23.36404384507615,
                 -12.339485654784305
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.7624735627978474
             ],
+            "Radius": 5,
             "MaxVelocity": 26.422366491653776,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 7.523015236406638,
                 17.87453578619892
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.0563580325938924
             ],
+            "Radius": 5,
             "MaxVelocity": 19.39316342991293,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 1.4307063868247316,
                 -21.89597580461612
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.2167066028576485
             ],
+            "Radius": 5,
             "MaxVelocity": 21.942667959973228,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 8.439687009378382,
                 10.557265647960367
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.970925601975636
             ],
+            "Radius": 5,
             "MaxVelocity": 13.516070981534325,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -0.7146933754590717,
                 -19.817407458403512
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.204692677903531
             ],
+            "Radius": 5,
             "MaxVelocity": 19.830290592760164,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 5.814572271898855,
                 5.865054015104887
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.2676588302184858
             ],
+            "Radius": 5,
             "MaxVelocity": 8.258820091588928,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -11.262262821913113,
                 23.154013070721025
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.5221113641624044
             ],
+            "Radius": 5,
             "MaxVelocity": 25.74775495356763,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 13.69778178562563,
                 2.0241610189050405
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.90416459502339
             ],
+            "Radius": 5,
             "MaxVelocity": 13.846532189579886,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 12.089878421042272,
                 2.7361823996367605
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.0915646024750827
             ],
+            "Radius": 5,
             "MaxVelocity": 12.395638521660173,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -5.357206682895907,
                 5.540109589693704
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.181597036586604
             ],
+            "Radius": 5,
             "MaxVelocity": 7.706651523786495,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 155.70214383452185
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -4.9118130825631905,
                 9.841467167329593
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 6.013690229878295
             ],
+            "Radius": 5,
             "MaxVelocity": 10.999108316753013,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 155.70214383452185
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 12.126420350262828,
                 17.55336462650539
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.7950744765708808
             ],
+            "Radius": 5,
             "MaxVelocity": 21.334729438695003,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 5.04090352737726,
                 -21.153211091296694
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.0834238012330768
             ],
+            "Radius": 5,
             "MaxVelocity": 21.745552369284205,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 20.530979552108203,
                 10.443979791778979
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.646891107846026
             ],
+            "Radius": 5,
             "MaxVelocity": 23.034709359142624,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 18.50794439837657,
                 21.558773868387483
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 6.051398569247996
             ],
+            "Radius": 5,
             "MaxVelocity": 28.413460481991024,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -15.726445053458496,
                 -9.401368949401553
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.7971494981725744
             ],
+            "Radius": 5,
             "MaxVelocity": 18.322303680002165,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -16.008297682709596,
                 17.257124752634905
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.3958236812508784
             ],
+            "Radius": 5,
             "MaxVelocity": 23.538775444492643,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 4.066468844705263,
                 9.14884847054811
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.8586287933459156
             ],
+            "Radius": 5,
             "MaxVelocity": 10.01187281191731,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 17.72315921111249,
                 18.887369064484417
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.3458729745814835
             ],
+            "Radius": 5,
             "MaxVelocity": 25.90063865236694,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 18.94540186931476,
                 -9.36120601770135
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.2806573738085514
             ],
+            "Radius": 5,
             "MaxVelocity": 21.13197648341686,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -20.058379593232104,
                 -23.52591936950065
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.894494379024084
             ],
+            "Radius": 5,
             "MaxVelocity": 30.916136144195573,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 21.98367319287533,
                 14.673885004144005
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.877748432133211
             ],
+            "Radius": 5,
             "MaxVelocity": 26.431132933833684,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 18.003182217386275,
                 12.066775772899474
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.1804406354353731
             ],
+            "Radius": 5,
             "MaxVelocity": 21.67306271632708,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -11.38258504972117,
                 8.203960723014974
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.7299003787384202
             ],
+            "Radius": 5,
             "MaxVelocity": 14.030973378882459,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 184.01162453170764
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 24.154466271949516,
                 -19.51240844683863
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.2053440288039265
             ],
+            "Radius": 5,
             "MaxVelocity": 31.051124364167656,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 184.01162453170764
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 1.5014982967053392,
                 24.498619503020535
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.0216102188952045
             ],
+            "Radius": 5,
             "MaxVelocity": 24.544589112241972,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 2.821849805213117,
                 8.231539408934797
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.11199251326406547
             ],
+            "Radius": 5,
             "MaxVelocity": 8.701785872108548,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -20.29703972966254,
                 -1.8958592245876316
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.563004215501985
             ],
+            "Radius": 5,
             "MaxVelocity": 20.38538947351641,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 11.766809141916196,
                 5.917092454795619
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.306520556166833
             ],
+            "Radius": 5,
             "MaxVelocity": 13.170792705865574,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 1.8955658727723645,
                 -3.9555217047494926
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.26682115650062216
             ],
+            "Radius": 5,
             "MaxVelocity": 4.386265146427378,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 8.387855859966564,
                 -24.019800090476075
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.6003411905684297
             ],
+            "Radius": 5,
             "MaxVelocity": 25.44222714924953,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 2.955995162060965,
                 11.156664511974274
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.418474288531449
             ],
+            "Radius": 5,
             "MaxVelocity": 11.541623388019294,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -7.925134819913563,
                 -3.2521181545248385
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.294440986630442
             ],
+            "Radius": 5,
             "MaxVelocity": 8.566448179076112,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -3.424639685196387,
                 -8.07543985898554
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.4435560853058393
             ],
+            "Radius": 5,
             "MaxVelocity": 8.771595401608216,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -4.924353954039059,
                 -9.327631275004448
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.8966307407077103
             ],
+            "Radius": 5,
             "MaxVelocity": 10.547699610204171,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 7.552632664596293,
                 -22.815757835115217
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.967447311489217
             ],
+            "Radius": 5,
             "MaxVelocity": 24.033332389765434,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -8.778714159616873,
                 -3.4463986104306428
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.510438823973656
             ],
+            "Radius": 5,
             "MaxVelocity": 9.43098540335187,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -12.924305986001439,
                 10.366997442746529
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 6.219816198988702
             ],
+            "Radius": 5,
             "MaxVelocity": 16.5684133578839,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 212.32110522889343
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 1.1114942360832714,
                 19.370046379821844
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.859292154147784
             ],
+            "Radius": 5,
             "MaxVelocity": 19.401910117132683,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 212.32110522889343
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 9.174364463122748,
                 21.5792972058502
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.267475269861344
             ],
+            "Radius": 5,
             "MaxVelocity": 23.44856138872114,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 22.445164407446384,
                 -18.17179453678927
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.8419767715603221
             ],
+            "Radius": 5,
             "MaxVelocity": 28.879049879879748,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -9.31263119964748,
                 10.988560483315368
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.2407365909936163
             ],
+            "Radius": 5,
             "MaxVelocity": 14.403942562927961,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 21.994533220231503,
                 7.27487619457004
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.4701600818153175
             ],
+            "Radius": 5,
             "MaxVelocity": 23.166426466379942,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -20.2121881940526,
                 -1.3668833825523947
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.0894275896723
             ],
+            "Radius": 5,
             "MaxVelocity": 20.258354369822275,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -8.078784456534752,
                 -12.752172766033668
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.411185217045688
             ],
+            "Radius": 5,
             "MaxVelocity": 15.095849381532602,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -23.914581027855572,
                 19.56196021337456
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.1582594152830117
             ],
+            "Radius": 5,
             "MaxVelocity": 30.896237200143304,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 10.692475871003564,
                 -23.54388580143431
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.7371020705626837
             ],
+            "Radius": 5,
             "MaxVelocity": 25.858143763290002,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -7.193864531059346,
                 -22.50357280056558
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.057395870441321134
             ],
+            "Radius": 5,
             "MaxVelocity": 23.625462443761574,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -23.4586245714873,
                 -7.128043012075927
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 6.154851961003436
             ],
+            "Radius": 5,
             "MaxVelocity": 24.517668403989642,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 11.541081632788252,
                 -18.158420538335378
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.0274482817432466
             ],
+            "Radius": 5,
             "MaxVelocity": 21.515687339746375,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 0.866450199476726,
                 24.835381569495592
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.9841874153500586
             ],
+            "Radius": 5,
             "MaxVelocity": 24.850491215479316,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -15.75284693519688,
                 -22.27015902847732
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.871374887068212
             ],
+            "Radius": 5,
             "MaxVelocity": 27.278419487158924,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 240.63058592607922
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 9.906229140693924,
                 3.5819437504394367
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.3981816938499516
             ],
+            "Radius": 5,
             "MaxVelocity": 10.533930739246657,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 240.63058592607922
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 12.430456546054335,
                 -12.017057044012217
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.24564460284918277
             ],
+            "Radius": 5,
             "MaxVelocity": 17.289473963726852,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -16.927694442421444,
                 17.749933129698487
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.568071296134787
             ],
+            "Radius": 5,
             "MaxVelocity": 24.52767753466997,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -13.162472555242315,
                 -9.105736578114588
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.4737575833124592
             ],
+            "Radius": 5,
             "MaxVelocity": 16.005159243116612,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -19.263167439899178,
                 -4.498776684144329
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.201329055117059
             ],
+            "Radius": 5,
             "MaxVelocity": 19.781521970551015,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -19.53222976350011,
                 -15.93339238716972
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.2713622354112215
             ],
+            "Radius": 5,
             "MaxVelocity": 25.20676481616944,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -9.675512794793947,
                 -6.231584262082449
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.33318148373052037
             ],
+            "Radius": 5,
             "MaxVelocity": 11.508613741787281,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -11.541558318318366,
                 4.430808375904272
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.772445848358141
             ],
+            "Radius": 5,
             "MaxVelocity": 12.36283265595419,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -6.675813307565642,
                 -9.077638928542978
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 6.25536790430241
             ],
+            "Radius": 5,
             "MaxVelocity": 11.26809708133851,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -3.254220143884079,
                 11.721027763218943
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.0445730356642637
             ],
+            "Radius": 5,
             "MaxVelocity": 12.164392322307357,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 16.057516982188226,
                 14.077821058675271
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.6850437129105567
             ],
+            "Radius": 5,
             "MaxVelocity": 21.35483311555827,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -18.9512645416366,
                 17.562888262946863
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.310940185199525
             ],
+            "Radius": 5,
             "MaxVelocity": 25.83806246342495,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -22.56109443928785,
                 -17.475658965012066
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.038725638408399
             ],
+            "Radius": 5,
             "MaxVelocity": 28.537723079458733,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 21.123143816246206,
                 -4.024931116616886
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.8536307561550434
             ],
+            "Radius": 5,
             "MaxVelocity": 21.503192208956584,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 268.940066623265
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -6.839317444659082,
                 -11.823600926731132
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.2926102228679868
             ],
+            "Radius": 5,
             "MaxVelocity": 13.659202099076479,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 268.940066623265
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -17.833026558210992,
                 -10.56859319707588
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.1793017493258566
             ],
+            "Radius": 5,
             "MaxVelocity": 20.72949585472684,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 9.810475039422133,
                 -2.400236469677708
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.126001039090016
             ],
+            "Radius": 5,
             "MaxVelocity": 10.099829484179207,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -3.792819101292269,
                 -19.68749572415545
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.9197993131054054
             ],
+            "Radius": 5,
             "MaxVelocity": 20.049512827591762,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 14.23058516786343,
                 -6.137846427095043
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.378348573354065
             ],
+            "Radius": 5,
             "MaxVelocity": 15.497829299047593,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -14.71356814071646,
                 -24.143799668526057
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.291923572867184
             ],
+            "Radius": 5,
             "MaxVelocity": 28.273877517337898,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -12.875467961280428,
                 0.5184254486782336
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.448814699451622
             ],
+            "Radius": 5,
             "MaxVelocity": 12.885900828727342,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 8.138804665534716,
                 -19.64975036948321
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.304136115706359
             ],
+            "Radius": 5,
             "MaxVelocity": 21.268587893105064,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -1.6184864376421026,
                 16.74411812772481
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.7893935783900152
             ],
+            "Radius": 5,
             "MaxVelocity": 16.822157716061103,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 17.155060517719978,
                 -19.736991310158704
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.4995426402280856
             ],
+            "Radius": 5,
             "MaxVelocity": 26.150428817591408,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -11.583633360595073,
                 -21.030859380067714
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.3358288507721086
             ],
+            "Radius": 5,
             "MaxVelocity": 24.00994810691754,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 8.322289062991828,
                 17.196472342816065
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.10494774997419
             ],
+            "Radius": 5,
             "MaxVelocity": 19.104427661807385,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 18.048360402522373,
                 -10.648611027914775
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.6234537265086797
             ],
+            "Radius": 5,
             "MaxVelocity": 20.955577540195968,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 12.961155825566445,
                 -2.859797366449415
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.05800408193807336
             ],
+            "Radius": 5,
             "MaxVelocity": 13.272904780482907,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 297.2495473204508
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 13.51147293795998,
                 -20.05527097720971
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.882561708753608
             ],
+            "Radius": 5,
             "MaxVelocity": 24.182096578306336,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 297.2495473204508
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -2.532107441076084,
                 -11.837257033542361
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.221166114671659
             ],
+            "Radius": 5,
             "MaxVelocity": 12.10504944935381,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -21.029595070822683,
                 24.358006016968993
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.725737252639072
             ],
+            "Radius": 5,
             "MaxVelocity": 32.18006100002713,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 8.03617722748542,
                 -14.075749083484856
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.12418740496546139
             ],
+            "Radius": 5,
             "MaxVelocity": 16.208234225009832,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -10.592248283039464,
                 -21.289481912340065
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.931614157884678
             ],
+            "Radius": 5,
             "MaxVelocity": 23.778935295454403,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 18.92931335586197,
                 -11.585468947387492
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.0331027730243143
             ],
+            "Radius": 5,
             "MaxVelocity": 22.193287157500897,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 5.927005992661477,
                 -5.867289062999936
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.9063699238411793
             ],
+            "Radius": 5,
             "MaxVelocity": 8.33993291255054,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 18.192666630999405,
                 -15.239696364222372
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.9216024443259405
             ],
+            "Radius": 5,
             "MaxVelocity": 23.732287382811876,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 14.759812787080728,
                 -0.4772095201237142
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.1975656484119845
             ],
+            "Radius": 5,
             "MaxVelocity": 14.767525264436438,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 5.173872031853454,
                 2.8012621695366557
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.322829890043127
             ],
+            "Radius": 5,
             "MaxVelocity": 5.883538182460669,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -5.580110494092389,
                 9.907555797226314
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.1901477694822007
             ],
+            "Radius": 5,
             "MaxVelocity": 11.370896842440914,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 17.774617610542204,
                 -20.43374326428693
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.3438112883878608
             ],
+            "Radius": 5,
             "MaxVelocity": 27.082741644667156,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -14.274401864361119,
                 14.692486244233116
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.4353125529271726
             ],
+            "Radius": 5,
             "MaxVelocity": 20.484816343386033,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 9.597124412088604,
                 -11.413304217858222
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.86288417336468
             ],
+            "Radius": 5,
             "MaxVelocity": 14.912018983038054,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 325.5590280176366
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -6.485181678532887,
                 5.085174657976305
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.2164610530539477
             ],
+            "Radius": 5,
             "MaxVelocity": 8.241151782712357,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 325.5590280176366
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -2.3454846221510617,
                 7.9431946760652625
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.5895249415796774
             ],
+            "Radius": 5,
             "MaxVelocity": 8.28224847336873,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 353.8685087148224
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -24.954592343880837,
                 1.325667866335467
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.664414958818661
             ],
+            "Radius": 5,
             "MaxVelocity": 24.989779397607943,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 353.8685087148224
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -18.860873970916998,
                 -4.862970367568556
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.6690899279267724
             ],
+            "Radius": 5,
             "MaxVelocity": 19.47770642921451,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 353.8685087148224
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -8.001150054898343,
                 -10.930472048660178
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.298331912717563
             ],
+            "Radius": 5,
             "MaxVelocity": 13.545981743954226,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 353.8685087148224
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 -3.2589731679726093,
                 -23.53349457136171
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.984313878587063
             ],
+            "Radius": 5,
             "MaxVelocity": 23.75807805462968,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 353.8685087148224
+            ],
+            "Velocity": [
+                0,
+                0
             ],
             "TargetVelocity": [
                 15.366613139590973,
                 16.60460123103986
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.4089083827734825
             ],
+            "Radius": 5,
             "MaxVelocity": 22.62400453995049,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 353.8685087148224
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -20.757336905957416,
                 17.574662390846914
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.2300234209643097
             ],
+            "Radius": 5,
             "MaxVelocity": 27.198084373346422,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 353.8685087148224
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -23.977548290926105,
                 -24.784929034990956
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.794107902690402
             ],
+            "Radius": 5,
             "MaxVelocity": 34.48500441225477,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 353.8685087148224
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -5.73667035563011,
                 -20.130878271846974
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.913954893257985
             ],
+            "Radius": 5,
             "MaxVelocity": 20.932311070808353,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 353.8685087148224
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 14.654884497178855,
                 2.6912554114528087
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.889892540364443
             ],
+            "Radius": 5,
             "MaxVelocity": 14.89994950714019,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 353.8685087148224
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 2.110955607611115,
                 -17.72629319722613
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.971354320812048
             ],
+            "Radius": 5,
             "MaxVelocity": 17.851543465239363,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 353.8685087148224
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 3.32489965340802,
                 -20.646472379551692
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.590007561624601
             ],
+            "Radius": 5,
             "MaxVelocity": 20.912479035848996,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 353.8685087148224
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 1.744257577404973,
                 21.137886600893125
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 6.035108878723804
             ],
+            "Radius": 5,
             "MaxVelocity": 21.209730890526448,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 353.8685087148224
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -5.454638011545468,
                 -11.834191591366016
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.568075191730416
             ],
+            "Radius": 5,
             "MaxVelocity": 13.03077766129692,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 353.8685087148224
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 1.735699743709268,
                 10.315605070232536
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.737444737648837
             ],
+            "Radius": 5,
             "MaxVelocity": 10.460609999675908,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -1.4094279760347272,
                 10.156384574328781
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.530281918151666
             ],
+            "Radius": 5,
             "MaxVelocity": 10.253713222110953,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -10.64382934228902,
                 -8.954889416464326
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.3275525432090267
             ],
+            "Radius": 5,
             "MaxVelocity": 13.909750088656427,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -20.212168128249377,
                 -0.05419877634886272
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.04271517016526
             ],
+            "Radius": 5,
             "MaxVelocity": 20.212240794923698,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -10.374006498995028,
                 19.9917902213124
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 0.782174259946897
             ],
+            "Radius": 5,
             "MaxVelocity": 22.523136706377137,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 127.39266313733606,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 13.831573891232974,
                 -9.053074051673898
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.242919665204173
             ],
+            "Radius": 5,
             "MaxVelocity": 16.530897921580937,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 155.70214383452185,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -13.262275628426115,
                 17.253529048766314
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.8597401181205813
             ],
+            "Radius": 5,
             "MaxVelocity": 21.7617145344977,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 184.01162453170764,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -8.077813035678655,
                 -2.488883975814349
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.4970109097171842
             ],
+            "Radius": 5,
             "MaxVelocity": 8.452550318362231,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 212.32110522889343,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -8.476471454850545,
                 24.582876053321524
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.2759524930762296
             ],
+            "Radius": 5,
             "MaxVelocity": 26.00323755569419,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 240.63058592607922,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 12.902414849496052,
                 6.938082692382519
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.215255361686126
             ],
+            "Radius": 5,
             "MaxVelocity": 14.649549494603379,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 268.940066623265,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 23.833977451913864,
                 8.687170742189315
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.10534920780114
             ],
+            "Radius": 5,
             "MaxVelocity": 25.367802756295006,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 297.2495473204508,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 24.431429301953333,
                 -16.71498471990397
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 1.5093460641026035
             ],
+            "Radius": 5,
             "MaxVelocity": 29.602119044469895,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 325.5590280176366,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -11.664958451443862,
                 -7.588603459409629
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 3.5649628807597855
             ],
+            "Radius": 5,
             "MaxVelocity": 13.916111458955601,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 353.8685087148224,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -7.753635201842207,
                 3.839873086191253
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.071000110046019
             ],
+            "Radius": 5,
             "MaxVelocity": 8.652368702344035,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 382.1779894120082,
                 382.1779894120082
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 24.912739579726605,
                 -4.759855313061284
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.677579719816859
             ],
+            "Radius": 5,
             "MaxVelocity": 25.363375484516137,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 14.154740348592895,
                 410.48747010919396
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -5.952006080718733,
                 5.223680716315815
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 2.644883221354248
             ],
+            "Radius": 5,
             "MaxVelocity": 7.9191676716005,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 42.464221045778686,
                 410.48747010919396
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 -14.305988285520248,
                 22.091890897743095
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.882912011779801
             ],
+            "Radius": 5,
             "MaxVelocity": 26.319440424584005,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 70.77370174296448,
                 410.48747010919396
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 19.283325228036567,
                 6.607486232924659
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 5.337864856482735
             ],
+            "Radius": 5,
             "MaxVelocity": 20.383952172444882,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         },
         {
             "Position": [
                 99.08318244015027,
                 410.48747010919396
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 4.32257742524701,
                 -19.792900266200625
             ],
-            "Radius": 5,
             "Heading": [
                 1,
                 4.079322455686338
             ],
+            "Radius": 5,
             "MaxVelocity": 20.259407112376707,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         }
     ],
     "Projectiles": null,
@@ -3813,7 +4613,7 @@
                 0,
                 406.33272976060107
             ],
-            "Mask": 4
+            "Flags": 0
         },
         {
             "Min": [
@@ -3824,7 +4624,7 @@
                 406.33272976060107,
                 406.33272976060107
             ],
-            "Mask": 4
+            "Flags": 0
         },
         {
             "Min": [
@@ -3835,7 +4635,7 @@
                 396.33272976060107,
                 0
             ],
-            "Mask": 4
+            "Flags": 0
         },
         {
             "Min": [
@@ -3846,12 +4646,11 @@
                 396.33272976060107,
                 406.33272976060107
             ],
-            "Mask": 4
+            "Flags": 0
         }
     ],
     "Collider": {
-        "LeafSize": 8,
-        "Tolerance": 1.15,
+        "DB": null,
         "PoolSize": 24
     },
     "MinX": 0,

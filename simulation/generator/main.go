@@ -9,10 +9,10 @@ import (
 	"path"
 	"time"
 
-	"github.com/downflux/go-collider/agent"
 	"github.com/downflux/go-collider/collider"
-	"github.com/downflux/go-collider/feature"
-	"github.com/downflux/go-collider/mask"
+	"github.com/downflux/go-database/agent"
+	"github.com/downflux/go-database/feature"
+	"github.com/downflux/go-database/flags"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
 	"github.com/downflux/pathfinding-demo/simulation"
@@ -32,24 +32,20 @@ func borders(xmin, xmax, ymin, ymax float64) []feature.O {
 	width := 2 * r
 	return []feature.O{
 		{
-			Min:  vector.V{xmin - width, ymin - width},
-			Max:  vector.V{xmin, ymax + width},
-			Mask: mask.MSizeSmall,
+			Min: vector.V{xmin - width, ymin - width},
+			Max: vector.V{xmin, ymax + width},
 		},
 		{
-			Min:  vector.V{xmax, ymin - width},
-			Max:  vector.V{xmax + width, ymax + width},
-			Mask: mask.MSizeSmall,
+			Min: vector.V{xmax, ymin - width},
+			Max: vector.V{xmax + width, ymax + width},
 		},
 		{
-			Min:  vector.V{xmin, ymin - width},
-			Max:  vector.V{xmax, ymin},
-			Mask: mask.MSizeSmall,
+			Min: vector.V{xmin, ymin - width},
+			Max: vector.V{xmax, ymin},
 		},
 		{
-			Min:  vector.V{xmin, ymax},
-			Max:  vector.V{xmax, ymax + width},
-			Mask: mask.MSizeSmall,
+			Min: vector.V{xmin, ymax},
+			Max: vector.V{xmax, ymax + width},
 		},
 	}
 }
@@ -79,12 +75,13 @@ func main() {
 						polar.V{1, rn(0, 2*math.Pi)},
 					),
 					TargetVelocity: v,
+					Velocity:       vector.V{0, 0},
 
 					Radius:             r,
 					MaxVelocity:        vector.Magnitude(v),
 					MaxAngularVelocity: 2 * math.Pi,
 					MaxAcceleration:    5,
-					Mask:               mask.MSizeSmall,
+					Flags:              flags.FSizeSmall,
 				})
 			}
 
@@ -110,18 +107,18 @@ func main() {
 				Position:           vector.V{50, 50},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{10, 10},
+				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    5,
-				Mask:               mask.MSizeSmall,
+				Flags:              flags.FSizeSmall,
 			},
 		},
 		Features: []feature.O{
 			{
-				Min:  vector.V{70, 20},
-				Max:  vector.V{90, 80},
-				Mask: mask.MSizeSmall,
+				Min: vector.V{70, 20},
+				Max: vector.V{90, 80},
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -139,23 +136,22 @@ func main() {
 				Position:           vector.V{50, 50},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{10, 10},
+				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    5,
-				Mask:               mask.MSizeSmall,
+				Flags:              flags.FSizeSmall,
 			},
 		},
 		Features: []feature.O{
 			{
-				Min:  vector.V{70, 20},
-				Max:  vector.V{90, 80},
-				Mask: mask.MSizeSmall,
+				Min: vector.V{70, 20},
+				Max: vector.V{90, 80},
 			},
 			{
-				Min:  vector.V{50, 80},
-				Max:  vector.V{90, 100},
-				Mask: mask.MSizeSmall,
+				Min: vector.V{50, 80},
+				Max: vector.V{90, 100},
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -175,33 +171,36 @@ func main() {
 				Position:           vector.V{50, 50},
 				Heading:            polar.V{1, math.Pi / 4},
 				TargetVelocity:     vector.V{10, -10},
+				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    5,
-				Mask:               mask.MSizeSmall,
+				Flags:              flags.FSizeSmall,
 			},
 			// (-X, -Y) to (-X, -Y)
 			{
 				Position:           vector.V{100, 50},
 				Heading:            polar.V{1, 5 * math.Pi / 4},
 				TargetVelocity:     vector.V{10, -10},
+				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    5,
-				Mask:               mask.MSizeSmall,
+				Flags:              flags.FSizeSmall,
 			},
 			// (+X, -Y) to (+X, +Y)
 			{
 				Position:           vector.V{100, 100},
 				Heading:            polar.V{1, 7 * math.Pi / 4},
 				TargetVelocity:     vector.V{10, 10},
+				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    5,
-				Mask:               mask.MSizeSmall,
+				Flags:              flags.FSizeSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -218,11 +217,12 @@ func main() {
 				Position:           vector.V{130, 50},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{-30, 0},
+				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi,
 				MaxAcceleration:    10,
-				Mask:               mask.MSizeSmall,
+				Flags:              flags.FSizeSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -239,21 +239,23 @@ func main() {
 				Position:           vector.V{50, 50},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{100, 0},
+				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    10,
-				Mask:               mask.MSizeSmall,
+				Flags:              flags.FSizeSmall,
 			},
 			{
 				Position:           vector.V{100, 45},
 				Heading:            polar.V{1, math.Pi},
 				TargetVelocity:     vector.V{-100, 0},
+				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    10,
-				Mask:               mask.MSizeSmall,
+				Flags:              flags.FSizeSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -272,21 +274,23 @@ func main() {
 				Position:           vector.V{50, 50},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{20, 2},
+				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    10,
-				Mask:               mask.MSizeSmall,
+				Flags:              flags.FSizeSmall,
 			},
 			{
 				Position:           vector.V{50, 80},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{20, -2},
+				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    10,
-				Mask:               mask.MSizeSmall,
+				Flags:              flags.FSizeSmall,
 			},
 		},
 		Collider:     collider.DefaultO,

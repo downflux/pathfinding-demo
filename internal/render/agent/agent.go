@@ -5,7 +5,7 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/downflux/go-collider/agent"
+	"github.com/downflux/go-database/agent"
 	"github.com/downflux/go-geometry/2d/hypersphere"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
@@ -28,14 +28,14 @@ var (
 )
 
 type A struct {
-	agent *agent.A
+	agent agent.RO
 
 	trail *trail.T
 
 	label bool
 }
 
-func New(a *agent.A, label bool) *A {
+func New(a agent.RO, label bool) *A {
 	return &A{
 		agent: a,
 		trail: trail.New(ColorTrail),

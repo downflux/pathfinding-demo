@@ -6,19 +6,23 @@
                 50,
                 50
             ],
+            "Velocity": [
+                0,
+                0
+            ],
             "TargetVelocity": [
                 10,
                 10
             ],
-            "Radius": 10,
             "Heading": [
                 1,
                 0
             ],
+            "Radius": 10,
             "MaxVelocity": 100,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Mask": 4
+            "Flags": 4
         }
     ],
     "Projectiles": null,
@@ -32,12 +36,11 @@
                 90,
                 80
             ],
-            "Mask": 4
+            "Flags": 0
         }
     ],
     "Collider": {
-        "LeafSize": 8,
-        "Tolerance": 1.15,
+        "DB": null,
         "PoolSize": 24
     },
     "MinX": 0,
