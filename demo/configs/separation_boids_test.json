@@ -1,5 +1,5 @@
 {
-    "Name": "Collision_Boids_Test",
+    "Name": "Separation_Boids_Test",
     "Agents": [
         {
             "Position": [

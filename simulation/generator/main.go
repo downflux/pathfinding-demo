@@ -241,7 +241,7 @@ func main() {
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      250,
 	}, simulation.O{
-		Name: "Collision_Boids_Test",
+		Name: "Separation_Boids_Test",
 		Agents: []agent.O{
 			{
 				Position:           vector.V{50, 50},
