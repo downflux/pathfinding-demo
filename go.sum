@@ -6,10 +6,14 @@ github.com/downflux/go-collider v0.2.1 h1:83XfIAj99YyrAZhT+eZRZPOQ6ZR/CpbQuKaImk
 github.com/downflux/go-collider v0.2.1/go.mod h1:QfEya2ScbxL8N+A6itC3dK/+xGjR0efj80mr+0dJKx0=
 github.com/downflux/go-collider v0.2.2 h1:BKfS/z+TU+mmdJg2C1I/rNdFyQedLjq4RnE350iwDW4=
 github.com/downflux/go-collider v0.2.2/go.mod h1:6HHVS1G0AkWNK/jyXNIQJJvZcQSh7H5u1esriX9PKNs=
+github.com/downflux/go-collider v0.2.3 h1:efzBgxqb4ThqhO/zRXddTg+Blgprv9+ElnjrfFlHlgY=
+github.com/downflux/go-collider v0.2.3/go.mod h1:6HHVS1G0AkWNK/jyXNIQJJvZcQSh7H5u1esriX9PKNs=
 github.com/downflux/go-database v0.2.0 h1:Z+wQUnJ7RvWTzePhG4pTWEOpn+9o3pP9BMJjvvdI034=
 github.com/downflux/go-database v0.2.0/go.mod h1:GgparhC7kkqx5VPbyFjE8/zA7o2F/E8P8SR/GwXNs+s=
 github.com/downflux/go-database v0.3.0 h1:mecbYU9/u6B1ZsnKlAT0i/mqPz9/nvPEU5QmNz0LivM=
 github.com/downflux/go-database v0.3.0/go.mod h1:GgparhC7kkqx5VPbyFjE8/zA7o2F/E8P8SR/GwXNs+s=
+github.com/downflux/go-database v0.3.1 h1:axnXBnUOje0G1pBQxMr9wYhFIXa+i3jS14VQAEaHuIM=
+github.com/downflux/go-database v0.3.1/go.mod h1:GgparhC7kkqx5VPbyFjE8/zA7o2F/E8P8SR/GwXNs+s=
 github.com/downflux/go-geometry v0.15.4 h1:COO+vw9M0fEoBIYrR1tY4nzWhnDNAnW1xIcf3TYKqJg=
 github.com/downflux/go-geometry v0.15.4/go.mod h1:ZJcto0QwYRdoIbi5G4mh5y6v2xUS+d++/cANaO1F9+8=
 github.com/downflux/go-pq v0.3.0 h1:oWLx7rzsD4fv1f2kp33NUq63CJVQvXZORkcpHr6bp9g=

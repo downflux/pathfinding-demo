@@ -84,11 +84,8 @@ func New(o O) *S {
 	s := &S{
 		nFrames: o.NFrames,
 
-		db: db,
-		collider: collider.New(collider.O{
-			DB:       db,
-			PoolSize: o.Collider.PoolSize,
-		}),
+		db:           db,
+		collider:     collider.New(db, o.Collider),
 		tickDuration: o.TickDuration,
 		minX:         o.MinX,
 		minY:         o.MinY,
