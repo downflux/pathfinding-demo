@@ -72,6 +72,7 @@ func main() {
 						float64(i%int(cols)) + 0.5,
 						math.Floor(float64(i)/cols) + 0.5,
 					}),
+					TargetPosition: vector.V{0, 0},
 					Heading: polar.Normalize(
 						polar.V{1, rn(0, 2*math.Pi)},
 					),
@@ -106,6 +107,7 @@ func main() {
 		Agents: []agent.O{
 			{
 				Position:           vector.V{50, 50},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{10, 10},
 				Velocity:           vector.V{0, 0},
@@ -135,6 +137,7 @@ func main() {
 		Agents: []agent.O{
 			{
 				Position:           vector.V{50, 50},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{10, 10},
 				Velocity:           vector.V{0, 0},
@@ -170,6 +173,7 @@ func main() {
 			// (+X, +Y) to (+X, -Y)
 			{
 				Position:           vector.V{50, 50},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, math.Pi / 4},
 				TargetVelocity:     vector.V{10, -10},
 				Velocity:           vector.V{0, 0},
@@ -182,6 +186,7 @@ func main() {
 			// (-X, -Y) to (-X, -Y)
 			{
 				Position:           vector.V{100, 50},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, 5 * math.Pi / 4},
 				TargetVelocity:     vector.V{10, -10},
 				Velocity:           vector.V{0, 0},
@@ -194,6 +199,7 @@ func main() {
 			// (+X, -Y) to (+X, +Y)
 			{
 				Position:           vector.V{100, 100},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, 7 * math.Pi / 4},
 				TargetVelocity:     vector.V{10, 10},
 				Velocity:           vector.V{0, 0},
@@ -216,6 +222,7 @@ func main() {
 		Agents: []agent.O{
 			{
 				Position:           vector.V{130, 50},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{-30, 0},
 				Velocity:           vector.V{0, 0},
@@ -234,10 +241,49 @@ func main() {
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      250,
 	}, simulation.O{
+		Name: "Collision_Boids_Test",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{50, 50},
+				TargetPosition:     vector.V{150, 50},
+				Heading:            polar.V{1, 0},
+				TargetVelocity:     vector.V{0, 0},
+				Velocity:           vector.V{0, 0},
+				Radius:             10,
+				Mass:               1,
+				MaxVelocity:        50,
+				MaxAngularVelocity: math.Pi,
+				MaxAcceleration:    50,
+				Flags:              flags.FSizeSmall,
+			},
+			{
+				Position:           vector.V{100, 45},
+				TargetPosition:     vector.V{0, 45},
+				Heading:            polar.V{1, math.Pi},
+				TargetVelocity:     vector.V{0, 0},
+				Velocity:           vector.V{0, 0},
+				Radius:             15,
+				Mass:               10,
+				MaxVelocity:        30,
+				MaxAngularVelocity: math.Pi,
+				MaxAcceleration:    10,
+				Flags:              flags.FSizeSmall,
+			},
+		},
+		Collider:     collider.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      400,
+		EnableBoids:  true,
+	}, simulation.O{
 		Name: "Collision_Test",
 		Agents: []agent.O{
 			{
 				Position:           vector.V{50, 50},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{100, 0},
 				Velocity:           vector.V{0, 0},
@@ -249,6 +295,7 @@ func main() {
 			},
 			{
 				Position:           vector.V{100, 45},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, math.Pi},
 				TargetVelocity:     vector.V{-100, 0},
 				Velocity:           vector.V{0, 0},
@@ -273,6 +320,7 @@ func main() {
 		Agents: []agent.O{
 			{
 				Position:           vector.V{50, 50},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{20, 2},
 				Velocity:           vector.V{0, 0},
@@ -284,6 +332,7 @@ func main() {
 			},
 			{
 				Position:           vector.V{50, 80},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{20, -2},
 				Velocity:           vector.V{0, 0},
@@ -306,6 +355,7 @@ func main() {
 		Agents: []agent.O{
 			{
 				Position:           vector.V{50, 50},
+				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{20, 0},
 				Velocity:           vector.V{20, 0},
@@ -319,6 +369,7 @@ func main() {
 		Projectiles: []projectile.O{
 			{
 				Position:       vector.V{100, 50},
+				TargetPosition: vector.V{0, 0},
 				Heading:        polar.V{1, math.Pi},
 				TargetVelocity: vector.V{-30, 0},
 				Velocity:       vector.V{-30, 0},

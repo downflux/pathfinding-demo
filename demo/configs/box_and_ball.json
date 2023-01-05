@@ -6,6 +6,10 @@
                 50,
                 50
             ],
+            "TargetPosition": [
+                0,
+                0
+            ],
             "Velocity": [
                 0,
                 0
@@ -19,6 +23,7 @@
                 0
             ],
             "Radius": 10,
+            "Mass": 0,
             "MaxVelocity": 100,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -40,9 +45,12 @@
         }
     ],
     "Collider": {
-        "DB": null,
         "PoolSize": 24
     },
+    "Boids": {
+        "PoolSize": 0
+    },
+    "EnableBoids": false,
     "MinX": 0,
     "MinY": 0,
     "MaxX": 150,

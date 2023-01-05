@@ -10,6 +10,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/downflux/go-boids/x/boids"
 	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-database/agent"
 	"github.com/downflux/go-database/database"
@@ -33,6 +34,9 @@ type O struct {
 	Projectiles []projectile.O
 	Features    []feature.O
 	Collider    collider.O
+	Boids       boids.O
+
+	EnableBoids bool
 
 	MinX         float64
 	MinY         float64
@@ -69,6 +73,9 @@ type S struct {
 	featureRenderers    []*rfeature.F
 	db                  *database.DB
 	collider            *collider.C
+	boids               *boids.B
+
+	enableBoids bool
 
 	minX         float64
 	minY         float64
@@ -81,11 +88,17 @@ type S struct {
 
 func New(o O) *S {
 	db := database.New(database.DefaultO)
+	var b *boids.B
+	if o.EnableBoids {
+		b = boids.New(db, o.Boids)
+	}
 	s := &S{
 		nFrames: o.NFrames,
 
 		db:           db,
 		collider:     collider.New(db, o.Collider),
+		boids:        b,
+		enableBoids:  o.EnableBoids,
 		tickDuration: o.TickDuration,
 		minX:         o.MinX,
 		minY:         o.MinY,
@@ -105,6 +118,9 @@ func New(o O) *S {
 }
 
 func (s *S) Tick(d time.Duration) {
+	if s.enableBoids {
+		s.boids.Tick(d)
+	}
 	s.collider.Tick(d)
 }
 
