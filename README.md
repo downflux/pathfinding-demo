@@ -10,5 +10,5 @@ go run simulation/generator/main.go \
 go run demo/main.go \
   --configs=demo/configs/*json \
   --output=demo/output \
-  --log=demo/logs
+  --log=demo/output/logs
 ```
