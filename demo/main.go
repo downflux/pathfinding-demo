@@ -20,13 +20,7 @@ var (
 func main() {
 	flag.Parse()
 
-	fp, err := os.OpenFile(*logger, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
-	if err != nil {
-		panic(fmt.Sprintf("cannot open log file: %v", err))
-	}
-	log.SetOutput(fp)
-
-	matches, err := filepath.Glob(filepath.Join(*configs, "*.json"))
+	matches, err := filepath.Glob(*configs)
 	if err != nil {
 		panic(fmt.Sprintf("cannot match input config directory: %v", err))
 	}
@@ -38,11 +32,23 @@ func main() {
 			if err != nil {
 				panic(fmt.Sprintf("cannot read file: %v", err))
 			}
-			opts = append(opts, simulation.Unmarshal(data))
+			o := simulation.Unmarshal(data)
+			if *logger != "/dev/null" {
+				(&o).Collider.Debug = true
+			}
+			opts = append(opts, o)
 		}()
 	}
 
 	for _, o := range opts {
+		if *logger != "/dev/null" {
+			lfn, err := os.OpenFile(filepath.Join(*logger, fmt.Sprintf("%v.log", o.Filename())), os.O_CREATE|os.O_WRONLY, 0666)
+			if err != nil {
+				panic(fmt.Sprintf("cannot open log file: %v", err))
+			}
+			log.SetOutput(lfn)
+		}
+
 		fn := filepath.Join(*output, fmt.Sprintf("%v.gif", o.Filename()))
 		fmt.Printf("running %v (%v)\n", o.Name, fn)
 		s := simulation.New(o)

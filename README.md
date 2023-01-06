@@ -9,5 +9,6 @@ go run simulation/generator/main.go \
 
 go run demo/main.go \
   --configs=demo/configs \
-  --output=demo/output
+  --output=demo/output \
+  --log=demo/logs
 ```

@@ -1,4 +1,5 @@
 demo/output/*gif
+demo/logs/*log
 
 # Binaries for programs and plugins
 *.exe
