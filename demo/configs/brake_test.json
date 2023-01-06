@@ -1,5 +1,5 @@
 {
-    "Name": "Acceleration_Test",
+    "Name": "Brake_Test",
     "Agents": [
         {
             "Position": [
@@ -11,11 +11,11 @@
                 0
             ],
             "Velocity": [
-                0,
+                30,
                 0
             ],
             "TargetVelocity": [
-                30,
+                0,
                 0
             ],
             "Heading": [
@@ -47,5 +47,5 @@
     "MaxX": 150,
     "MaxY": 150,
     "TickDuration": 20000000,
-    "NFrames": 250
+    "NFrames": 200
 }

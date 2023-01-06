@@ -222,10 +222,10 @@ func main() {
 		Name: "Acceleration_Test",
 		Agents: []agent.O{
 			{
-				Position:           vector.V{130, 50},
+				Position:           vector.V{50, 50},
 				TargetPosition:     vector.V{0, 0},
 				Heading:            polar.V{1, 0},
-				TargetVelocity:     vector.V{-30, 0},
+				TargetVelocity:     vector.V{30, 0},
 				Velocity:           vector.V{0, 0},
 				Radius:             10,
 				MaxVelocity:        100,
@@ -241,6 +241,29 @@ func main() {
 		MaxY:         150,
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      250,
+	}, simulation.O{
+		Name: "Brake_Test",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{50, 50},
+				TargetPosition:     vector.V{0, 0},
+				Heading:            polar.V{1, 0},
+				TargetVelocity:     vector.V{0, 0},
+				Velocity:           vector.V{30, 0},
+				Radius:             10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi,
+				MaxAcceleration:    10,
+				Flags:              flags.FSizeSmall,
+			},
+		},
+		Collider:     collider.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      200,
 	}, simulation.O{
 		Name: "Separation_Boids_Test",
 		Agents: []agent.O{
