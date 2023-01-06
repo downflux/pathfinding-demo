@@ -42,7 +42,7 @@ func main() {
 
 	for _, o := range opts {
 		if *logger != "/dev/null" {
-			lfn, err := os.OpenFile(filepath.Join(*logger, fmt.Sprintf("%v.log", o.Filename())), os.O_CREATE|os.O_WRONLY, 0666)
+			lfn, err := os.OpenFile(filepath.Join(*logger, fmt.Sprintf("%v.log", o.Filename())), os.O_TRUNC|os.O_CREATE|os.O_WRONLY, 0666)
 			if err != nil {
 				panic(fmt.Sprintf("cannot open log file: %v", err))
 			}
