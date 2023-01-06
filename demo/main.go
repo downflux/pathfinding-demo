@@ -41,14 +41,17 @@ func main() {
 	}
 
 	for _, o := range opts {
+		fp := *logger
 		if *logger != "/dev/null" {
-			lfn, err := os.OpenFile(filepath.Join(*logger, fmt.Sprintf("%v.log", o.Filename())), os.O_TRUNC|os.O_CREATE|os.O_WRONLY, 0666)
-			if err != nil {
-				panic(fmt.Sprintf("cannot open log file: %v", err))
-			}
-			log.SetOutput(lfn)
-			log.SetFlags(log.Flags() | log.Lshortfile)
+			fp = filepath.Join(*logger, fmt.Sprintf("%v.log", o.Filename()))
 		}
+
+		lfn, err := os.OpenFile(fp, os.O_TRUNC|os.O_CREATE|os.O_WRONLY, 0666)
+		if err != nil {
+			panic(fmt.Sprintf("cannot open log file: %v", err))
+		}
+		log.SetOutput(lfn)
+		log.SetFlags(log.Flags() | log.Lshortfile)
 
 		fn := filepath.Join(*output, fmt.Sprintf("%v.gif", o.Filename()))
 		fmt.Printf("running %v (%v)\n", o.Name, fn)

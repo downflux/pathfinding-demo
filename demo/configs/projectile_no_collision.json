@@ -58,10 +58,13 @@
     ],
     "Features": null,
     "Collider": {
-        "PoolSize": 24
+        "PoolSize": 24,
+        "Debug": false
     },
     "Boids": {
-        "PoolSize": 0
+        "PoolSize": 0,
+        "AvoidanceWeight": 0,
+        "SeekWeight": 0
     },
     "EnableBoids": false,
     "MinX": 0,

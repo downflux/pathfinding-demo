@@ -9,6 +9,7 @@ import (
 	"path"
 	"time"
 
+	"github.com/downflux/go-boids/x/boids"
 	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-database/agent"
 	"github.com/downflux/go-database/feature"
@@ -244,39 +245,40 @@ func main() {
 		Name: "Separation_Boids_Test",
 		Agents: []agent.O{
 			{
-				Position:           vector.V{50, 50},
-				TargetPosition:     vector.V{150, 50},
+				Position:           vector.V{150, 50},
+				TargetPosition:     vector.V{250, 50},
 				Heading:            polar.V{1, 0},
 				TargetVelocity:     vector.V{0, 0},
 				Velocity:           vector.V{0, 0},
-				Radius:             10,
+				Radius:             5,
 				Mass:               1,
 				MaxVelocity:        50,
-				MaxAngularVelocity: math.Pi,
+				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    50,
 				Flags:              flags.FSizeSmall,
 			},
 			{
-				Position:           vector.V{100, 45},
-				TargetPosition:     vector.V{0, 45},
+				Position:           vector.V{200, 45},
+				TargetPosition:     vector.V{100, 45},
 				Heading:            polar.V{1, math.Pi},
 				TargetVelocity:     vector.V{0, 0},
 				Velocity:           vector.V{0, 0},
-				Radius:             15,
+				Radius:             10,
 				Mass:               10,
 				MaxVelocity:        30,
-				MaxAngularVelocity: math.Pi,
+				MaxAngularVelocity: math.Pi / 8,
 				MaxAcceleration:    10,
 				Flags:              flags.FSizeSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
+		Boids:        boids.DefaultO,
 		MinX:         0,
 		MinY:         0,
-		MaxX:         150,
-		MaxY:         150,
+		MaxX:         300,
+		MaxY:         100,
 		TickDuration: 20 * time.Millisecond,
-		NFrames:      400,
+		NFrames:      600,
 		EnableBoids:  true,
 	}, simulation.O{
 		Name: "Collision_Test",
