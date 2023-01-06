@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"image/gif"
+	"log"
 	"os"
 	"path/filepath"
 
@@ -13,10 +14,17 @@ import (
 var (
 	configs = flag.String("configs", "", "config directory")
 	output  = flag.String("output", "/dev/null", "output GIF directory")
+	logger  = flag.String("log", "/dev/null", "output log file")
 )
 
 func main() {
 	flag.Parse()
+
+	fp, err := os.OpenFile(*logger, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+	if err != nil {
+		panic(fmt.Sprintf("cannot open log file: %v", err))
+	}
+	log.SetOutput(fp)
 
 	matches, err := filepath.Glob(filepath.Join(*configs, "*.json"))
 	if err != nil {
