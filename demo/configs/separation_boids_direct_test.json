@@ -1,0 +1,79 @@
+{
+    "Name": "Separation_Boids_Direct_Test",
+    "Agents": [
+        {
+            "Position": [
+                150,
+                50
+            ],
+            "TargetPosition": [
+                250,
+                50
+            ],
+            "Velocity": [
+                0,
+                0
+            ],
+            "TargetVelocity": [
+                0,
+                0
+            ],
+            "Heading": [
+                1,
+                0
+            ],
+            "Radius": 5,
+            "Mass": 1,
+            "MaxVelocity": 50,
+            "MaxAngularVelocity": 0.7853981633974483,
+            "MaxAcceleration": 50,
+            "Flags": 4
+        },
+        {
+            "Position": [
+                200,
+                50
+            ],
+            "TargetPosition": [
+                100,
+                50
+            ],
+            "Velocity": [
+                0,
+                0
+            ],
+            "TargetVelocity": [
+                0,
+                0
+            ],
+            "Heading": [
+                1,
+                3.141592653589793
+            ],
+            "Radius": 10,
+            "Mass": 10,
+            "MaxVelocity": 30,
+            "MaxAngularVelocity": 0.39269908169872414,
+            "MaxAcceleration": 10,
+            "Flags": 4
+        }
+    ],
+    "Projectiles": null,
+    "Features": null,
+    "Collider": {
+        "PoolSize": 24,
+        "Debug": false
+    },
+    "Boids": {
+        "PoolSize": 24,
+        "AvoidanceWeight": 5,
+        "SeekWeight": 1
+    },
+    "EnableBoids": true,
+    "MinX": 0,
+    "MinY": 0,
+    "MaxX": 300,
+    "MaxY": 100,
+    "TickDuration": 20000000,
+    "NFrames": 600
+}
