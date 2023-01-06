@@ -8,7 +8,7 @@ go run simulation/generator/main.go \
   --output=demo/configs/
 
 go run demo/main.go \
-  --configs=demo/configs/* \
+  --configs=demo/configs/*json \
   --output=demo/output \
   --log=demo/logs
 ```
