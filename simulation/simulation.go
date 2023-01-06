@@ -106,7 +106,7 @@ func New(o O) *S {
 		maxY:         o.MaxY,
 	}
 	for _, opt := range o.Agents {
-		s.agentRenderers = append(s.agentRenderers, ragent.New(db.InsertAgent(opt), opt.Radius >= 10))
+		s.agentRenderers = append(s.agentRenderers, ragent.New(db.InsertAgent(opt), opt.Radius >= 10, o.EnableBoids))
 	}
 	for _, opt := range o.Projectiles {
 		s.projectileRenderers = append(s.projectileRenderers, rprojectile.New(db.InsertProjectile(opt), opt.Radius >= 10))
@@ -140,6 +140,7 @@ func (s *S) Execute() *gif.GIF {
 				ragent.ColorVelocity,
 				ragent.ColorTrail,
 				ragent.ColorAgent,
+				ragent.ColorTargetPosition,
 				ragent.ColorHeading,
 
 				rprojectile.ColorVelocity,

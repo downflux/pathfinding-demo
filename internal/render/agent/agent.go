@@ -19,10 +19,11 @@ import (
 )
 
 var (
-	ColorVelocity = color.RGBA{0, 0, 255, 255}
-	ColorHeading  = color.RGBA{255, 0, 0, 255}
-	ColorAgent    = color.Black
-	ColorTrail    = color.RGBA{192, 192, 192, 255}
+	ColorVelocity       = color.RGBA{0, 0, 255, 255}
+	ColorHeading        = color.RGBA{255, 0, 0, 255}
+	ColorAgent          = color.Black
+	ColorTargetPosition = color.RGBA{0, 128, 0, 255}
+	ColorTrail          = color.RGBA{192, 192, 192, 255}
 
 	fontOffset = vector.V{-6, -8}
 )
@@ -32,20 +33,32 @@ type A struct {
 
 	trail *trail.T
 
-	label bool
+	target bool
+	label  bool
 }
 
-func New(a agent.RO, label bool) *A {
+func New(a agent.RO, label bool, target bool) *A {
 	return &A{
-		agent: a,
-		trail: trail.New(ColorTrail),
-		label: label,
+		agent:  a,
+		trail:  trail.New(ColorTrail),
+		label:  label,
+		target: target,
 	}
 }
 
 func (r *A) Draw(img *image.Paletted) {
 	r.trail.Push(r.agent.Position())
 	r.trail.Draw(img)
+
+	if r.target {
+		circle.New(
+			*hypersphere.New(
+				r.agent.TargetPosition(),
+				2,
+			),
+			ColorTargetPosition,
+		).Draw(img)
+	}
 
 	circle.New(
 		*hypersphere.New(
