@@ -47,6 +47,7 @@ func main() {
 				panic(fmt.Sprintf("cannot open log file: %v", err))
 			}
 			log.SetOutput(lfn)
+			log.SetFlags(log.Flags() | log.Lshortfile)
 		}
 
 		fn := filepath.Join(*output, fmt.Sprintf("%v.gif", o.Filename()))
