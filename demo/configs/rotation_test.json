@@ -100,7 +100,9 @@
         "AvoidanceHorizon": 0,
         "SeekWeight": 0,
         "ArrivalWeight": 0,
-        "ArrivalHorizon": 0
+        "ArrivalHorizon": 0,
+        "AlignmentWeight": 0,
+        "AlignmentHorizon": 0
     },
     "EnableBoids": false,
     "MinX": 0,

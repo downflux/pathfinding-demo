@@ -68,10 +68,12 @@
     "Boids": {
         "PoolSize": 24,
         "AvoidanceWeight": 5,
-        "AvoidanceHorizon": 1,
+        "AvoidanceHorizon": 1.5,
         "SeekWeight": 0,
         "ArrivalWeight": 1,
-        "ArrivalHorizon": 3
+        "ArrivalHorizon": 3,
+        "AlignmentWeight": 0.5,
+        "AlignmentHorizon": 2
     },
     "EnableBoids": true,
     "MinX": 0,
