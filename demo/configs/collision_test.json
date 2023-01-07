@@ -73,7 +73,12 @@
         "ArrivalWeight": 0,
         "ArrivalHorizon": 0,
         "AlignmentWeight": 0,
-        "AlignmentHorizon": 0
+        "AlignmentHorizon": 0,
+        "SeparationWeight": 0,
+        "SeparationHorizon": 0,
+        "CohesionWeight": 0,
+        "CohesionHorizon": 0,
+        "FlockingWeight": 0
     },
     "EnableBoids": false,
     "MinX": 0,

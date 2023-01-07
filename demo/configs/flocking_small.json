@@ -1,0 +1,177 @@
+{
+    "Name": "Flocking_Small",
+    "Agents": [
+        {
+            "Position": [
+                50,
+                150
+            ],
+            "TargetPosition": [
+                300,
+                250
+            ],
+            "Velocity": [
+                24.649492878572396,
+                0
+            ],
+            "TargetVelocity": [
+                0,
+                0
+            ],
+            "Heading": [
+                1,
+                0
+            ],
+            "Radius": 8.891265666061187,
+            "Mass": 11.114082082576484,
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 6.283185307179586,
+            "MaxAcceleration": 10,
+            "Flags": 4,
+            "Team": 0
+        },
+        {
+            "Position": [
+                40,
+                140
+            ],
+            "TargetPosition": [
+                290,
+                240
+            ],
+            "Velocity": [
+                22.31634322865532,
+                0
+            ],
+            "TargetVelocity": [
+                0,
+                0
+            ],
+            "Heading": [
+                1,
+                0
+            ],
+            "Radius": 4.87296609421093,
+            "Mass": 6.091207617763662,
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 6.283185307179586,
+            "MaxAcceleration": 10,
+            "Flags": 4,
+            "Team": 0
+        },
+        {
+            "Position": [
+                35,
+                150
+            ],
+            "TargetPosition": [
+                285,
+                250
+            ],
+            "Velocity": [
+                15.741492476352747,
+                0
+            ],
+            "TargetVelocity": [
+                0,
+                0
+            ],
+            "Heading": [
+                1,
+                0
+            ],
+            "Radius": 5.398632954124368,
+            "Mass": 6.74829119265546,
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 6.283185307179586,
+            "MaxAcceleration": 10,
+            "Flags": 4,
+            "Team": 0
+        },
+        {
+            "Position": [
+                40,
+                160
+            ],
+            "TargetPosition": [
+                290,
+                260
+            ],
+            "Velocity": [
+                12.25233212282794,
+                0
+            ],
+            "TargetVelocity": [
+                0,
+                0
+            ],
+            "Heading": [
+                1,
+                0
+            ],
+            "Radius": 4.4268349476852125,
+            "Mass": 5.533543684606515,
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 6.283185307179586,
+            "MaxAcceleration": 10,
+            "Flags": 4,
+            "Team": 0
+        },
+        {
+            "Position": [
+                80,
+                160
+            ],
+            "TargetPosition": [
+                330,
+                260
+            ],
+            "Velocity": [
+                15.453168679640555,
+                0
+            ],
+            "TargetVelocity": [
+                0,
+                0
+            ],
+            "Heading": [
+                1,
+                0
+            ],
+            "Radius": 11.538556037219594,
+            "Mass": 14.423195046524492,
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 6.283185307179586,
+            "MaxAcceleration": 10,
+            "Flags": 4,
+            "Team": 0
+        }
+    ],
+    "Projectiles": null,
+    "Features": null,
+    "Collider": {
+        "PoolSize": 24
+    },
+    "Boids": {
+        "PoolSize": 24,
+        "AvoidanceWeight": 5,
+        "AvoidanceHorizon": 1.5,
+        "SeekWeight": 0,
+        "ArrivalWeight": 1,
+        "ArrivalHorizon": 3,
+        "AlignmentWeight": 0.5,
+        "AlignmentHorizon": 2,
+        "SeparationWeight": 0.5,
+        "SeparationHorizon": 2,
+        "CohesionWeight": 0.4,
+        "CohesionHorizon": 5,
+        "FlockingWeight": 1
+    },
+    "EnableBoids": true,
+    "MinX": 0,
+    "MinY": 0,
+    "MaxX": 500,
+    "MaxY": 500,
+    "TickDuration": 20000000,
+    "NFrames": 1200
+}

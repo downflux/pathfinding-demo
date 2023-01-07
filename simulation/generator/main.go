@@ -448,7 +448,94 @@ func main() {
 		MaxY:         150,
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      250,
-	})
+	}, func() simulation.O {
+		pCenter := vector.V{50, 150}
+		gCenter := vector.V{300, 250}
+		v := vector.V{20, 0}
+		m := 10.0
+		r := 8.0
+
+		agents := []agent.O{
+			{
+				Position:           pCenter,
+				TargetPosition:     gCenter,
+				Heading:            polar.V{1, 0},
+				TargetVelocity:     vector.V{0, 0},
+				Velocity:           vector.Scale(rn(0.5, 1.5), v),
+				MaxVelocity:        100,
+				MaxAngularVelocity: 2 * math.Pi,
+				MaxAcceleration:    10,
+				Flags:              flags.FSizeSmall,
+			},
+			{
+				Position:           vector.Add(pCenter, vector.V{-10, -10}),
+				TargetPosition:     vector.Add(gCenter, vector.V{-10, -10}),
+				Heading:            polar.V{1, 0},
+				TargetVelocity:     vector.V{0, 0},
+				Velocity:           vector.Scale(rn(0.5, 1.5), v),
+				MaxVelocity:        100,
+				MaxAngularVelocity: 2 * math.Pi,
+				MaxAcceleration:    10,
+				Flags:              flags.FSizeSmall,
+			},
+			{
+				Position:           vector.Add(pCenter, vector.V{-15, 0}),
+				TargetPosition:     vector.Add(gCenter, vector.V{-15, 0}),
+				Heading:            polar.V{1, 0},
+				TargetVelocity:     vector.V{0, 0},
+				Velocity:           vector.Scale(rn(0.5, 1.5), v),
+				MaxVelocity:        100,
+				MaxAngularVelocity: 2 * math.Pi,
+				MaxAcceleration:    10,
+				Flags:              flags.FSizeSmall,
+			},
+			{
+				Position:           vector.Add(pCenter, vector.V{-10, 10}),
+				TargetPosition:     vector.Add(gCenter, vector.V{-10, 10}),
+				Heading:            polar.V{1, 0},
+				TargetVelocity:     vector.V{0, 0},
+				Velocity:           vector.Scale(rn(0.5, 1.5), v),
+				MaxVelocity:        100,
+				MaxAngularVelocity: 2 * math.Pi,
+				MaxAcceleration:    10,
+				Flags:              flags.FSizeSmall,
+			},
+			{
+				Position:           vector.Add(pCenter, vector.V{30, 10}),
+				TargetPosition:     vector.Add(gCenter, vector.V{30, 10}),
+				Heading:            polar.V{1, 0},
+				TargetVelocity:     vector.V{0, 0},
+				Velocity:           vector.Scale(rn(0.5, 1.5), v),
+				MaxVelocity:        100,
+				MaxAngularVelocity: 2 * math.Pi,
+				MaxAcceleration:    10,
+				Flags:              flags.FSizeSmall,
+			},
+		}
+		for i := 0; i < len(agents); i++ {
+			f := rn(0.5, 1.5)
+			mass := m * f
+			radius := r * f
+			a := &agents[i]
+			a.Radius = radius
+			a.Mass = mass
+
+		}
+		return simulation.O{
+			Name:         "Flocking_Small",
+			Agents:       agents,
+			Collider:     collider.DefaultO,
+			Boids:        boids.DefaultO,
+			MinX:         0,
+			MinY:         0,
+			MaxX:         500,
+			MaxY:         500,
+			TickDuration: 20 * time.Millisecond,
+			EnableBoids:  true,
+			NFrames:      1200,
+		}
+
+	}())
 
 	for _, o := range opts {
 		fn := path.Join(*output, fmt.Sprintf("%v.json", o.Filename()))
