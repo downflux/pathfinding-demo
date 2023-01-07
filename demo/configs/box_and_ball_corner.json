@@ -27,7 +27,8 @@
             "MaxVelocity": 100,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         }
     ],
     "Projectiles": null,
@@ -41,7 +42,8 @@
                 90,
                 80
             ],
-            "Flags": 0
+            "Flags": 0,
+            "Team": 0
         },
         {
             "Min": [
@@ -52,12 +54,12 @@
                 90,
                 100
             ],
-            "Flags": 0
+            "Flags": 0,
+            "Team": 0
         }
     ],
     "Collider": {
-        "PoolSize": 24,
-        "Debug": false
+        "PoolSize": 24
     },
     "Boids": {
         "PoolSize": 0,

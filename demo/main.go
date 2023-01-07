@@ -4,7 +4,6 @@ import (
 	"flag"
 	"fmt"
 	"image/gif"
-	"log"
 	"os"
 	"path/filepath"
 
@@ -14,7 +13,6 @@ import (
 var (
 	configs = flag.String("configs", "", "config directory")
 	output  = flag.String("output", "/dev/null", "output GIF directory")
-	logger  = flag.String("log", "/dev/null", "output log file")
 )
 
 func main() {
@@ -32,27 +30,11 @@ func main() {
 			if err != nil {
 				panic(fmt.Sprintf("cannot read file: %v", err))
 			}
-			o := simulation.Unmarshal(data)
-			if *logger != "/dev/null" {
-				(&o).Collider.Debug = true
-			}
-			opts = append(opts, o)
+			opts = append(opts, simulation.Unmarshal(data))
 		}()
 	}
 
 	for _, o := range opts {
-		fp := *logger
-		if *logger != "/dev/null" {
-			fp = filepath.Join(*logger, fmt.Sprintf("%v.log", o.Filename()))
-		}
-
-		lfn, err := os.OpenFile(fp, os.O_TRUNC|os.O_CREATE|os.O_WRONLY, 0666)
-		if err != nil {
-			panic(fmt.Sprintf("cannot open log file: %v", err))
-		}
-		log.SetOutput(lfn)
-		log.SetFlags(log.Flags() | log.Lshortfile)
-
 		fn := filepath.Join(*output, fmt.Sprintf("%v.gif", o.Filename()))
 		fmt.Printf("running %v (%v)\n", o.Name, fn)
 		s := simulation.New(o)

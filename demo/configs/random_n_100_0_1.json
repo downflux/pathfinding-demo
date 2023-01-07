@@ -27,7 +27,8 @@
             "MaxVelocity": 19.492426812775413,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -55,7 +56,8 @@
             "MaxVelocity": 26.10521898439377,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -83,7 +85,8 @@
             "MaxVelocity": 10.604825396207373,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -111,7 +114,8 @@
             "MaxVelocity": 24.95717932758471,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -139,7 +143,8 @@
             "MaxVelocity": 25.180449032193394,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -167,7 +172,8 @@
             "MaxVelocity": 28.912958882211633,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -195,7 +201,8 @@
             "MaxVelocity": 27.452938558683783,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -223,7 +230,8 @@
             "MaxVelocity": 27.647545717422695,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -251,7 +259,8 @@
             "MaxVelocity": 20.65541325430085,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -279,7 +288,8 @@
             "MaxVelocity": 21.002142450630835,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -307,7 +317,8 @@
             "MaxVelocity": 10.56830569838027,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -335,7 +346,8 @@
             "MaxVelocity": 22.873658221816942,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -363,7 +375,8 @@
             "MaxVelocity": 25.8603533992157,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -391,7 +404,8 @@
             "MaxVelocity": 20.134287946832625,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -419,7 +433,8 @@
             "MaxVelocity": 4.034659763788365,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -447,7 +462,8 @@
             "MaxVelocity": 22.53656109421375,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -475,7 +491,8 @@
             "MaxVelocity": 21.697312332942747,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -503,7 +520,8 @@
             "MaxVelocity": 22.222660289666887,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -531,7 +549,8 @@
             "MaxVelocity": 20.57279451426524,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -559,7 +578,8 @@
             "MaxVelocity": 27.234408718642584,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -587,7 +607,8 @@
             "MaxVelocity": 21.527057042586616,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -615,7 +636,8 @@
             "MaxVelocity": 26.930615241968678,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -643,7 +665,8 @@
             "MaxVelocity": 16.261762641320953,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -671,7 +694,8 @@
             "MaxVelocity": 15.892561918609601,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -699,7 +723,8 @@
             "MaxVelocity": 15.026287200087848,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -727,7 +752,8 @@
             "MaxVelocity": 21.76044638593649,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -755,7 +781,8 @@
             "MaxVelocity": 30.08077613493648,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -783,7 +810,8 @@
             "MaxVelocity": 25.202879586766947,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -811,7 +839,8 @@
             "MaxVelocity": 4.78041035439635,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -839,7 +868,8 @@
             "MaxVelocity": 23.47644239891448,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -867,7 +897,8 @@
             "MaxVelocity": 28.409988251407135,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -895,7 +926,8 @@
             "MaxVelocity": 17.45031485598178,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -923,7 +955,8 @@
             "MaxVelocity": 8.428065115032096,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -951,7 +984,8 @@
             "MaxVelocity": 25.255847845065997,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -979,7 +1013,8 @@
             "MaxVelocity": 26.84953889511646,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1007,7 +1042,8 @@
             "MaxVelocity": 16.018593951637527,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1035,7 +1071,8 @@
             "MaxVelocity": 21.661585094633505,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1063,7 +1100,8 @@
             "MaxVelocity": 13.318511816787893,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1091,7 +1129,8 @@
             "MaxVelocity": 10.234859714612382,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1119,7 +1158,8 @@
             "MaxVelocity": 11.697015565788558,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1147,7 +1187,8 @@
             "MaxVelocity": 26.922613545255093,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1175,7 +1216,8 @@
             "MaxVelocity": 23.153590326223185,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1203,7 +1245,8 @@
             "MaxVelocity": 23.448279308686192,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1231,7 +1274,8 @@
             "MaxVelocity": 18.93099500561619,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1259,7 +1303,8 @@
             "MaxVelocity": 3.827921887371302,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1287,7 +1332,8 @@
             "MaxVelocity": 25.730376030759224,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1315,7 +1361,8 @@
             "MaxVelocity": 16.7065612617978,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1343,7 +1390,8 @@
             "MaxVelocity": 14.444003975682424,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1371,7 +1419,8 @@
             "MaxVelocity": 14.311039395158822,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1399,7 +1448,8 @@
             "MaxVelocity": 23.048205319676292,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1427,7 +1477,8 @@
             "MaxVelocity": 15.08258307763293,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1455,7 +1506,8 @@
             "MaxVelocity": 13.243604118692407,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1483,7 +1535,8 @@
             "MaxVelocity": 18.453830157932934,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1511,7 +1564,8 @@
             "MaxVelocity": 20.11097467797155,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1539,7 +1593,8 @@
             "MaxVelocity": 19.503556582028793,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1567,7 +1622,8 @@
             "MaxVelocity": 25.48694851026137,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1595,7 +1651,8 @@
             "MaxVelocity": 19.534618824989263,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1623,7 +1680,8 @@
             "MaxVelocity": 17.97187426703608,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1651,7 +1709,8 @@
             "MaxVelocity": 30.14863150626531,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1679,7 +1738,8 @@
             "MaxVelocity": 5.969876947061451,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1707,7 +1767,8 @@
             "MaxVelocity": 17.082479660205582,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1735,7 +1796,8 @@
             "MaxVelocity": 15.454584913424483,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1763,7 +1825,8 @@
             "MaxVelocity": 27.76911370162498,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1791,7 +1854,8 @@
             "MaxVelocity": 13.941621591118471,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1819,7 +1883,8 @@
             "MaxVelocity": 23.032772353963626,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1847,7 +1912,8 @@
             "MaxVelocity": 23.597255924664168,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1875,7 +1941,8 @@
             "MaxVelocity": 25.583407416506756,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1903,7 +1970,8 @@
             "MaxVelocity": 19.414329708255682,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1931,7 +1999,8 @@
             "MaxVelocity": 11.944802907899165,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1959,7 +2028,8 @@
             "MaxVelocity": 14.756819455570854,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -1987,7 +2057,8 @@
             "MaxVelocity": 30.108442041948926,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2015,7 +2086,8 @@
             "MaxVelocity": 24.2989159593979,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2043,7 +2115,8 @@
             "MaxVelocity": 15.066522308975543,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2071,7 +2144,8 @@
             "MaxVelocity": 24.544873031928415,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2099,7 +2173,8 @@
             "MaxVelocity": 26.436637962185095,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2127,7 +2202,8 @@
             "MaxVelocity": 19.22037188363155,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2155,7 +2231,8 @@
             "MaxVelocity": 32.88746772326232,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2183,7 +2260,8 @@
             "MaxVelocity": 17.17355082438973,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2211,7 +2289,8 @@
             "MaxVelocity": 18.892070357161955,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2239,7 +2318,8 @@
             "MaxVelocity": 27.43847660173326,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2267,7 +2347,8 @@
             "MaxVelocity": 8.339501557172987,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2295,7 +2376,8 @@
             "MaxVelocity": 26.182217263690816,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2323,7 +2405,8 @@
             "MaxVelocity": 26.642034272109203,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2351,7 +2434,8 @@
             "MaxVelocity": 16.42271461196286,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2379,7 +2463,8 @@
             "MaxVelocity": 11.49562011583977,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2407,7 +2492,8 @@
             "MaxVelocity": 13.753233943410624,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2435,7 +2521,8 @@
             "MaxVelocity": 19.80310446164229,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2463,7 +2550,8 @@
             "MaxVelocity": 16.36960928830432,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2491,7 +2579,8 @@
             "MaxVelocity": 17.143183850401247,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2519,7 +2608,8 @@
             "MaxVelocity": 25.36772343898399,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2547,7 +2637,8 @@
             "MaxVelocity": 24.85118009430327,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2575,7 +2666,8 @@
             "MaxVelocity": 28.537757006376975,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2603,7 +2695,8 @@
             "MaxVelocity": 12.763365191567779,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2631,7 +2724,8 @@
             "MaxVelocity": 31.25937366576517,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2659,7 +2753,8 @@
             "MaxVelocity": 17.06608146755338,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2687,7 +2782,8 @@
             "MaxVelocity": 25.464600813257483,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2715,7 +2811,8 @@
             "MaxVelocity": 22.134162950731454,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2743,7 +2840,8 @@
             "MaxVelocity": 27.587730360113163,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2771,7 +2869,8 @@
             "MaxVelocity": 31.38561431895682,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         },
         {
             "Position": [
@@ -2799,7 +2898,8 @@
             "MaxVelocity": 15.059215519974444,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
-            "Flags": 4
+            "Flags": 4,
+            "Team": 0
         }
     ],
     "Projectiles": null,
@@ -2813,7 +2913,8 @@
                 0,
                 290.24956081989643
             ],
-            "Flags": 0
+            "Flags": 0,
+            "Team": 0
         },
         {
             "Min": [
@@ -2824,7 +2925,8 @@
                 290.24956081989643,
                 290.24956081989643
             ],
-            "Flags": 0
+            "Flags": 0,
+            "Team": 0
         },
         {
             "Min": [
@@ -2835,7 +2937,8 @@
                 280.24956081989643,
                 0
             ],
-            "Flags": 0
+            "Flags": 0,
+            "Team": 0
         },
         {
             "Min": [
@@ -2846,12 +2949,12 @@
                 280.24956081989643,
                 290.24956081989643
             ],
-            "Flags": 0
+            "Flags": 0,
+            "Team": 0
         }
     ],
     "Collider": {
-        "PoolSize": 24,
-        "Debug": false
+        "PoolSize": 24
     },
     "Boids": {
         "PoolSize": 0,
