@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/downflux/go-boids/x/boids"
+	"github.com/downflux/go-boids/boids"
 	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-database/agent"
 	"github.com/downflux/go-database/database"

@@ -1,3 +1,5 @@
+github.com/downflux/go-boids v0.1.0 h1:AQapmQV3+obX7Jif1bJY1kpMGueVyqA9I3iGT5uwO6w=
+github.com/downflux/go-boids v0.1.0/go.mod h1:V0J9gtPVFN9snkd+SpQfBKHHniYVzp6xwZH+jook+l0=
 github.com/downflux/go-boids/x v0.0.0-20220717080926-c859735ca14a h1:F4kqZ5pKb8Ukd6L2rVIEFW3R4GFwWIWXbN56SDPsPLw=
 github.com/downflux/go-boids/x v0.0.0-20220717080926-c859735ca14a/go.mod h1:LxiQU4c+jnU8NPysWqJxId3v/16TCMzvxvUH2mHHrXY=
 github.com/downflux/go-boids/x v0.0.0-20230105004235-88964f9ca0d8 h1:As2UI4YhUfcBcDPZg72igSfFcnE9zb1ADCDomrgdhuI=
