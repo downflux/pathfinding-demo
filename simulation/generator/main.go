@@ -449,78 +449,9 @@ func main() {
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      250,
 	}, func() simulation.O {
-		pCenter := vector.V{50, 150}
-		gCenter := vector.V{300, 250}
-		v := vector.V{20, 0}
-		m := 10.0
-		r := 8.0
-
-		agents := []agent.O{
-			{
-				Position:           pCenter,
-				TargetPosition:     gCenter,
-				Heading:            polar.V{1, 0},
-				TargetVelocity:     vector.V{0, 0},
-				Velocity:           vector.Scale(rn(0.5, 1.5), v),
-				MaxVelocity:        100,
-				MaxAngularVelocity: 2 * math.Pi,
-				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
-			},
-			{
-				Position:           vector.Add(pCenter, vector.V{-10, -10}),
-				TargetPosition:     vector.Add(gCenter, vector.V{-10, -10}),
-				Heading:            polar.V{1, 0},
-				TargetVelocity:     vector.V{0, 0},
-				Velocity:           vector.Scale(rn(0.5, 1.5), v),
-				MaxVelocity:        100,
-				MaxAngularVelocity: 2 * math.Pi,
-				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
-			},
-			{
-				Position:           vector.Add(pCenter, vector.V{-15, 0}),
-				TargetPosition:     vector.Add(gCenter, vector.V{-15, 0}),
-				Heading:            polar.V{1, 0},
-				TargetVelocity:     vector.V{0, 0},
-				Velocity:           vector.Scale(rn(0.5, 1.5), v),
-				MaxVelocity:        100,
-				MaxAngularVelocity: 2 * math.Pi,
-				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
-			},
-			{
-				Position:           vector.Add(pCenter, vector.V{-10, 10}),
-				TargetPosition:     vector.Add(gCenter, vector.V{-10, 10}),
-				Heading:            polar.V{1, 0},
-				TargetVelocity:     vector.V{0, 0},
-				Velocity:           vector.Scale(rn(0.5, 1.5), v),
-				MaxVelocity:        100,
-				MaxAngularVelocity: 2 * math.Pi,
-				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
-			},
-			{
-				Position:           vector.Add(pCenter, vector.V{30, 10}),
-				TargetPosition:     vector.Add(gCenter, vector.V{30, 10}),
-				Heading:            polar.V{1, 0},
-				TargetVelocity:     vector.V{0, 0},
-				Velocity:           vector.Scale(rn(0.5, 1.5), v),
-				MaxVelocity:        100,
-				MaxAngularVelocity: 2 * math.Pi,
-				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
-			},
-		}
-		for i := 0; i < len(agents); i++ {
-			f := rn(0.5, 1.5)
-			mass := m * f
-			radius := r * f
-			a := &agents[i]
-			a.Radius = radius
-			a.Mass = mass
-
-		}
+		agents := flock(vector.V{50, 150}, vector.V{450, 350}, 10, 8)
+		agents = append(agents, flock(vector.V{50, 450}, vector.V{300, 150}, 10, 8)...)
+		agents = append(agents, flock(vector.V{150, 50}, vector.V{50, 450}, 10, 8)...)
 		return simulation.O{
 			Name:         "Flocking_Small",
 			Agents:       agents,
@@ -554,4 +485,74 @@ func main() {
 			w.Write(o.Marshal())
 		}()
 	}
+}
+
+func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
+	agents := []agent.O{
+		{
+			Position:           p,
+			TargetPosition:     g,
+			Heading:            polar.V{1, 0},
+			TargetVelocity:     vector.V{0, 0},
+			Velocity:           vector.V{20, 0},
+			MaxVelocity:        50,
+			MaxAngularVelocity: math.Pi,
+			MaxAcceleration:    50,
+			Flags:              flags.FSizeSmall,
+		},
+		{
+			Position:           vector.Add(p, vector.V{-10, -10}),
+			TargetPosition:     vector.Add(g, vector.V{-10, -10}),
+			Heading:            polar.V{1, 0},
+			TargetVelocity:     vector.V{0, 0},
+			Velocity:           vector.V{20, 0},
+			MaxVelocity:        50,
+			MaxAngularVelocity: math.Pi,
+			MaxAcceleration:    50,
+			Flags:              flags.FSizeSmall,
+		},
+		{
+			Position:           vector.Add(p, vector.V{-15, 0}),
+			TargetPosition:     vector.Add(g, vector.V{-15, 0}),
+			Heading:            polar.V{1, 0},
+			TargetVelocity:     vector.V{0, 0},
+			Velocity:           vector.V{20, 0},
+			MaxVelocity:        50,
+			MaxAngularVelocity: math.Pi,
+			MaxAcceleration:    50,
+			Flags:              flags.FSizeSmall,
+		},
+		{
+			Position:           vector.Add(p, vector.V{-10, 10}),
+			TargetPosition:     vector.Add(g, vector.V{-10, 10}),
+			Heading:            polar.V{1, 0},
+			TargetVelocity:     vector.V{0, 0},
+			Velocity:           vector.V{20, 0},
+			MaxVelocity:        50,
+			MaxAngularVelocity: math.Pi,
+			MaxAcceleration:    50,
+			Flags:              flags.FSizeSmall,
+		},
+		{
+			Position:           vector.Add(p, vector.V{30, 10}),
+			TargetPosition:     vector.Add(g, vector.V{30, 10}),
+			Heading:            polar.V{1, 0},
+			TargetVelocity:     vector.V{0, 0},
+			Velocity:           vector.V{20, 0},
+			MaxVelocity:        50,
+			MaxAngularVelocity: math.Pi,
+			MaxAcceleration:    50,
+			Flags:              flags.FSizeSmall,
+		},
+	}
+	for i := 0; i < len(agents); i++ {
+		f := rn(0.5, 1.5)
+		mass := m * f
+		radius := r * f
+		a := &agents[i]
+		a.Radius = radius
+		a.Mass = mass
+
+	}
+	return agents
 }
