@@ -78,7 +78,7 @@
         "SeparationHorizon": 2,
         "CohesionWeight": 0.4,
         "CohesionHorizon": 5,
-        "FlockingWeight": 1
+        "FlockingWeight": 1.5
     },
     "EnableBoids": true,
     "MinX": 0,
