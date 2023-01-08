@@ -23,7 +23,7 @@
                 5.7278378483364945
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 19.492426812775413,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -52,7 +52,7 @@
                 2.036845081677493
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 26.10521898439377,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -81,7 +81,7 @@
                 1.9088450785908155
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 10.604825396207373,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -110,7 +110,7 @@
                 1.3065452089231755
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 24.95717932758471,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -139,7 +139,7 @@
                 5.076443528922042
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 25.180449032193394,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -168,7 +168,7 @@
                 4.026672428252645
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 28.912958882211633,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -197,7 +197,7 @@
                 1.1409689402654246
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 27.452938558683783,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -226,7 +226,7 @@
                 3.1081688458550327
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 27.647545717422695,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -255,7 +255,7 @@
                 1.7184182343220293
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 20.65541325430085,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -284,7 +284,7 @@
                 5.933822226024195
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 21.002142450630835,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -313,7 +313,7 @@
                 6.13173073698478
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 10.56830569838027,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -342,7 +342,7 @@
                 1.9814777687182419
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 22.873658221816942,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -371,7 +371,7 @@
                 3.366474132570617
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 25.8603533992157,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -400,7 +400,7 @@
                 2.8832560584620457
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 20.134287946832625,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -429,7 +429,7 @@
                 3.4596208655942258
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 4.034659763788365,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -458,7 +458,7 @@
                 4.665357639775632
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 22.53656109421375,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -487,7 +487,7 @@
                 1.6492774748336814
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 21.697312332942747,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -516,7 +516,7 @@
                 2.5724579587495198
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 22.222660289666887,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -545,7 +545,7 @@
                 5.665093442678043
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 20.57279451426524,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -574,7 +574,7 @@
                 0.6867940071059381
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 27.234408718642584,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -603,7 +603,7 @@
                 6.2149002275154075
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 21.527057042586616,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -632,7 +632,7 @@
                 1.9093791181703315
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 26.930615241968678,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -661,7 +661,7 @@
                 5.111941602132738
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 16.261762641320953,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -690,7 +690,7 @@
                 1.573114322440006
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 15.892561918609601,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -719,7 +719,7 @@
                 0.030660578383472012
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 15.026287200087848,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -748,7 +748,7 @@
                 0.08347555827977786
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 21.76044638593649,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -777,7 +777,7 @@
                 6.048346236962753
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 30.08077613493648,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -806,7 +806,7 @@
                 0.32103368745958927
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 25.202879586766947,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -835,7 +835,7 @@
                 2.18320825806072
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 4.78041035439635,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -864,7 +864,7 @@
                 1.634411527217865
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 23.47644239891448,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -893,7 +893,7 @@
                 5.885507234077466
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 28.409988251407135,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -922,7 +922,7 @@
                 4.753118624986562
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 17.45031485598178,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -951,7 +951,7 @@
                 2.968755120463335
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 8.428065115032096,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -980,7 +980,7 @@
                 1.5686286737539072
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 25.255847845065997,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1009,7 +1009,7 @@
                 4.751408700926376
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 26.84953889511646,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1038,7 +1038,7 @@
                 4.13122812027383
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 16.018593951637527,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1067,7 +1067,7 @@
                 0.940501619250187
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 21.661585094633505,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1096,7 +1096,7 @@
                 1.559376387224825
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 13.318511816787893,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1125,7 +1125,7 @@
                 0.5150293504697422
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 10.234859714612382,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1154,7 +1154,7 @@
                 3.9081515315436572
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 11.697015565788558,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1183,7 +1183,7 @@
                 1.0003054983717667
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 26.922613545255093,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1212,7 +1212,7 @@
                 1.5443563971125953
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 23.153590326223185,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1241,7 +1241,7 @@
                 2.124854488644727
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 23.448279308686192,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1270,7 +1270,7 @@
                 4.610945930718556
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 18.93099500561619,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1299,7 +1299,7 @@
                 2.9093629979108844
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 3.827921887371302,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1328,7 +1328,7 @@
                 2.860040555789443
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 25.730376030759224,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1357,7 +1357,7 @@
                 2.6621994342276425
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 16.7065612617978,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1386,7 +1386,7 @@
                 4.288409534386124
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 14.444003975682424,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1415,7 +1415,7 @@
                 2.430722098345851
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 14.311039395158822,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1444,7 +1444,7 @@
                 1.800998196752994
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 23.048205319676292,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1473,7 +1473,7 @@
                 6.249296110759466
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 15.08258307763293,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1502,7 +1502,7 @@
                 2.5906543334757024
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 13.243604118692407,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1531,7 +1531,7 @@
                 3.4281224525725924
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 18.453830157932934,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1560,7 +1560,7 @@
                 4.890227110260767
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 20.11097467797155,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1589,7 +1589,7 @@
                 3.9668779516468757
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 19.503556582028793,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1618,7 +1618,7 @@
                 3.5554447976882697
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 25.48694851026137,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1647,7 +1647,7 @@
                 3.7459009876865594
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 19.534618824989263,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1676,7 +1676,7 @@
                 5.091768708725552
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 17.97187426703608,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1705,7 +1705,7 @@
                 2.108121907369547
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 30.14863150626531,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1734,7 +1734,7 @@
                 3.943696147735472
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 5.969876947061451,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1763,7 +1763,7 @@
                 0.5289618020383289
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 17.082479660205582,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1792,7 +1792,7 @@
                 2.6403035778340653
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 15.454584913424483,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1821,7 +1821,7 @@
                 0.49163245210255324
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 27.76911370162498,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1850,7 +1850,7 @@
                 2.309532833070089
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 13.941621591118471,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1879,7 +1879,7 @@
                 4.158400872198476
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 23.032772353963626,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1908,7 +1908,7 @@
                 4.194738328485953
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 23.597255924664168,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1937,7 +1937,7 @@
                 1.2954375168302479
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 25.583407416506756,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1966,7 +1966,7 @@
                 5.078331883955561
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 19.414329708255682,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -1995,7 +1995,7 @@
                 2.8412810777631443
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 11.944802907899165,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2024,7 +2024,7 @@
                 1.5510960347280893
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 14.756819455570854,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2053,7 +2053,7 @@
                 0.028207113170974938
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 30.108442041948926,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2082,7 +2082,7 @@
                 2.0562545037729105
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 24.2989159593979,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2111,7 +2111,7 @@
                 2.7651966840637185
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 15.066522308975543,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2140,7 +2140,7 @@
                 3.2803196905877137
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 24.544873031928415,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2169,7 +2169,7 @@
                 1.0295529480168422
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 26.436637962185095,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2198,7 +2198,7 @@
                 1.7301033246044624
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 19.22037188363155,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2227,7 +2227,7 @@
                 0.64898193731382
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 32.88746772326232,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2256,7 +2256,7 @@
                 2.9683598983139765
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 17.17355082438973,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2285,7 +2285,7 @@
                 4.321599355831556
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 18.892070357161955,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2314,7 +2314,7 @@
                 0.6056303220138038
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 27.43847660173326,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2343,7 +2343,7 @@
                 2.1901930827329847
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 8.339501557172987,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2372,7 +2372,7 @@
                 2.3128471790211917
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 26.182217263690816,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2401,7 +2401,7 @@
                 1.6534084891501588
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 26.642034272109203,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2430,7 +2430,7 @@
                 4.749165881417865
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 16.42271461196286,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2459,7 +2459,7 @@
                 3.948333183117363
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 11.49562011583977,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2488,7 +2488,7 @@
                 3.628339251230357
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 13.753233943410624,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2517,7 +2517,7 @@
                 2.17900396021895
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 19.80310446164229,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2546,7 +2546,7 @@
                 5.548284549365396
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 16.36960928830432,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2575,7 +2575,7 @@
                 2.810488760697877
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 17.143183850401247,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2604,7 +2604,7 @@
                 1.0344333255592884
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 25.36772343898399,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2633,7 +2633,7 @@
                 4.922703223871717
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 24.85118009430327,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2662,7 +2662,7 @@
                 4.594504590268695
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 28.537757006376975,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2691,7 +2691,7 @@
                 3.8480536071924685
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 12.763365191567779,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2720,7 +2720,7 @@
                 3.142045070146276
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 31.25937366576517,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2749,7 +2749,7 @@
                 2.752084702805299
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 17.06608146755338,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2778,7 +2778,7 @@
                 4.416544119051754
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 25.464600813257483,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2807,7 +2807,7 @@
                 0.562708170573788
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 22.134162950731454,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2836,7 +2836,7 @@
                 0.5901329109155975
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 27.587730360113163,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2865,7 +2865,7 @@
                 3.1621018947699624
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 31.38561431895682,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,
@@ -2894,7 +2894,7 @@
                 2.5430366326590765
             ],
             "Radius": 5,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 15.059215519974444,
             "MaxAngularVelocity": 6.283185307179586,
             "MaxAcceleration": 5,

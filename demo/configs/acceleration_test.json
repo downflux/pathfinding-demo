@@ -23,7 +23,7 @@
                 0
             ],
             "Radius": 10,
-            "Mass": 0,
+            "Mass": 10,
             "MaxVelocity": 100,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 10,
