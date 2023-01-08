@@ -22,8 +22,8 @@
                 1,
                 0
             ],
-            "Radius": 9.859797151428959,
-            "Mass": 12.324746439286198,
+            "Radius": 8.663700174687438,
+            "Mass": 15.318306268750847,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -32,12 +32,12 @@
         },
         {
             "Position": [
-                40,
-                140
+                35,
+                135
             ],
             "TargetPosition": [
-                440,
-                340
+                435,
+                335
             ],
             "Velocity": [
                 20,
@@ -51,8 +51,8 @@
                 1,
                 0
             ],
-            "Radius": 8.926537291462129,
-            "Mass": 11.15817161432766,
+            "Radius": 8.065749908896239,
+            "Mass": 13.276800325073408,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -61,11 +61,11 @@
         },
         {
             "Position": [
-                35,
+                20,
                 150
             ],
             "TargetPosition": [
-                435,
+                420,
                 350
             ],
             "Velocity": [
@@ -80,8 +80,8 @@
                 1,
                 0
             ],
-            "Radius": 6.296596990541099,
-            "Mass": 7.870746238176373,
+            "Radius": 6.071791250723497,
+            "Mass": 7.523805916808655,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -90,12 +90,12 @@
         },
         {
             "Position": [
-                40,
-                160
+                35,
+                165
             ],
             "TargetPosition": [
-                440,
-                360
+                435,
+                365
             ],
             "Velocity": [
                 20,
@@ -109,8 +109,8 @@
                 1,
                 0
             ],
-            "Radius": 4.900932849131176,
-            "Mass": 6.12616606141397,
+            "Radius": 4.680477964548578,
+            "Mass": 4.470790607474448,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -138,8 +138,8 @@
                 1,
                 0
             ],
-            "Radius": 6.181267471856222,
-            "Mass": 7.726584339820278,
+            "Radius": 5.969125623904969,
+            "Mass": 7.271522594685487,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -167,8 +167,8 @@
                 1,
                 0
             ],
-            "Radius": 8.891265666061187,
-            "Mass": 11.114082082576484,
+            "Radius": 8.042279145745525,
+            "Mass": 13.199643644508846,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -177,12 +177,12 @@
         },
         {
             "Position": [
-                40,
-                440
+                35,
+                435
             ],
             "TargetPosition": [
-                290,
-                140
+                285,
+                135
             ],
             "Velocity": [
                 20,
@@ -196,8 +196,8 @@
                 1,
                 0
             ],
-            "Radius": 4.87296609421093,
-            "Mass": 6.091207617763662,
+            "Radius": 4.648344363568969,
+            "Mass": 4.409613331086409,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -206,11 +206,11 @@
         },
         {
             "Position": [
-                35,
+                20,
                 450
             ],
             "TargetPosition": [
-                285,
+                270,
                 150
             ],
             "Velocity": [
@@ -225,8 +225,8 @@
                 1,
                 0
             ],
-            "Radius": 5.398632954124368,
-            "Mass": 6.74829119265546,
+            "Radius": 5.219348328768695,
+            "Mass": 5.559509587147055,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -235,12 +235,12 @@
         },
         {
             "Position": [
-                40,
-                460
+                35,
+                465
             ],
             "TargetPosition": [
-                290,
-                160
+                285,
+                165
             ],
             "Velocity": [
                 20,
@@ -254,8 +254,8 @@
                 1,
                 0
             ],
-            "Radius": 4.4268349476852125,
-            "Mass": 5.533543684606515,
+            "Radius": 4.10184557187382,
+            "Mass": 3.433701448061402,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -283,8 +283,8 @@
                 1,
                 0
             ],
-            "Radius": 11.538556037219594,
-            "Mass": 14.423195046524492,
+            "Radius": 9.646444812673089,
+            "Mass": 18.990591331417864,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -312,8 +312,8 @@
                 1,
                 0
             ],
-            "Radius": 4.261595704246913,
-            "Mass": 5.326994630308642,
+            "Radius": 3.8799457412310034,
+            "Mass": 3.0722406030401226,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -322,12 +322,12 @@
         },
         {
             "Position": [
-                140,
-                40
+                135,
+                35
             ],
             "TargetPosition": [
-                40,
-                440
+                35,
+                435
             ],
             "Velocity": [
                 20,
@@ -341,8 +341,8 @@
                 1,
                 0
             ],
-            "Radius": 8.891294943267187,
-            "Mass": 11.114118679083983,
+            "Radius": 8.042298656052582,
+            "Mass": 13.199707688396972,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -351,11 +351,11 @@
         },
         {
             "Position": [
-                135,
+                120,
                 50
             ],
             "TargetPosition": [
-                35,
+                20,
                 450
             ],
             "Velocity": [
@@ -370,8 +370,8 @@
                 1,
                 0
             ],
-            "Radius": 4.97679934772897,
-            "Mass": 6.2209991846612125,
+            "Radius": 4.766557249049873,
+            "Mass": 4.636748573157121,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -380,12 +380,12 @@
         },
         {
             "Position": [
-                140,
-                60
+                135,
+                65
             ],
             "TargetPosition": [
-                40,
-                460
+                35,
+                465
             ],
             "Velocity": [
                 20,
@@ -399,8 +399,8 @@
                 1,
                 0
             ],
-            "Radius": 6.099799565985893,
-            "Mass": 7.624749457482366,
+            "Radius": 5.895525981446548,
+            "Mass": 7.09331155059414,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -428,8 +428,8 @@
                 1,
                 0
             ],
-            "Radius": 7.423180292833461,
-            "Mass": 9.278975366041827,
+            "Radius": 6.99587119405501,
+            "Mass": 9.988206890573197,
             "MaxVelocity": 50,
             "MaxAngularVelocity": 3.141592653589793,
             "MaxAcceleration": 50,
@@ -450,12 +450,12 @@
         "ArrivalWeight": 1,
         "ArrivalHorizon": 3,
         "AlignmentWeight": 1,
-        "AlignmentHorizon": 3,
+        "AlignmentHorizon": 4,
         "SeparationWeight": 2.5,
-        "SeparationHorizon": 2,
+        "SeparationHorizon": 2.5,
         "CohesionWeight": 1,
         "CohesionHorizon": 5,
-        "FlockingWeight": 0.5
+        "FlockingWeight": 0.3
     },
     "EnableBoids": true,
     "MinX": 0,

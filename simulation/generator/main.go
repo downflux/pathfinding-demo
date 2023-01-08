@@ -449,9 +449,9 @@ func main() {
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      250,
 	}, func() simulation.O {
-		agents := flock(vector.V{50, 150}, vector.V{450, 350}, 10, 8)
-		agents = append(agents, flock(vector.V{50, 450}, vector.V{300, 150}, 10, 8)...)
-		agents = append(agents, flock(vector.V{150, 50}, vector.V{50, 450}, 10, 8)...)
+		agents := flock(vector.V{50, 150}, vector.V{450, 350}, 10, 7)
+		agents = append(agents, flock(vector.V{50, 450}, vector.V{300, 150}, 10, 7)...)
+		agents = append(agents, flock(vector.V{150, 50}, vector.V{50, 450}, 10, 7)...)
 		return simulation.O{
 			Name:         "Flocking_Small",
 			Agents:       agents,
@@ -501,8 +501,8 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			Flags:              flags.FSizeSmall,
 		},
 		{
-			Position:           vector.Add(p, vector.V{-10, -10}),
-			TargetPosition:     vector.Add(g, vector.V{-10, -10}),
+			Position:           vector.Add(p, vector.V{-15, -15}),
+			TargetPosition:     vector.Add(g, vector.V{-15, -15}),
 			Heading:            polar.V{1, 0},
 			TargetVelocity:     vector.V{0, 0},
 			Velocity:           vector.V{20, 0},
@@ -512,8 +512,8 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			Flags:              flags.FSizeSmall,
 		},
 		{
-			Position:           vector.Add(p, vector.V{-15, 0}),
-			TargetPosition:     vector.Add(g, vector.V{-15, 0}),
+			Position:           vector.Add(p, vector.V{-30, 0}),
+			TargetPosition:     vector.Add(g, vector.V{-30, 0}),
 			Heading:            polar.V{1, 0},
 			TargetVelocity:     vector.V{0, 0},
 			Velocity:           vector.V{20, 0},
@@ -523,8 +523,8 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			Flags:              flags.FSizeSmall,
 		},
 		{
-			Position:           vector.Add(p, vector.V{-10, 10}),
-			TargetPosition:     vector.Add(g, vector.V{-10, 10}),
+			Position:           vector.Add(p, vector.V{-15, 15}),
+			TargetPosition:     vector.Add(g, vector.V{-15, 15}),
 			Heading:            polar.V{1, 0},
 			TargetVelocity:     vector.V{0, 0},
 			Velocity:           vector.V{20, 0},
@@ -546,9 +546,9 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 		},
 	}
 	for i := 0; i < len(agents); i++ {
-		f := rn(0.5, 1.5)
+		f := rn(0.25, 2)
 		mass := m * f
-		radius := r * f
+		radius := r * math.Sqrt(f)
 		a := &agents[i]
 		a.Radius = radius
 		a.Mass = mass
