@@ -64,15 +64,16 @@ func main() {
 			cols := math.Floor(math.Sqrt(float64(n)))
 			grid := (max - min) / cols
 			for i := 0; i < n; i++ {
+				p := vector.V{
+					float64(i%int(cols)) + 0.5,
+					math.Floor(float64(i)/cols) + 0.5,
+				}
 				v := vector.Scale(5*r, vector.V{
 					rn(-1, 1),
 					rn(-1, 1),
 				})
 				agents = append(agents, agent.O{
-					Position: vector.Scale(grid, vector.V{
-						float64(i%int(cols)) + 0.5,
-						math.Floor(float64(i)/cols) + 0.5,
-					}),
+					Position:       vector.Scale(grid, p),
 					TargetPosition: vector.V{0, 0},
 					Heading: polar.Normalize(
 						polar.V{1, rn(0, 2*math.Pi)},
@@ -99,6 +100,68 @@ func main() {
 				MaxY:         max,
 				TickDuration: 20 * time.Millisecond,
 				NFrames:      600,
+			})
+		}
+	}
+	for _, n := range []int{100, 200, 1000} {
+		for _, density := range []float64{0.01, 0.1} {
+			agents := make([]agent.O, 0, n)
+
+			min, max := 0.0, math.Sqrt(float64(n)*math.Pi*r*r/density)
+			cols := math.Floor(math.Sqrt(float64(n)))
+			grid := (max - min) / cols
+
+			targets := make([]vector.V, 0, n)
+			for i := 0; i < n; i++ {
+				targets = append(targets, vector.Scale(grid, vector.V{
+					float64(i%int(cols)) + 0.5,
+					math.Floor(float64(i)/cols) + 0.5,
+				}))
+			}
+			rand.Shuffle(len(targets), func(i, j int) { targets[i], targets[j] = targets[j], targets[i] })
+			// Allow for some duplicate goals to see artificial
+			// flocking better.
+			targets = targets[:n/10]
+
+			for i := 0; i < n; i++ {
+				p := vector.V{
+					float64(i%int(cols)) + 0.5,
+					math.Floor(float64(i)/cols) + 0.5,
+				}
+				v := vector.Scale(5*r, vector.V{
+					rn(-1, 1),
+					rn(-1, 1),
+				})
+				agents = append(agents, agent.O{
+					Position:       vector.Scale(grid, p),
+					TargetPosition: targets[i%len(targets)],
+					Heading: polar.Normalize(
+						polar.V{1, rn(0, 2*math.Pi)},
+					),
+					TargetVelocity:     v,
+					Mass:               5,
+					Velocity:           vector.V{0, 0},
+					Radius:             r,
+					MaxVelocity:        50,
+					MaxAngularVelocity: math.Pi / 4,
+					MaxAcceleration:    40,
+					Flags:              flags.FSizeSmall,
+				})
+			}
+
+			opts = append(opts, simulation.O{
+				Name:         fmt.Sprintf("Random_Boids/N=%v/ρ=%v", n, density),
+				Agents:       agents,
+				Features:     borders(min, max, min, max),
+				Collider:     collider.DefaultO,
+				Boids:        boids.DefaultO,
+				EnableBoids:  true,
+				MinX:         min,
+				MinY:         min,
+				MaxX:         max,
+				MaxY:         max,
+				TickDuration: 20 * time.Millisecond,
+				NFrames:      1200,
 			})
 		}
 	}
@@ -335,13 +398,13 @@ func main() {
 		},
 		Collider:     collider.DefaultO,
 		Boids:        boids.DefaultO,
+		EnableBoids:  true,
 		MinX:         0,
 		MinY:         0,
 		MaxX:         300,
 		MaxY:         100,
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      600,
-		EnableBoids:  true,
 	}, simulation.O{
 		Name: "Collision_Test",
 		Agents: []agent.O{
