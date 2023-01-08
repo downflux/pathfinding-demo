@@ -449,13 +449,13 @@
         "SeekWeight": 0,
         "ArrivalWeight": 1,
         "ArrivalHorizon": 3,
-        "AlignmentWeight": 0.5,
-        "AlignmentHorizon": 2,
-        "SeparationWeight": 0.5,
+        "AlignmentWeight": 1,
+        "AlignmentHorizon": 3,
+        "SeparationWeight": 2.5,
         "SeparationHorizon": 2,
-        "CohesionWeight": 0.4,
+        "CohesionWeight": 1,
         "CohesionHorizon": 5,
-        "FlockingWeight": 1.5
+        "FlockingWeight": 0.5
     },
     "EnableBoids": true,
     "MinX": 0,
