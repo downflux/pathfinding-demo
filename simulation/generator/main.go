@@ -335,6 +335,74 @@ func main() {
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      200,
 	}, simulation.O{
+		Name: "Boids_Box_And_Ball",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{25, 50},
+				TargetPosition:     vector.V{100, 100},
+				Heading:            polar.V{1, 0},
+				TargetVelocity:     vector.V{10, 10},
+				Velocity:           vector.V{0, 0},
+				Radius:             10,
+				Mass:               10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: 2 * math.Pi,
+				MaxAcceleration:    50,
+				Flags:              flags.FSizeSmall,
+			},
+		},
+		Features: []feature.O{
+			{
+				Min: vector.V{70, 20},
+				Max: vector.V{90, 80},
+			},
+		},
+		Collider:     collider.DefaultO,
+		Boids:        boids.DefaultO,
+		EnableBoids:  true,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      600,
+	}, simulation.O{
+		Name: "Boids_Box_And_Ball_Corner",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{25, 50},
+				TargetPosition:     vector.V{100, 100},
+				Heading:            polar.V{1, 0},
+				TargetVelocity:     vector.V{10, 10},
+				Velocity:           vector.V{0, 0},
+				Radius:             10,
+				Mass:               10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi,
+				MaxAcceleration:    50,
+				Flags:              flags.FSizeSmall,
+			},
+		},
+		Features: []feature.O{
+			{
+				Min: vector.V{70, 20},
+				Max: vector.V{90, 80},
+			},
+			{
+				Min: vector.V{50, 80},
+				Max: vector.V{90, 100},
+			},
+		},
+		Collider:     collider.DefaultO,
+		Boids:        boids.DefaultO,
+		EnableBoids:  true,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      1200,
+	}, simulation.O{
 		Name: "Separation_Boids_Test",
 		Agents: []agent.O{
 			{
