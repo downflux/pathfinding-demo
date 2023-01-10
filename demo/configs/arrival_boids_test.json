@@ -1,0 +1,61 @@
+{
+    "Name": "Arrival_Boids_Test",
+    "Agents": [
+        {
+            "Position": [
+                150,
+                50
+            ],
+            "TargetPosition": [
+                250,
+                50
+            ],
+            "Velocity": [
+                0,
+                0
+            ],
+            "TargetVelocity": [
+                0,
+                0
+            ],
+            "Heading": [
+                1,
+                1.5707963267948966
+            ],
+            "Radius": 5,
+            "Mass": 1,
+            "MaxVelocity": 50,
+            "MaxAngularVelocity": 1.5707963267948966,
+            "MaxAcceleration": 50,
+            "Flags": 4,
+            "Team": 0
+        }
+    ],
+    "Projectiles": null,
+    "Features": null,
+    "Collider": {
+        "PoolSize": 24
+    },
+    "Boids": {
+        "PoolSize": 24,
+        "AvoidanceWeight": 5,
+        "AvoidanceHorizon": 1.5,
+        "SeekWeight": 0,
+        "ArrivalWeight": 1,
+        "ArrivalHorizon": 3,
+        "AlignmentWeight": 1,
+        "AlignmentHorizon": 4,
+        "SeparationWeight": 2.5,
+        "SeparationHorizon": 2.5,
+        "CohesionWeight": 1,
+        "CohesionHorizon": 5,
+        "FlockingWeight": 0.3
+    },
+    "EnableBoids": true,
+    "MinX": 0,
+    "MinY": 0,
+    "MaxX": 300,
+    "MaxY": 100,
+    "TickDuration": 20000000,
+    "NFrames": 600
+}

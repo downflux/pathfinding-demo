@@ -435,6 +435,32 @@ func main() {
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      1200,
 	}, simulation.O{
+		Name: "Arrival_Boids_Test",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{150, 50},
+				TargetPosition:     vector.V{250, 50},
+				Heading:            polar.V{1, math.Pi / 2},
+				TargetVelocity:     vector.V{0, 0},
+				Velocity:           vector.V{0, 0},
+				Radius:             5,
+				Mass:               1,
+				MaxVelocity:        50,
+				MaxAngularVelocity: math.Pi / 2,
+				MaxAcceleration:    50,
+				Flags:              flags.FSizeSmall,
+			},
+		},
+		Collider:     collider.DefaultO,
+		Boids:        boids.DefaultO,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         300,
+		MaxY:         100,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      600,
+		EnableBoids:  true,
+	}, simulation.O{
 		Name: "Separation_Boids_Test",
 		Agents: []agent.O{
 			{
