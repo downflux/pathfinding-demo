@@ -367,6 +367,38 @@ func main() {
 		TickDuration: 20 * time.Millisecond,
 		NFrames:      600,
 	}, simulation.O{
+		Name: "Boids_Box_And_Ball_Convex_Corner",
+		Agents: []agent.O{
+			{
+				Position:           vector.V{25, 25},
+				TargetPosition:     vector.V{100, 100},
+				Heading:            polar.V{1, math.Pi / 4},
+				TargetVelocity:     vector.V{10, 10},
+				Velocity:           vector.V{0, 0},
+				Radius:             10,
+				Mass:               10,
+				MaxVelocity:        100,
+				MaxAngularVelocity: math.Pi,
+				MaxAcceleration:    50,
+				Flags:              flags.FSizeSmall,
+			},
+		},
+		Features: []feature.O{
+			{
+				Min: vector.V{50, 50},
+				Max: vector.V{80, 80},
+			},
+		},
+		Collider:     collider.DefaultO,
+		Boids:        boids.DefaultO,
+		EnableBoids:  true,
+		MinX:         0,
+		MinY:         0,
+		MaxX:         150,
+		MaxY:         150,
+		TickDuration: 20 * time.Millisecond,
+		NFrames:      600,
+	}, simulation.O{
 		Name: "Boids_Box_And_Ball_Corner",
 		Agents: []agent.O{
 			{

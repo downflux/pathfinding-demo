@@ -1,0 +1,74 @@
+{
+    "Name": "Boids_Box_And_Ball_Convex_Corner",
+    "Agents": [
+        {
+            "Position": [
+                25,
+                25
+            ],
+            "TargetPosition": [
+                100,
+                100
+            ],
+            "Velocity": [
+                0,
+                0
+            ],
+            "TargetVelocity": [
+                10,
+                10
+            ],
+            "Heading": [
+                1,
+                0.7853981633974483
+            ],
+            "Radius": 10,
+            "Mass": 10,
+            "MaxVelocity": 100,
+            "MaxAngularVelocity": 3.141592653589793,
+            "MaxAcceleration": 50,
+            "Flags": 4,
+            "Team": 0
+        }
+    ],
+    "Projectiles": null,
+    "Features": [
+        {
+            "Min": [
+                50,
+                50
+            ],
+            "Max": [
+                80,
+                80
+            ],
+            "Flags": 0,
+            "Team": 0
+        }
+    ],
+    "Collider": {
+        "PoolSize": 24
+    },
+    "Boids": {
+        "PoolSize": 24,
+        "AvoidanceWeight": 5,
+        "AvoidanceHorizon": 1.5,
+        "SeekWeight": 0,
+        "ArrivalWeight": 1,
+        "ArrivalHorizon": 3,
+        "AlignmentWeight": 1,
+        "AlignmentHorizon": 4,
+        "SeparationWeight": 2.5,
+        "SeparationHorizon": 2.5,
+        "CohesionWeight": 1,
+        "CohesionHorizon": 5,
+        "FlockingWeight": 0.3
+    },
+    "EnableBoids": true,
+    "MinX": 0,
+    "MinY": 0,
+    "MaxX": 150,
+    "MaxY": 150,
+    "TickDuration": 20000000,
+    "NFrames": 600
+}
