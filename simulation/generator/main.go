@@ -13,7 +13,7 @@ import (
 	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-database/agent"
 	"github.com/downflux/go-database/feature"
-	"github.com/downflux/go-database/flags"
+	"github.com/downflux/go-database/flags/size"
 	"github.com/downflux/go-database/projectile"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
@@ -85,7 +85,7 @@ func main() {
 					MaxVelocity:        vector.Magnitude(v),
 					MaxAngularVelocity: 2 * math.Pi,
 					MaxAcceleration:    5,
-					Flags:              flags.FSizeSmall,
+					Size:               size.FSmall,
 				})
 			}
 
@@ -145,7 +145,7 @@ func main() {
 					MaxVelocity:        50,
 					MaxAngularVelocity: math.Pi / 4,
 					MaxAcceleration:    40,
-					Flags:              flags.FSizeSmall,
+					Size:               size.FSmall,
 				})
 			}
 
@@ -180,7 +180,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    5,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Features: []feature.O{
@@ -211,7 +211,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    5,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Features: []feature.O{
@@ -248,7 +248,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    5,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 			// (-X, -Y) to (-X, -Y)
 			{
@@ -262,7 +262,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    5,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 			// (+X, -Y) to (+X, +Y)
 			{
@@ -276,7 +276,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    5,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -300,7 +300,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi,
 				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -324,7 +324,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi,
 				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -348,7 +348,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    50,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Features: []feature.O{
@@ -380,7 +380,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi,
 				MaxAcceleration:    50,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Features: []feature.O{
@@ -412,7 +412,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi,
 				MaxAcceleration:    50,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Features: []feature.O{
@@ -448,7 +448,7 @@ func main() {
 				MaxVelocity:        50,
 				MaxAngularVelocity: math.Pi / 2,
 				MaxAcceleration:    50,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -474,7 +474,7 @@ func main() {
 				MaxVelocity:        50,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    50,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 			{
 				Position:           vector.V{200, 45},
@@ -487,7 +487,7 @@ func main() {
 				MaxVelocity:        30,
 				MaxAngularVelocity: math.Pi / 8,
 				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -513,7 +513,7 @@ func main() {
 				MaxVelocity:        50,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    50,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 			{
 				Position:           vector.V{200, 50},
@@ -526,7 +526,7 @@ func main() {
 				MaxVelocity:        30,
 				MaxAngularVelocity: math.Pi / 8,
 				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -552,7 +552,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 			{
 				Position:           vector.V{100, 45},
@@ -565,7 +565,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -591,7 +591,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 			{
 				Position:           vector.V{50, 80},
@@ -604,7 +604,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -628,7 +628,7 @@ func main() {
 				MaxVelocity:        100,
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    10,
-				Flags:              flags.FSizeSmall,
+				Size:               size.FSmall,
 			},
 		},
 		Projectiles: []projectile.O{
@@ -639,7 +639,6 @@ func main() {
 				TargetVelocity: vector.V{-30, 0},
 				Velocity:       vector.V{-30, 0},
 				Radius:         2,
-				Flags:          flags.FSizeProjectile,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -699,7 +698,7 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			MaxVelocity:        50,
 			MaxAngularVelocity: math.Pi,
 			MaxAcceleration:    50,
-			Flags:              flags.FSizeSmall,
+			Size:               size.FSmall,
 		},
 		{
 			Position:           vector.Add(p, vector.V{-15, -15}),
@@ -710,7 +709,7 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			MaxVelocity:        50,
 			MaxAngularVelocity: math.Pi,
 			MaxAcceleration:    50,
-			Flags:              flags.FSizeSmall,
+			Size:               size.FSmall,
 		},
 		{
 			Position:           vector.Add(p, vector.V{-30, 0}),
@@ -721,7 +720,7 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			MaxVelocity:        50,
 			MaxAngularVelocity: math.Pi,
 			MaxAcceleration:    50,
-			Flags:              flags.FSizeSmall,
+			Size:               size.FSmall,
 		},
 		{
 			Position:           vector.Add(p, vector.V{-15, 15}),
@@ -732,7 +731,7 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			MaxVelocity:        50,
 			MaxAngularVelocity: math.Pi,
 			MaxAcceleration:    50,
-			Flags:              flags.FSizeSmall,
+			Size:               size.FSmall,
 		},
 		{
 			Position:           vector.Add(p, vector.V{30, 10}),
@@ -743,7 +742,7 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			MaxVelocity:        50,
 			MaxAngularVelocity: math.Pi,
 			MaxAcceleration:    50,
-			Flags:              flags.FSizeSmall,
+			Size:               size.FSmall,
 		},
 	}
 	for i := 0; i < len(agents); i++ {

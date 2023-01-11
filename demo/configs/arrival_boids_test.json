@@ -27,8 +27,10 @@
             "MaxVelocity": 50,
             "MaxAngularVelocity": 1.5707963267948966,
             "MaxAcceleration": 50,
-            "Flags": 4,
-            "Team": 0
+            "Flags": 0,
+            "Size": 1,
+            "Team": 0,
+            "Move": 0
         }
     ],
     "Projectiles": null,
