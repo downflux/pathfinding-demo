@@ -1,5 +1,5 @@
 {
-    "Name": "Separation_Boids_Test",
+    "Name": "Avoidance_Boids_Test",
     "Agents": [
         {
             "Position": [
@@ -30,7 +30,7 @@
             "Flags": 0,
             "Size": 1,
             "Team": 0,
-            "Move": 0
+            "Move": 6
         },
         {
             "Position": [
@@ -61,7 +61,7 @@
             "Flags": 0,
             "Size": 1,
             "Team": 0,
-            "Move": 0
+            "Move": 6
         }
     ],
     "Projectiles": null,
@@ -73,7 +73,7 @@
         "PoolSize": 24,
         "AvoidanceWeight": 5,
         "AvoidanceHorizon": 1.5,
-        "SeekWeight": 0,
+        "SeekWeight": 1,
         "ArrivalWeight": 1,
         "ArrivalHorizon": 3,
         "AlignmentWeight": 1,

@@ -13,6 +13,7 @@ import (
 	"github.com/downflux/go-collider/collider"
 	"github.com/downflux/go-database/agent"
 	"github.com/downflux/go-database/feature"
+	"github.com/downflux/go-database/flags/move"
 	"github.com/downflux/go-database/flags/size"
 	"github.com/downflux/go-database/projectile"
 	"github.com/downflux/go-geometry/2d/vector"
@@ -146,6 +147,7 @@ func main() {
 					MaxAngularVelocity: math.Pi / 4,
 					MaxAcceleration:    40,
 					Size:               size.FSmall,
+					Move:               move.FAvoidance | move.FArrival | move.FFlocking,
 				})
 			}
 
@@ -349,6 +351,7 @@ func main() {
 				MaxAngularVelocity: 2 * math.Pi,
 				MaxAcceleration:    50,
 				Size:               size.FSmall,
+				Move:               move.FAvoidance | move.FArrival | move.FFlocking,
 			},
 		},
 		Features: []feature.O{
@@ -381,6 +384,7 @@ func main() {
 				MaxAngularVelocity: math.Pi,
 				MaxAcceleration:    50,
 				Size:               size.FSmall,
+				Move:               move.FAvoidance | move.FArrival | move.FFlocking,
 			},
 		},
 		Features: []feature.O{
@@ -413,6 +417,7 @@ func main() {
 				MaxAngularVelocity: math.Pi,
 				MaxAcceleration:    50,
 				Size:               size.FSmall,
+				Move:               move.FAvoidance | move.FArrival | move.FFlocking,
 			},
 		},
 		Features: []feature.O{
@@ -449,6 +454,7 @@ func main() {
 				MaxAngularVelocity: math.Pi / 2,
 				MaxAcceleration:    50,
 				Size:               size.FSmall,
+				Move:               move.FArrival,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -461,7 +467,7 @@ func main() {
 		NFrames:      600,
 		EnableBoids:  true,
 	}, simulation.O{
-		Name: "Separation_Boids_Test",
+		Name: "Avoidance_Boids_Test",
 		Agents: []agent.O{
 			{
 				Position:           vector.V{150, 50},
@@ -475,6 +481,7 @@ func main() {
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    50,
 				Size:               size.FSmall,
+				Move:               move.FAvoidance | move.FSeek,
 			},
 			{
 				Position:           vector.V{200, 45},
@@ -488,6 +495,7 @@ func main() {
 				MaxAngularVelocity: math.Pi / 8,
 				MaxAcceleration:    10,
 				Size:               size.FSmall,
+				Move:               move.FAvoidance | move.FSeek,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -500,7 +508,7 @@ func main() {
 		NFrames:      600,
 		EnableBoids:  true,
 	}, simulation.O{
-		Name: "Separation_Boids_Direct_Test",
+		Name: "Avoidance_Boids_Direct_Test",
 		Agents: []agent.O{
 			{
 				Position:           vector.V{150, 50},
@@ -514,6 +522,7 @@ func main() {
 				MaxAngularVelocity: math.Pi / 4,
 				MaxAcceleration:    50,
 				Size:               size.FSmall,
+				Move:               move.FAvoidance | move.FSeek,
 			},
 			{
 				Position:           vector.V{200, 50},
@@ -527,6 +536,7 @@ func main() {
 				MaxAngularVelocity: math.Pi / 8,
 				MaxAcceleration:    10,
 				Size:               size.FSmall,
+				Move:               move.FAvoidance | move.FSeek,
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -699,6 +709,7 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			MaxAngularVelocity: math.Pi,
 			MaxAcceleration:    50,
 			Size:               size.FSmall,
+			Move:               move.FAvoidance | move.FArrival | move.FFlocking,
 		},
 		{
 			Position:           vector.Add(p, vector.V{-15, -15}),
@@ -710,6 +721,7 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			MaxAngularVelocity: math.Pi,
 			MaxAcceleration:    50,
 			Size:               size.FSmall,
+			Move:               move.FAvoidance | move.FArrival | move.FFlocking,
 		},
 		{
 			Position:           vector.Add(p, vector.V{-30, 0}),
@@ -721,6 +733,7 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			MaxAngularVelocity: math.Pi,
 			MaxAcceleration:    50,
 			Size:               size.FSmall,
+			Move:               move.FAvoidance | move.FArrival | move.FFlocking,
 		},
 		{
 			Position:           vector.Add(p, vector.V{-15, 15}),
@@ -732,6 +745,7 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			MaxAngularVelocity: math.Pi,
 			MaxAcceleration:    50,
 			Size:               size.FSmall,
+			Move:               move.FAvoidance | move.FArrival | move.FFlocking,
 		},
 		{
 			Position:           vector.Add(p, vector.V{30, 10}),
@@ -743,6 +757,7 @@ func flock(p vector.V, g vector.V, m float64, r float64) []agent.O {
 			MaxAngularVelocity: math.Pi,
 			MaxAcceleration:    50,
 			Size:               size.FSmall,
+			Move:               move.FAvoidance | move.FArrival | move.FFlocking,
 		},
 	}
 	for i := 0; i < len(agents); i++ {

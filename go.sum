@@ -18,6 +18,8 @@ github.com/downflux/go-boids v0.3.0 h1:utFR9/mFQ/Q6lnOPsIklC+PurRWUXm2TEi8kSolK0
 github.com/downflux/go-boids v0.3.0/go.mod h1:dFhTsA7fv3oJGX9d9sep0s2qT0dnA3m7W9bBdZBMq3s=
 github.com/downflux/go-boids v0.3.1 h1:kaZploeb9sITdXEwLcF3cY3cpqgXDH1smyKGFDmjHP8=
 github.com/downflux/go-boids v0.3.1/go.mod h1:wtZNVDZ8rde5RX/EDVYyDlIp01jh9ViNKD3ckHGwqdY=
+github.com/downflux/go-boids v0.3.2 h1:JuOMD4dtEdutgKxNShYx7v24u0E/v3iuxNK96SCvUHE=
+github.com/downflux/go-boids v0.3.2/go.mod h1:wtZNVDZ8rde5RX/EDVYyDlIp01jh9ViNKD3ckHGwqdY=
 github.com/downflux/go-bvh v1.0.0 h1:k5rSxBGEeuhWaW8JrxL5KF1f3fA9jaXoK1/zJLV9DK4=
 github.com/downflux/go-bvh v1.0.0/go.mod h1:A4IdDdYkX7zy0STS7KvNMGgQTpMOT3/aSJh8MkM4GLc=
 github.com/downflux/go-collider v0.2.11 h1:bhm9IzcxJ5fc9Ug7QhfUcRkCVtGoIkSHncTL0Gk+oKg=
