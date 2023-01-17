@@ -71,6 +71,7 @@
     },
     "Boids": {
         "PoolSize": 24,
+        "EnableCache": false,
         "AvoidanceWeight": 5,
         "AvoidanceHorizon": 1.5,
         "SeekWeight": 1,
