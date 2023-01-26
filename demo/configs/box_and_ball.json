@@ -36,14 +36,7 @@
     "Projectiles": null,
     "Features": [
         {
-            "Min": [
-                70,
-                20
-            ],
-            "Max": [
-                90,
-                80
-            ],
+            "AABB": {},
             "Flags": 0,
             "Team": 0
         }

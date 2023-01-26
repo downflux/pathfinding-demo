@@ -1,13 +1,11 @@
 package aabb
 
 import (
-	"fmt"
 	"image"
 	"image/color"
 	"math"
 
-	"github.com/downflux/go-geometry/nd/hyperrectangle"
-	"github.com/downflux/go-geometry/nd/vector"
+	"github.com/downflux/go-geometry/2d/hyperrectangle"
 )
 
 type R struct {
@@ -16,9 +14,6 @@ type R struct {
 }
 
 func New(r hyperrectangle.R, color color.Color) *R {
-	if k := r.Min().Dimension(); k != 2 {
-		panic(fmt.Sprintf("invalid hyperrectangle dimension %v", k))
-	}
 	return &R{
 		aabb:  r,
 		color: color,
@@ -26,8 +21,8 @@ func New(r hyperrectangle.R, color color.Color) *R {
 }
 
 func (r *R) Draw(img *image.Paletted) {
-	xmin, xmax := int(math.Round(r.aabb.Min().X(vector.AXIS_X))), int(math.Round(r.aabb.Max().X(vector.AXIS_X)))
-	ymin, ymax := int(math.Round(r.aabb.Min().X(vector.AXIS_Y))), int(math.Round(r.aabb.Max().X(vector.AXIS_Y)))
+	xmin, xmax := int(math.Round(r.aabb.Min().X())), int(math.Round(r.aabb.Max().X()))
+	ymin, ymax := int(math.Round(r.aabb.Min().Y())), int(math.Round(r.aabb.Max().Y()))
 
 	for i := xmin; i <= xmax; i++ {
 		img.Set(i, ymin, r.color)

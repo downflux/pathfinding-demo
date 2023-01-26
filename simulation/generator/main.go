@@ -16,6 +16,7 @@ import (
 	"github.com/downflux/go-database/flags/move"
 	"github.com/downflux/go-database/flags/size"
 	"github.com/downflux/go-database/projectile"
+	"github.com/downflux/go-geometry/2d/hyperrectangle"
 	"github.com/downflux/go-geometry/2d/vector"
 	"github.com/downflux/go-geometry/2d/vector/polar"
 	"github.com/downflux/pathfinding-demo/simulation"
@@ -35,20 +36,16 @@ func borders(xmin, xmax, ymin, ymax float64) []feature.O {
 	width := 2 * r
 	return []feature.O{
 		{
-			Min: vector.V{xmin - width, ymin - width},
-			Max: vector.V{xmin, ymax + width},
+			AABB: *hyperrectangle.New(vector.V{xmin - width, ymin - width}, vector.V{xmin, ymax + width}),
 		},
 		{
-			Min: vector.V{xmax, ymin - width},
-			Max: vector.V{xmax + width, ymax + width},
+			AABB: *hyperrectangle.New(vector.V{xmax, ymin - width}, vector.V{xmax + width, ymax + width}),
 		},
 		{
-			Min: vector.V{xmin, ymin - width},
-			Max: vector.V{xmax, ymin},
+			AABB: *hyperrectangle.New(vector.V{xmin, ymin - width}, vector.V{xmax, ymin}),
 		},
 		{
-			Min: vector.V{xmin, ymax},
-			Max: vector.V{xmax, ymax + width},
+			AABB: *hyperrectangle.New(vector.V{xmin, ymax}, vector.V{xmax, ymax + width}),
 		},
 	}
 }
@@ -187,8 +184,7 @@ func main() {
 		},
 		Features: []feature.O{
 			{
-				Min: vector.V{70, 20},
-				Max: vector.V{90, 80},
+				AABB: *hyperrectangle.New(vector.V{70, 20}, vector.V{90, 80}),
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -218,12 +214,10 @@ func main() {
 		},
 		Features: []feature.O{
 			{
-				Min: vector.V{70, 20},
-				Max: vector.V{90, 80},
+				AABB: *hyperrectangle.New(vector.V{70, 20}, vector.V{90, 80}),
 			},
 			{
-				Min: vector.V{50, 80},
-				Max: vector.V{90, 100},
+				AABB: *hyperrectangle.New(vector.V{50, 80}, vector.V{90, 100}),
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -356,8 +350,7 @@ func main() {
 		},
 		Features: []feature.O{
 			{
-				Min: vector.V{70, 20},
-				Max: vector.V{90, 80},
+				AABB: *hyperrectangle.New(vector.V{70, 20}, vector.V{90, 80}),
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -389,8 +382,7 @@ func main() {
 		},
 		Features: []feature.O{
 			{
-				Min: vector.V{50, 50},
-				Max: vector.V{80, 80},
+				AABB: *hyperrectangle.New(vector.V{50, 50}, vector.V{80, 80}),
 			},
 		},
 		Collider:     collider.DefaultO,
@@ -422,12 +414,10 @@ func main() {
 		},
 		Features: []feature.O{
 			{
-				Min: vector.V{70, 20},
-				Max: vector.V{90, 80},
+				AABB: *hyperrectangle.New(vector.V{70, 20}, vector.V{90, 80}),
 			},
 			{
-				Min: vector.V{50, 80},
-				Max: vector.V{90, 100},
+				AABB: *hyperrectangle.New(vector.V{50, 80}, vector.V{90, 100}),
 			},
 		},
 		Collider:     collider.DefaultO,
